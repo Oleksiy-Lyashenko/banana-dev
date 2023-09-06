@@ -1,0 +1,40 @@
+@import "../utils/vars";
+
+.logo {
+  width: 250px;
+  height: 4.5rem;
+}
+
+.header {
+  z-index: 2;
+  position: relative;
+  background-color: #000000;
+
+  box-shadow: 20px 50px 40px #000000;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    padding: 0.5rem 1rem;
+
+    border: 2px solid $sub-yellow-text-color;
+    background-color: transparent;
+
+    font-family: "Fira Code";
+    color: #F7E439;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $sub-yellow-text-color;
+      color: $dark-text-color
+    }
+  }
+}

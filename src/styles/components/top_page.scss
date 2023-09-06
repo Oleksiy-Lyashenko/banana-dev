@@ -1,0 +1,167 @@
+@import '../utils/vars';
+
+.top-page {
+  z-index: 1;
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__text-block {
+    margin-top: 3rem;
+    max-width: 750px;
+  }
+
+  &__main-text {
+    position: relative;
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    font-family: $sugo-pro-display;
+    color: $white-text-color;
+    font-size: 6.5rem;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.2rem;
+    letter-spacing: 6.6px;
+    text-transform: uppercase;
+
+    text-shadow: 
+      4px 4px 0px #e12c83;
+      // 7px 7px 0px rgba(0, 0, 0, 0.2);
+
+    &::after {
+      content: "";
+      text-shadow: 
+        4px 4px 0px #d5d5d5, 
+        7px 7px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &--yellow {
+      color: $main-yellow-text-color;
+    }
+  }
+
+  &__sub-text {
+    padding: 0;
+    margin-bottom: 70px;
+
+    font-family: $fira-code;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    color: $white-text-color;
+  }
+
+  &__button {
+    padding: 25px 75px;
+
+    background: url('../../images/button.svg');
+    background-size: cover;
+    background-position: center;
+
+    border: none;
+
+    font-family: $fira-code;
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.44px;
+
+    cursor: pointer;
+  }
+
+  &__columns {
+    margin-right: -10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    column-gap: 10px;
+  }
+}
+
+.column {
+  display: grid;
+  position: relative;
+
+  &-1 {
+    position: absolute;
+    top: 0px;
+    grid-column: 1;
+
+    z-index: 0;
+  }
+
+  &-2 {
+    grid-column: 2;
+  }
+}
+
+.our-client {
+  block-size: border-box;
+  margin-top: 1rem;
+
+  &__content {
+    position: relative;
+
+    padding: 2.5rem 4rem;
+    background-color: $gray-color;
+
+    &::after {
+      z-index: 1;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      box-shadow: 16rem -50px 60px #000000;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 1.5rem;
+
+    font-family: $sugo-pro-display;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: $white-text-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__block-img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    max-width: 10rem;
+    width: 100%;
+    height: 4rem;
+  }
+
+  &__left-tape {
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+  }
+
+  &__right-tape {
+    z-index: 2;
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+  }
+}
