@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/banana-dev/static/css/main.2930650f.css",
-    "main.js": "/banana-dev/static/js/main.577549d8.js",
+    "main.js": "/banana-dev/static/js/main.63672e05.js",
     "static/media/Sugo-Pro-Classic-Thin-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Thin-trial.08ce01ad8a874fb4a8c8.ttf",
     "static/media/Sugo-Pro-Classic-Light-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Light-trial.95d5ce39453ba7a5fb28.ttf",
     "static/media/Sugo-Pro-Classic-Bold-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Bold-trial.0da79f137b8a422c0e7b.ttf",
@@ -28,10 +28,10 @@
     "static/media/button.svg": "/banana-dev/static/media/button.c4b01f9c699672819605.svg",
     "index.html": "/banana-dev/index.html",
     "main.2930650f.css.map": "/banana-dev/static/css/main.2930650f.css.map",
-    "main.577549d8.js.map": "/banana-dev/static/js/main.577549d8.js.map"
+    "main.63672e05.js.map": "/banana-dev/static/js/main.63672e05.js.map"
   },
   "entrypoints": [
     "static/css/main.2930650f.css",
-    "static/js/main.577549d8.js"
+    "static/js/main.63672e05.js"
   ]
 }
