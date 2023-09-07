@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import '../../styles/components/card.scss';
 
 export const Card = ({ img, name, rate, position, experince, skills }) => {
