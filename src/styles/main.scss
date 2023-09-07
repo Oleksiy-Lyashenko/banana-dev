@@ -1,4 +1,5 @@
-@import "utils";
+@import "utils/vars";
+@import "utils/_mixins";
 @import "fonts";
 
 body {
@@ -28,5 +29,21 @@ code {
   &__top-page {
     max-width: 1350px;
     margin: 0 auto;
+  }
+}
+
+.main {
+  &__page-title {
+    margin: 0;
+
+    color: $main-yellow-text-color;
+    font-family: $sugo-pro-display;
+    font-size: 6.2rem;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.2rem;
+    letter-spacing: 6.6px;
+    text-transform: uppercase;
   }
 }

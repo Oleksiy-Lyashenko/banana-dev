@@ -1,0 +1,146 @@
+@import '../utils/vars';
+
+.make-money {
+  &__content {
+    padding-top: 200px;
+    position: relative;
+  }
+
+  &__banan-bg {
+    max-width: 48rem;
+    width: 100%;
+
+    z-index: 1;
+    position: absolute;
+    top: 28rem;
+    right: -10rem;
+  }
+
+  &__dev-bg {
+    max-width: 45rem;
+    width: 100%;
+
+    position: absolute;
+    bottom: 4.5rem;
+    left: -12rem;
+  }
+
+  &__title {
+    z-index: 2;
+    position: relative;
+    margin-bottom: 6rem;
+    padding-left: 2rem;
+  }
+
+  &__img {
+    max-width: 25rem;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    &--2 {
+      height: 27rem;
+    }
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (3, 1fr);
+    column-gap: 3rem;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: column;
+
+    &--1 {
+      grid-column: 1;
+      grid-row: 1;
+      padding-right: 6rem;
+
+      justify-self: flex-end;
+      text-align: left;
+    }
+
+    &--2 {
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: center;
+
+
+      margin-top: -13rem;
+      text-align: right;
+    }
+
+    &--3 {
+      grid-column: 1;
+      grid-row: 3;
+      justify-self: center;
+      padding-right: 5rem;
+
+      margin-top: -13rem;
+
+      text-align: left;
+
+    }
+  }
+
+  &__step-info {
+    margin: 0;
+
+    display: block;
+    max-width: 22rem;
+    width: 100%;
+
+    color: $white-text-color;
+    font-family: $fira-code;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+
+    &--2 {
+      align-self: flex-end;
+    }
+  }
+
+  &__button {
+    padding: 1.2rem 3rem;
+
+    background: url('../../images/button.svg');
+    background-size: cover;
+    background-position: center;
+
+    border: none;
+
+    font-family: $fira-code;
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.44px;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $white-text-color;
+      padding: 1.25rem 3rem;
+
+      background: url('../../images/button_hover.svg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--position {
+      position: absolute;
+      bottom: 4rem;
+      right: 14rem;
+    }
+  }
+}

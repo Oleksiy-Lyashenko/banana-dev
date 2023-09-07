@@ -22,7 +22,7 @@
 
     font-family: $sugo-pro-display;
     color: $white-text-color;
-    font-size: 6.5rem;
+    font-size: 6.2rem;
     font-style: normal;
     font-style: normal;
     font-weight: 400;
@@ -78,6 +78,15 @@
     letter-spacing: 0.44px;
 
     cursor: pointer;
+
+    &:hover {
+      color: $white-text-color;
+      padding: 27px 75px;
+
+      background: url('../../images/button_hover.svg');
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__columns {
@@ -94,20 +103,21 @@
 
   &-1 {
     position: absolute;
-    top: 0px;
+    top: 10px;
     grid-column: 1;
 
     z-index: 0;
   }
 
   &-2 {
+    margin-top: 25px;
     grid-column: 2;
   }
 }
 
 .our-client {
   block-size: border-box;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   &__content {
     position: relative;
