@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import '../../styles/components/top_page.scss';
-import { Card } from '../Card/Card';
+import { Card } from '../../components/Card';
 
 export const TopPage = () => {
   return (

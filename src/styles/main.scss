@@ -26,7 +26,9 @@ code {
   max-width: 1350px;
   margin: 0 auto;
 
-  &__top-page {
+  &--our-clients {
+    position: relative;
+    z-index: 1;
     max-width: 1350px;
     margin: 0 auto;
   }
