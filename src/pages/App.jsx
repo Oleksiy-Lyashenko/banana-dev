@@ -1,17 +1,23 @@
-import { Header } from './Header';
+import { Header } from '../components/Header';
 import { MakeMoneyPage } from './MakeMoneyPage/MakeMoneyPage';
+import { OurClients } from './OurClientsPage/OurClientsPage';
 import { TopPage } from './TopPage';
+import { WhatOffer } from './WhatOfferPage/WhatOfferPage';
 
 function App() {
   return (
     <div className="page">
       <Header />
 
-      <main className='main'>
-        <section className='main__content'>
+      <main className="main">
+        <section className="main__content">
           <TopPage />
 
           <MakeMoneyPage />
+
+          <WhatOffer />
+
+          <OurClients />
         </section>
       </main>
     </div>
