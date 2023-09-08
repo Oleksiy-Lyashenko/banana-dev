@@ -30,16 +30,9 @@
     letter-spacing: 6.6px;
     text-transform: uppercase;
 
-    text-shadow: 
-      4px 4px 0px #e12c83;
-      // 7px 7px 0px rgba(0, 0, 0, 0.2);
-
-    &::after {
-      content: "";
-      text-shadow: 
-        4px 4px 0px #d5d5d5, 
-        7px 7px 0px rgba(0, 0, 0, 0.2);
-    }
+    text-shadow: -1px -1px 0px #000000,
+      3px 3px 0px #000000,
+      4px 4px 0px #808080;
 
     &--yellow {
       color: $main-yellow-text-color;
@@ -60,7 +53,7 @@
   }
 
   &__button {
-    padding: 25px 75px;
+    padding: 1.6rem 4.5rem;
 
     background: url('../../images/button.svg');
     background-size: cover;
@@ -81,7 +74,7 @@
 
     &:hover {
       color: $white-text-color;
-      padding: 27px 75px;
+      padding: 1.6rem 4.5rem;
 
       background: url('../../images/button_hover.svg');
       background-size: cover;

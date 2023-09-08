@@ -1,7 +1,6 @@
 {
   "name": "site",
   "version": "0.1.0",
-  "homepage": "https://Oleksiy-Lyashenko.github.io/banana-dev",
   "private": true,
   "dependencies": {
     "@svgr/webpack": "^8.1.0",

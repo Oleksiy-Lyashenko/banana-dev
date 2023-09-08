@@ -3,6 +3,7 @@ import { MakeMoneyPage } from './MakeMoneyPage/MakeMoneyPage';
 import { OurClients } from './OurClientsPage/OurClientsPage';
 import { TopPage } from './TopPage';
 import { WhatOffer } from './WhatOfferPage/WhatOfferPage';
+import { WowFactorPage } from './WowFactorPage';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <WhatOffer />
 
           <OurClients />
+
+          <WowFactorPage />
         </section>
       </main>
     </div>
