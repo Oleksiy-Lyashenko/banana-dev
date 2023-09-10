@@ -1,8 +1,12 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../../styles/components/our_clients.scss';
 
-const REVIEW_WIDTH = 39;
+let REVIEW_WIDTH = window.screen.width;
+
+if (window.screen.width >= 600) {
+  REVIEW_WIDTH = 625
+}
 
 export const SliderClients = () => {
   const [offset, setOffset] = useState(0);
@@ -30,7 +34,7 @@ export const SliderClients = () => {
       <div
         className="our-clients__block container"
         style={{
-          transform: `translateX(${offset}rem)`,
+          transform: `translateX(${offset}px)`,
         }}>
         <div className="our-clients__column">
           <div className="our-clients__card">
@@ -48,14 +52,14 @@ export const SliderClients = () => {
               the team!
             </p>
 
-            <div className="our-clients__bottom">
+            <div className="our-clients__review-bottom">
               <img
                 src="./images/our_clients/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
 
-              <div className="our-clients__bottom-info">
+              <div className="our-clients__review-bottom-info">
                 <span className="our-clients__name">Mitchel Gronyx</span>
 
                 <div className="our-clients__position">// founder of Microssoft, UK</div>
@@ -77,75 +81,14 @@ export const SliderClients = () => {
               the team!
             </p>
 
-            <div className="our-clients__bottom">
+            <div className="our-clients__review-bottom">
               <img
                 src="./images/our_clients/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
 
-              <div className="our-clients__bottom-info">
-                <span className="our-clients__name">Mitchel Gronyx</span>
-
-                <div className="our-clients__position">// founder of Microssoft, UK</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="our-clients__column">
-          <div className="our-clients__card">
-            <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-            </div>
-
-            <p className="our-clients__review">
-              I’ve worked with some incredible devs in my career, but the experience I am having
-              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
-              the team!
-            </p>
-
-            <div className="our-clients__bottom">
-              <img
-                src="./images/our_clients/client_img.png"
-                alt=""
-                className="our-clients__client-img"
-              />
-
-              <div className="our-clients__bottom-info">
-                <span className="our-clients__name">Mitchel Gronyx</span>
-
-                <div className="our-clients__position">// founder of Microssoft, UK</div>
-              </div>
-            </div>
-          </div>
-          <div className="our-clients__card">
-            <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-            </div>
-
-            <p className="our-clients__review">
-              I’ve worked with some incredible devs in my career, but the experience I am having
-              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
-              the team!
-            </p>
-
-            <div className="our-clients__bottom">
-              <img
-                src="./images/our_clients/client_img.png"
-                alt=""
-                className="our-clients__client-img"
-              />
-
-              <div className="our-clients__bottom-info">
+              <div className="our-clients__review-bottom-info">
                 <span className="our-clients__name">Mitchel Gronyx</span>
 
                 <div className="our-clients__position">// founder of Microssoft, UK</div>
@@ -170,14 +113,14 @@ export const SliderClients = () => {
               the team!
             </p>
 
-            <div className="our-clients__bottom">
+            <div className="our-clients__review-bottom">
               <img
                 src="./images/our_clients/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
 
-              <div className="our-clients__bottom-info">
+              <div className="our-clients__review-bottom-info">
                 <span className="our-clients__name">Mitchel Gronyx</span>
 
                 <div className="our-clients__position">// founder of Microssoft, UK</div>
@@ -199,14 +142,14 @@ export const SliderClients = () => {
               the team!
             </p>
 
-            <div className="our-clients__bottom">
+            <div className="our-clients__review-bottom">
               <img
                 src="./images/our_clients/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
 
-              <div className="our-clients__bottom-info">
+              <div className="our-clients__review-bottom-info">
                 <span className="our-clients__name">Mitchel Gronyx</span>
 
                 <div className="our-clients__position">// founder of Microssoft, UK</div>
@@ -231,14 +174,14 @@ export const SliderClients = () => {
               the team!
             </p>
 
-            <div className="our-clients__bottom">
+            <div className="our-clients__review-bottom">
               <img
                 src="./images/our_clients/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
 
-              <div className="our-clients__bottom-info">
+              <div className="our-clients__review-bottom-info">
                 <span className="our-clients__name">Mitchel Gronyx</span>
 
                 <div className="our-clients__position">// founder of Microssoft, UK</div>
@@ -260,14 +203,75 @@ export const SliderClients = () => {
               the team!
             </p>
 
-            <div className="our-clients__bottom">
+            <div className="our-clients__review-bottom">
               <img
                 src="./images/our_clients/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
 
-              <div className="our-clients__bottom-info">
+              <div className="our-clients__review-bottom-info">
+                <span className="our-clients__name">Mitchel Gronyx</span>
+
+                <div className="our-clients__position">// founder of Microssoft, UK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="our-clients__column">
+          <div className="our-clients__card">
+            <div className="our-clients__top">
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+            </div>
+
+            <p className="our-clients__review">
+              I’ve worked with some incredible devs in my career, but the experience I am having
+              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
+              the team!
+            </p>
+
+            <div className="our-clients__review-bottom">
+              <img
+                src="./images/our_clients/client_img.png"
+                alt=""
+                className="our-clients__client-img"
+              />
+
+              <div className="our-clients__review-bottom-info">
+                <span className="our-clients__name">Mitchel Gronyx</span>
+
+                <div className="our-clients__position">// founder of Microssoft, UK</div>
+              </div>
+            </div>
+          </div>
+          <div className="our-clients__card">
+            <div className="our-clients__top">
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+            </div>
+
+            <p className="our-clients__review">
+              I’ve worked with some incredible devs in my career, but the experience I am having
+              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
+              the team!
+            </p>
+
+            <div className="our-clients__review-bottom">
+              <img
+                src="./images/our_clients/client_img.png"
+                alt=""
+                className="our-clients__client-img"
+              />
+
+              <div className="our-clients__review-bottom-info">
                 <span className="our-clients__name">Mitchel Gronyx</span>
 
                 <div className="our-clients__position">// founder of Microssoft, UK</div>

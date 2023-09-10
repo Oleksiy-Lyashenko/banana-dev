@@ -1,19 +1,47 @@
 @import '../utils/vars';
+@import "../utils/mixins";
 
 .make-money {
   &__content {
-    padding-top: 200px;
+    box-sizing: border-box;
+    padding-top: 10rem;
     position: relative;
+    overflow: hidden;
+
+    @include onTablet {
+      padding-top: 200px;
+    }
+
+    @include onDesktop {
+      overflow: visible;
+    }
   }
 
   &__banan-bg {
+    box-sizing: border-box;
+
     max-width: 48rem;
     width: 100%;
 
     z-index: 1;
     position: absolute;
-    top: 28rem;
-    right: -10rem;
+    top: 46rem;
+
+    @include onTablet {
+      max-width: 25rem;
+      // right: -10rem;
+      top: 25rem;
+      right: 0;
+    }
+
+    @include onSmallDesktop {
+      max-width: 48rem;
+      right: -10rem;
+    }
+
+    @include onDesktop {
+      top: 37rem;
+    }
   }
 
   &__dev-bg {
@@ -21,15 +49,38 @@
     width: 100%;
 
     position: absolute;
-    bottom: 4.5rem;
-    left: -12rem;
+    bottom: 22rem;
+
+    @include onTablet {
+      max-width: 25rem;
+      bottom: -20rem;
+      left: 0;
+      height: 100%;
+      // left: -12rem;
+    }
+
+    @include onSmallDesktop {
+      max-width: 45rem;
+    };
+
+    @include onDesktop {
+      left: -12rem;
+      bottom: -34rem;
+    }
   }
 
   &__title {
     z-index: 2;
     position: relative;
-    margin-bottom: 6rem;
-    padding-left: 2rem;
+    margin-bottom: 4rem;
+
+    @include onTablet {
+      margin-bottom: 6rem;
+    }
+
+    @include onSmallDesktop {
+      padding-left: 2rem;
+    }
   }
 
   &__img {
@@ -43,47 +94,72 @@
   }
 
   &__block {
-    display: grid;
-    grid-template-columns: (2, 1fr);
-    grid-template-rows: (3, 1fr);
-    column-gap: 3rem;
-
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
     position: relative;
     z-index: 2;
+
+    @include onTablet {
+      display: grid;
+      grid-template-columns: (2, 1fr);
+      grid-template-rows: (3, 1fr);
+      column-gap: 3rem;
+    }
   }
 
   &__step {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 
     &--1 {
-      grid-column: 1;
-      grid-row: 1;
-      padding-right: 6rem;
 
-      justify-self: flex-end;
-      text-align: left;
+      @include onTablet {
+        grid-column: 1;
+        grid-row: 1;
+        padding-right: 6rem;
+
+        justify-self: flex-end;
+        text-align: left;
+      }
     }
 
     &--2 {
-      grid-column: 2;
-      grid-row: 2;
-      justify-self: center;
-
-
-      margin-top: -13rem;
       text-align: right;
+
+      @include onTablet {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+
+
+        margin-top: -20rem;
+        text-align: right;
+      }
+
+      @include onSmallDesktop {
+        margin-top: -13rem;
+      }
     }
 
     &--3 {
-      grid-column: 1;
-      grid-row: 3;
-      justify-self: center;
-      padding-right: 5rem;
 
-      margin-top: -13rem;
+      @include onTablet {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
 
-      text-align: left;
+
+        margin-top: -13rem;
+        text-align: right;
+      }
+
+      @include onSmallDesktop {
+        margin-top: -13rem;
+      }
 
     }
   }
@@ -104,7 +180,10 @@
     letter-spacing: 1.2px;
 
     &--2 {
-      align-self: flex-end;
+
+      @include onTablet {
+        align-self: flex-end;
+      }
     }
   }
 
@@ -138,9 +217,21 @@
     }
 
     &--position {
-      position: absolute;
-      bottom: 4rem;
-      right: 14rem;
+      display: block;
+      margin-top: -5rem;
+
+      @include onTablet {
+        display: block;
+
+        position: absolute;
+        bottom: 4rem;
+        right: 0;
+      }
+
+      @include onSmallDesktop {
+        bottom: 4rem;
+        right: 14rem;
+      }
     }
   }
 }

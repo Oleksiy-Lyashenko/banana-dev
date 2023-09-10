@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import '../../styles/components/card.scss';
 
-export const Card = ({ img, name, rate, position, experince, skills }) => {
+export const Card = ({ number, img, name, rate, position, experince, skills }) => {
+  let className = `card card--${number}`;
+
   return (
-    <div className="card">
+    <div className={className}>
       <div className="card__top">
         <img src={img} className="card__avatar" />
         <div className="card__detail">

@@ -19,9 +19,10 @@ export const TopPage = () => {
           <button className="top-page__button">let’s go banana</button>
         </div>
 
-        <div className="top-page__columns">
+        <div className="column">
           <div className="column-1">
             <Card
+              number={'1'}
               img={'./images/person/person_1.svg'}
               name={'Yevhenii F.'}
               rate={'45'}
@@ -30,6 +31,7 @@ export const TopPage = () => {
               skills={['Figma', 'Sketch', 'Photoshop', 'AEffects']}
             />
             <Card
+              number={'2'}
               img={'./images/person/person_1.svg'}
               name={'Yevhenii F.'}
               rate={'72'}
@@ -38,6 +40,7 @@ export const TopPage = () => {
               skills={['Figma', 'Sketch', 'Photoshop', 'AEffects']}
             />
             <Card
+              number={'3'}
               img={'./images/person/person_2.svg'}
               name={'Maksym L.'}
               rate={'72'}
@@ -46,6 +49,7 @@ export const TopPage = () => {
               skills={['AWS', 'Docker', 'Graphql', 'PostgreSQL']}
             />
             <Card
+              number={'4'}
               img={'./images/person/person_3.svg'}
               name={'Oleg L.'}
               rate={'47'}
@@ -54,6 +58,7 @@ export const TopPage = () => {
               skills={['Javascript', 'React', 'Typescript']}
             />
             <Card
+              number={'5'}
               img={'./images/person/person_4.svg'}
               name={'Maksim P.'}
               rate={'47'}
@@ -62,6 +67,7 @@ export const TopPage = () => {
               skills={['Dart', 'Firebase', 'Node', 'Flutter']}
             />
             <Card
+              number={'6'}
               img={'./images/person/person_5.svg'}
               name={'Den Z.'}
               rate={'60'}
@@ -73,6 +79,7 @@ export const TopPage = () => {
 
           <div className="column-2">
             <Card
+              number={'7'}
               img={'./images/person/person_6.svg'}
               name={'Alex L.'}
               rate={'50'}
@@ -81,6 +88,7 @@ export const TopPage = () => {
               skills={['JS', 'React', 'Python', 'Django', 'Graphql']}
             />
             <Card
+              number={'8'}
               img={'./images/person/person_7.svg'}
               name={'Igor H.'}
               rate={'62'}
@@ -89,6 +97,7 @@ export const TopPage = () => {
               skills={['Python', 'Django', 'Flask', 'AWS', 'PostgreSQL']}
             />{' '}
             <Card
+              number={'9'}
               img={'./images/person/person_8.svg'}
               name={'Dmitro M.'}
               rate={'72'}
@@ -97,6 +106,7 @@ export const TopPage = () => {
               skills={['Java', 'AWS', 'Vaadin', 'Apache']}
             />{' '}
             <Card
+              number={'10'}
               img={'./images/person/person_9.svg'}
               name={'Igor B.'}
               rate={'72'}
@@ -105,6 +115,7 @@ export const TopPage = () => {
               skills={['PHP', 'JS', 'HTML', 'CSS', 'Laravel']}
             />{' '}
             <Card
+              number={'11'}
               img={'./images/person/person_10.svg'}
               name={'Oleksandr T.'}
               rate={'35'}

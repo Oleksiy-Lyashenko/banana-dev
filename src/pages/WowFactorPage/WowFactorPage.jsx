@@ -4,12 +4,19 @@ export const WowFactorPage = () => {
   return (
     <div className="wow-factor">
       <div className="wow-factor__content container">
+        <h2 className="main__page-title wow-factor__title wow-factor__title--mobile">
+          Give Your <br />
+          product that <br />
+          <span className="wow-factor__title--pink">Wow</span> Factor
+        </h2>
         <div className="wow-factor__info">
           <h2 className="main__page-title wow-factor__title">
             Give Your <br />
             product that <br />
             <span className="wow-factor__title--pink">Wow</span> Factor
           </h2>
+
+          <img src="./images/wow_factor/pc_img.svg" alt="" className="wow-factor__img-mobile" />
 
           <p className="wow-factor__description">
             We build it all, having an effective website or mobile app is easy. Work with our
@@ -53,7 +60,7 @@ export const WowFactorPage = () => {
           </div>
         </div>
 
-        <img src="./images/wow_factor/pc_img.svg" alt="" className='wow-factor__img'/>
+        <img src="./images/wow_factor/pc_img.svg" alt="" className="wow-factor__img" />
       </div>
     </div>
   );

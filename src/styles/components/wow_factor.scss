@@ -1,22 +1,50 @@
 @import '../utils/vars';
+@import "../utils/mixins";
 
 .wow-factor {
   &__content {
-    padding-top: 250px;
+    padding-top: 10rem;
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    @include onTablet {
+      padding-top: 250px;
+
+
+    }
+
+    @include onSmallDesktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__info {
-    max-width: 40rem;
+    max-width: 35rem;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    @include onSmallDesktop {
+      display: block;
+    }
   }
 
   &__title {
     margin-right: 0;
     margin-bottom: 3rem;
+    justify-self: flex-start;
+    display: none;
+
+    @include onSmallDesktop {
+      display: block;
+    }
 
     &--pink {
       color: $pink-text-color;
@@ -24,6 +52,15 @@
       text-shadow: -1px -1px 0px #000000,
         3px 3px 0px #000000,
         4px 4px 0px $pink-text-color;
+    }
+
+    &--mobile {
+      align-self: flex-start;
+      display: block;
+
+      @include onSmallDesktop {
+        display: none;
+      }
     }
   }
 
@@ -33,17 +70,27 @@
 
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 150% */
+    line-height: 1.7rem; /* 150% */
     letter-spacing: 1.2px;
+
+    @include onTablet {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     row-gap: 1.2rem;
+  }
+
+  &__proposal {
+    display: flex;
+    align-items: center;
   }
 
   &__list-img {
@@ -56,19 +103,51 @@
   &__list-text {
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 150% */
+    line-height: 1.8rem; /* 150% */
     letter-spacing: 1.2px;
+
+    @include onTablet {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
   }
 
   &__img {
-    max-width: 46rem;
+    display: none;
+    max-width: 20rem;
+    
     height: 100%;
     width: 100%;
 
-    margin-right: -10rem;
     padding-top: 2rem;
+
+    // margin-right: -10rem;
+
+    @include onSmallDesktop {
+      display: block;
+      max-width: 30rem;
+    }
+
+    @include onDesktop {
+      max-width: 33rem;
+      // margin-right: -10rem;
+    }
+  }
+
+  &__img-mobile {
+    box-sizing: border-box;
+    padding-inline: 2rem 2rem;
+
+    height: 100%;
+    width: 100%;
+
+    margin-bottom: 2rem;
+
+    @include onSmallDesktop {
+      display: none;
+    }
   }
 }
