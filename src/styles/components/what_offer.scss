@@ -1,25 +1,55 @@
 @import "../utils/vars";
+@import "../utils/mixins";
 
 .what-offer {
   &__content {
-    padding-top: 200px;
+    padding-top: 10rem;
+
+    @include onTablet {
+      padding-top: 200px;
+    }
   }
 
   &__title {
-    padding-left: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
+
+    @include onTablet {
+      padding-left: 2rem;
+      margin-bottom: 6rem;
+    }
   }
 
   &__block {
-    display: grid;
-    grid-template-columns: (3, 1fr);
-    column-gap: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+
+    @include onTablet {
+      // display: grid;
+      // grid-template-columns: (3, 1fr);
+      // column-gap: 10rem;
+      flex-direction: row;
+      column-gap: 2rem;
+      justify-content: space-between;
+      align-items: start;
+    }
+
+    @include onSmallDesktop {
+      // column-gap: 10rem;
+    }
   }
 
   &__card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-inline: 2rem 2rem;
+
+    @include onTablet {
+      padding-inline: 0 0;
+    }
     &--1 {
       grid-column: 1;
       justify-self: center;
@@ -37,8 +67,17 @@
 
   &__img {
     max-width: 16rem;
+    width: 100%;
     align-self: center;
     margin-bottom: 2.5rem;
+
+    @include onTablet {
+      height: 10rem;
+    }
+
+    @include onSmallDesktop {
+      height: 18rem;
+    }
   }
 
   &__card-title {
@@ -47,11 +86,21 @@
 
     color: $main-yellow-text-color;
     font-family: $fira-code;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 100% */
+    line-height: 1.3rem; /* 100% */
     letter-spacing: 1.8px;
+
+    @include onTablet {
+      font-size: .9rem;
+      line-height: .9rem; /* 100% */
+    }
+
+    @include onDesktop {
+      font-size: 1.3rem;
+      line-height: 1.3rem; /* 150% */
+    }
   }
 
   &__card-info {
@@ -60,11 +109,21 @@
 
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 150% */
+    line-height: 1.6rem; /* 150% */
     letter-spacing: 1.2px;
+
+    @include onTablet {
+      font-size: .9rem;
+      line-height: 1.3rem; /* 150% */
+    }
+
+    @include onDesktop {
+      font-size: 1.2rem;
+      line-height: 1.8rem; /* 150% */
+    }
   }
 
   &__proposal {
@@ -91,7 +150,16 @@
     font-size: 1.1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 150% */
+    line-height: 1.1rem; /* 150% */
     letter-spacing: 1.2px;
+
+    @include onTablet {
+      font-size: .9rem;
+      line-height: 1.2rem; /* 150% */
+    }
+
+    @include onDesktop {
+      font-size: 1.2rem;
+    }
   }
 }

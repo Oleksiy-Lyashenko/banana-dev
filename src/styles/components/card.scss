@@ -1,12 +1,84 @@
 @import "../utils/vars";
+@import "../utils/mixins";
 
 .card {
+  box-sizing: border-box;
+  max-width: 320px;
+  width: 100%;
   padding: 1rem 1.8rem;
   margin-bottom: .5rem;
 
   background: url('../../images/cart_bg.svg');
   background-size: cover;
   background-position: center;
+
+  &--1 {
+    display: block;
+  }
+
+  &--2 {
+    display: block;
+  }
+
+  &--3 {
+    display: block;
+  }
+
+  &--4 {
+    display: none;
+
+    @include onTablet {
+      display: block;
+    }
+  }
+
+  &--5 {
+    display: none;
+
+
+    @include onTablet {
+      display: block;
+    }
+  }
+
+  &--6 {
+    display: none;
+
+    @include onTablet {
+      display: block;
+    }
+
+  }
+
+  //column-2
+  &--7 {
+    display: block;
+  }
+
+  &--8 {
+    display: block;
+  }
+
+  &--9 {
+    display: block;
+  }
+
+  &--10 {
+    display: none;
+
+    @include onSmallDesktop {
+      display: block;
+    }
+  }
+
+  &--11 {
+    display: none;
+
+    @include onSmallDesktop {
+      display: block;
+    }
+  }
+
 
   &__avatar {
     width: 50px;

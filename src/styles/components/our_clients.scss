@@ -1,20 +1,32 @@
 @import '../utils/vars';
+@import '../utils/mixins';
 
 .our-clients {
   &__content {
-    padding-top: 250px;
+    padding-top: 10rem;
+    position: relative;
 
     overflow: hidden;
+
+    @include onTablet {
+      padding-top: 250px;
+    }
   }
 
   &__title {
-    text-align: right;
-    margin-right: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+
+    @include onTablet {
+      text-align: right;
+      margin-right: 2rem;
+      margin-bottom: 5rem;
+    }
   }
 
   &__block {
     display: flex;
+    width: 100%;
+    height: 100%;
     column-gap: 2rem;
     margin-bottom: 3rem;
 
@@ -27,22 +39,35 @@
   }
 
   &__column {
+    flex: 1 0 100%;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+
+    @include onTablet {
+      flex: content;
+
+    }
   }
 
   &__card {
-    width: 32rem;
+    // box-sizing: border-box;
+    // max-width: 32rem;
+    // width: 100%;
 
-    padding: 1.5rem 2.5rem;
+    @include onTablet {
+      width: 32rem;
+      padding: 1.5rem 2.5rem;
+    }
 
-    background-color:rgba(217, 217, 217, 0.10);
+    padding: 1rem 1.5rem;
+
+    background-color: rgba(217, 217, 217, 0.1);
   }
 
   &__top {
     display: flex;
-    column-gap: .35rem;
+    column-gap: 0.35rem;
 
     margin-bottom: 1.5rem;
   }
@@ -57,11 +82,16 @@
 
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1.15rem;
+    font-size: .9rem;
     font-style: normal;
     font-weight: 500;
     line-height: 30px; /* 150% */
     letter-spacing: 1.2px;
+
+    @include onDesktop {
+      font-size: 1.15rem;
+      line-height: 30px; /* 150% */
+    }
   }
 
   &__bottom {
@@ -79,27 +109,58 @@
   &__name {
     color: $main-yellow-text-color;
     font-family: $fira-code;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px; /* 125% */
+    line-height: 1.1rem; /* 125% */
     letter-spacing: 1.44px;
     text-transform: uppercase;
+
+    @include onDesktop {
+      font-size: 1.4rem;
+      line-height: 1.4rem; /* 125% */
+    }
   }
 
   &__position {
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 150% */
+    line-height: 1rem; /* 150% */
     letter-spacing: 1.2px;
+
+    @include onDesktop {
+      font-size: 1.2rem;
+      line-height: 1.3rem; /* 125% */
+    }
+  }
+
+  &__review-bottom {
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+
+    @include onTablet {
+      flex-direction: row;
+      row-gap: 1rem;
+    }
+
+    @include onDesktop {
+      row-gap: 3rem;
+    }
   }
 
   &__bottom {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__arrow {
