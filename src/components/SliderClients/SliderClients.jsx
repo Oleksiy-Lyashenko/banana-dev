@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import '../../styles/components/our_clients.scss';
 
 let REVIEW_WIDTH = window.screen.width;

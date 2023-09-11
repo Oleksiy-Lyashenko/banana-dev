@@ -1,0 +1,8 @@
+@import "../utils/vars";
+@import "../utils/mixins";
+
+.projects-page {
+  &__content {
+    padding-top: 10rem;
+  }
+}
