@@ -1,4 +1,5 @@
 import { Header } from '../components/Header';
+import { FormPage } from './FormPage';
 import { MakeMoneyPage } from './MakeMoneyPage/MakeMoneyPage';
 import { OurClients } from './OurClientsPage/OurClientsPage';
 import { ProjectsPage } from './ProjectsPage';
@@ -27,6 +28,8 @@ function App() {
           <ProjectsPage />
 
           <StackPage />
+
+          <FormPage />
         </section>
       </main>
     </div>
