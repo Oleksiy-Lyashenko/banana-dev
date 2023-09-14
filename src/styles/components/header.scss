@@ -10,9 +10,6 @@
   z-index: 2;
   position: relative;
 
-  padding-top: 12px;
-
-
   background-color: #000000;
 
   @include onTablet {
@@ -23,7 +20,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     margin-bottom: 2rem;
+    padding-top: 18px;
+
   }
 
   &__button {
@@ -31,7 +31,7 @@
 
     @include onTablet {
       display: block;
-      padding: 0.5rem 1rem;
+      padding: .6rem 1.5rem;
 
       border: 2px solid $sub-yellow-text-color;
       background-color: transparent;

@@ -44,7 +44,6 @@
 
     font-family: $sugo-pro-display;
     color: $white-text-color;
-    // font-size: 6.2rem;
     font-size: 3.5rem;
     font-style: normal;
     font-style: normal;
@@ -54,8 +53,8 @@
     text-transform: uppercase;
 
     text-shadow: -1px -1px 0px #000000,
-      3px 3px 0px #000000,
-      4px 4px 0px #808080;
+      1.5px 1.5px 0px #000000,
+      2px 2px 0px #808080;
 
     @include onSmallDesktop {
       font-size: 5.6rem;

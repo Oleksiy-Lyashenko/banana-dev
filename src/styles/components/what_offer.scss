@@ -98,12 +98,13 @@
     }
 
     @include onDesktop {
-      font-size: 1.3rem;
-      line-height: 1.3rem; /* 150% */
+      font-size: 1.9rem;
+      line-height: 1.6rem; /* 150% */
     }
   }
 
   &__card-info {
+    max-width: 350px;
     margin: 0;
     margin-bottom: 1.4rem;
 

@@ -54,6 +54,10 @@
     // box-sizing: border-box;
     // max-width: 32rem;
     // width: 100%;
+    background: url(../../images/our_page_bg_img.svg);
+    background-size: cover;
+    background-position: center;
+
 
     @include onTablet {
       width: 32rem;
@@ -62,7 +66,7 @@
 
     padding: 1rem 1.5rem;
 
-    background-color: rgba(217, 217, 217, 0.1);
+    // background-color: rgba(217, 217, 217, 0.1);
   }
 
   &__top {
@@ -150,6 +154,12 @@
     @include onDesktop {
       row-gap: 3rem;
     }
+  }
+  
+  &__review-bottom-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
   }
 
   &__bottom {

@@ -20,7 +20,7 @@ export const Card = ({ number, img, name, rate, position, experince, skills }) =
         </div>
       </div>
       <div className="card__bottom">
-        {skills && skills.map((skill) => <div className="card__skill">{skill}</div>)}
+        {skills && skills.map((skill, index) => <div key={`${index}_${skill[0]}`} className="card__skill">{skill}</div>)}
       </div>
     </div>
   );
