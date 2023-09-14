@@ -188,7 +188,7 @@
   }
 
   &__button {
-    padding: 1.3rem 3rem;
+    padding: 1.5rem 4.5rem;
 
     background: url('../../images/button.svg');
     background-size: cover;
@@ -209,7 +209,7 @@
 
     &:hover {
       color: $white-text-color;
-      padding: 1.3rem 3rem;
+      padding: 1.5rem 4.5rem;
 
       background: url('../../images/button_hover.svg');
       background-size: cover;
