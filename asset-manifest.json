@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/banana-dev/static/css/main.de7973a5.css",
-    "main.js": "/banana-dev/static/js/main.3dfcd7eb.js",
+    "main.css": "/banana-dev/static/css/main.ad42ccda.css",
+    "main.js": "/banana-dev/static/js/main.2c3e1044.js",
     "static/media/Sugo-Pro-Classic-Thin-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Thin-trial.08ce01ad8a874fb4a8c8.ttf",
     "static/media/Sugo-Pro-Classic-Light-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Light-trial.95d5ce39453ba7a5fb28.ttf",
     "static/media/Sugo-Pro-Classic-Bold-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Bold-trial.0da79f137b8a422c0e7b.ttf",
@@ -28,13 +28,14 @@
     "static/media/cart_bg.svg": "/banana-dev/static/media/cart_bg.97c47b08df02514aed70.svg",
     "static/media/button_hover.svg": "/banana-dev/static/media/button_hover.26576b822da43e32cbb8.svg",
     "static/media/button.svg": "/banana-dev/static/media/button.c4b01f9c699672819605.svg",
+    "static/media/our_page_bg_img.svg": "/banana-dev/static/media/our_page_bg_img.8bab8f73ae1e11f3cc01.svg",
     "index.html": "/banana-dev/index.html",
     "static/media/star.svg": "/banana-dev/static/media/star.b73ff636d0fec6ec7bda.svg",
-    "main.de7973a5.css.map": "/banana-dev/static/css/main.de7973a5.css.map",
-    "main.3dfcd7eb.js.map": "/banana-dev/static/js/main.3dfcd7eb.js.map"
+    "main.ad42ccda.css.map": "/banana-dev/static/css/main.ad42ccda.css.map",
+    "main.2c3e1044.js.map": "/banana-dev/static/js/main.2c3e1044.js.map"
   },
   "entrypoints": [
-    "static/css/main.de7973a5.css",
-    "static/js/main.3dfcd7eb.js"
+    "static/css/main.ad42ccda.css",
+    "static/js/main.2c3e1044.js"
   ]
 }
