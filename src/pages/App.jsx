@@ -1,4 +1,5 @@
 import { Header } from '../components/Header';
+import { FooterPage } from './FooterPage';
 import { FormPage } from './FormPage';
 import { MakeMoneyPage } from './MakeMoneyPage/MakeMoneyPage';
 import { OurClients } from './OurClientsPage/OurClientsPage';
@@ -30,6 +31,8 @@ function App() {
           <StackPage />
 
           <FormPage />
+
+          <FooterPage />
         </section>
       </main>
     </div>

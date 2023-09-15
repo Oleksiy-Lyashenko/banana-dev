@@ -16,7 +16,7 @@ export const WowFactorPage = () => {
             <span className="wow-factor__title--pink">Wow</span> Factor
           </h2>
 
-          <img src="./images/wow_factor/pc_img.svg" alt="" className="wow-factor__img-mobile" />
+          <img src="./images/wow_factor_page/pc_img.svg" alt="" className="wow-factor__img-mobile" />
 
           <p className="wow-factor__description">
             We build it all, having an effective website or mobile app is easy. Work with our
@@ -26,7 +26,7 @@ export const WowFactorPage = () => {
           <div className="wow-factor__list">
             <div className="wow-factor__proposal">
               <img
-                src="./images/what_offer/banan_list.svg"
+                src="./images/what_offer_page/banan_list.svg"
                 alt=""
                 className="wow-factor__list-img"
               />
@@ -36,7 +36,7 @@ export const WowFactorPage = () => {
 
             <div className="wow-factor__proposal">
               <img
-                src="./images/what_offer/banan_list.svg"
+                src="./images/what_offer_page/banan_list.svg"
                 alt=""
                 className="wow-factor__list-img"
               />
@@ -48,7 +48,7 @@ export const WowFactorPage = () => {
 
             <div className="wow-factor__proposal">
               <img
-                src="./images/what_offer/banan_list.svg"
+                src="./images/what_offer_page/banan_list.svg"
                 alt=""
                 className="wow-factor__list-img"
               />
@@ -60,7 +60,7 @@ export const WowFactorPage = () => {
           </div>
         </div>
 
-        <img src="./images/wow_factor/pc_img.svg" alt="" className="wow-factor__img" />
+        <img src="./images/wow_factor_page/pc_img.svg" alt="" className="wow-factor__img" />
       </div>
     </div>
   );

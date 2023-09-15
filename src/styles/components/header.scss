@@ -26,6 +26,43 @@
 
   }
 
+  &__menu-img {
+    cursor: pointer;
+  }
+
+  &__left-block {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  &__menu {
+    &-right {
+      display: block;
+    
+      @include onTablet {
+        display: none;
+      }
+    }
+
+    &-left {
+      display: none;
+
+      @include onTablet {
+        display: block;
+      }
+
+      @include onSmallDesktop {
+        display: none;
+      }
+    }
+  }
+
+  &__right-block {
+    display: flex;
+    align-items: center;
+  }
+
   &__button {
     display: none;
 

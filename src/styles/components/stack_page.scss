@@ -30,7 +30,7 @@
 
   @include onSmallDesktop {
     grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(9, 6rem);
+    grid-template-rows: repeat(10, 6rem);
   }
 
   &__direction {
@@ -1350,6 +1350,117 @@
         display: block;
         grid-column: 15;
         grid-row: 9;
+      }
+    }
+
+    //row 10
+    &--position-10-1 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 1;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-2 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 2;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-3_4 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 3 / 5;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-5 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 5;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-6_7 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 6 / 8;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-8 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 8;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-9 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 9;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-10_11 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 10 / 12;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-12 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 12;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-13_14 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 13 / 15;
+        grid-row: 10;
+      }
+    }
+
+    &--position-10-15 {
+      display: none;
+
+      @include onSmallDesktop {
+        display: block;
+        grid-column: 15;
+        grid-row: 10;
       }
     }
 

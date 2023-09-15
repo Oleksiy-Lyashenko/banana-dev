@@ -8,7 +8,7 @@ export function WhatOffer() {
 
         <div className="what-offer__block">
           <div className="what-offer__card what-offer__card--1">
-            <img src="./images/what_offer/img_1.svg" alt="" className="what-offer__img" />
+            <img src="./images/what_offer_page/img_1.svg" alt="" className="what-offer__img" />
 
             <h4 className="what-offer__card-title">design & development</h4>
 
@@ -20,7 +20,7 @@ export function WhatOffer() {
             <div className="what-offer__list">
               <div className="what-offer__proposal">
                 <img
-                  src="./images/what_offer/banan_list.svg"
+                  src="./images/what_offer_page/banan_list.svg"
                   alt=""
                   className="what-offer__list-img"
                 />
@@ -30,7 +30,7 @@ export function WhatOffer() {
 
               <div className="what-offer__proposal">
                 <img
-                  src="./images/what_offer/banan_list.svg"
+                  src="./images/what_offer_page/banan_list.svg"
                   alt=""
                   className="what-offer__list-img"
                 />
@@ -40,7 +40,7 @@ export function WhatOffer() {
 
               <div className="what-offer__proposal">
                 <img
-                  src="./images/what_offer/banan_list.svg"
+                  src="./images/what_offer_page/banan_list.svg"
                   alt=""
                   className="what-offer__list-img"
                 />
@@ -51,7 +51,7 @@ export function WhatOffer() {
           </div>
 
           <div className="what-offer__card what-offer__card--2">
-            <img src="./images/what_offer/img_2.svg" alt="" className="what-offer__img" />
+            <img src="./images/what_offer_page/img_2.svg" alt="" className="what-offer__img" />
 
             <h4 className="what-offer__card-title">strategic marketing</h4>
 
@@ -62,7 +62,7 @@ export function WhatOffer() {
             <div className="what-offer__list">
               <div className="what-offer__proposal">
                 <img
-                  src="./images/what_offer/banan_list.svg"
+                  src="./images/what_offer_page/banan_list.svg"
                   alt=""
                   className="what-offer__list-img"
                 />
@@ -72,7 +72,7 @@ export function WhatOffer() {
 
               <div className="what-offer__proposal">
                 <img
-                  src="./images/what_offer/banan_list.svg"
+                  src="./images/what_offer_page/banan_list.svg"
                   alt=""
                   className="what-offer__list-img"
                 />
@@ -82,7 +82,7 @@ export function WhatOffer() {
 
               <div className="what-offer__proposal">
                 <img
-                  src="./images/what_offer/banan_list.svg"
+                  src="./images/what_offer_page/banan_list.svg"
                   alt=""
                   className="what-offer__list-img"
                 />
@@ -93,7 +93,7 @@ export function WhatOffer() {
           </div>
 
           <div className="what-offer__card what-offer__card--3">
-            <img src="./images/what_offer/img_3.svg" alt="" className="what-offer__img" />
+            <img src="./images/what_offer_page/img_3.svg" alt="" className="what-offer__img" />
 
             <h4 className="what-offer__card-title">software development</h4>
 
@@ -105,7 +105,7 @@ export function WhatOffer() {
             <div className="what-offer__list">
               <div className="what-offer__proposal">
                 <img
-                  src="./images/what_offer/banan_list.svg"
+                  src="./images/what_offer_page/banan_list.svg"
                   alt=""
                   className="what-offer__list-img"
                 />
@@ -115,7 +115,7 @@ export function WhatOffer() {
 
               <div className="what-offer__proposal">
                 <img
-                  src="./images/what_offer/banan_list.svg"
+                  src="./images/what_offer_page/banan_list.svg"
                   alt=""
                   className="what-offer__list-img"
                 />
@@ -125,7 +125,7 @@ export function WhatOffer() {
 
               <div className="what-offer__proposal">
                 <img
-                  src="./images/what_offer/banan_list.svg"
+                  src="./images/what_offer_page/banan_list.svg"
                   alt=""
                   className="what-offer__list-img"
                 />

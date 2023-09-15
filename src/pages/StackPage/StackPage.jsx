@@ -308,7 +308,22 @@ export const StackPage = () => {
             <span className="grid-stack__field grid-stack__field--position-9-10_11 grid-stack__field--position-none-top-border"></span>
             <span className="grid-stack__direction grid-stack__field--position-9-12 grid-stack__field--position-none-top-border"></span>
             <span className="grid-stack__field grid-stack__field--position-9-13_14 grid-stack__field--position-none-top-border"></span>
-            <span className="grid-stack__field grid-stack__field--position-9-5"></span>
+            <span className="grid-stack__field grid-stack__field--position-9-15"></span>
+          </>
+
+          {/* row 10 */}
+          <>
+            <div className="grid-stack__field grid-stack__field--position-10-1"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-2"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-3_4"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-5"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-6_7"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-8"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-9"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-10_11"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-12"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-13_14"></div>
+            <div className="grid-stack__field grid-stack__field--position-10-15"></div>
           </>
 
           {/* additional fields to tablet*/}

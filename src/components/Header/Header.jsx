@@ -5,10 +5,22 @@ export function Header() {
   return (
     <header className="header">
       <div className="header__content container">
-        <img src="./images/logo.svg" className="logo" />
+        <div className="header__left-block">
+          <img
+            src="./images/top_page/header/menu_img.svg"
+            alt=""
+            className="header__menu-img header__menu-left"
+          />
+          <img src="./images/logo.svg" className="logo" />
+        </div>
 
-        <div className="">
+        <div className="header__right-block">
           <button className="header__button">inquire now</button>
+          <img
+            src="./images/top_page/header/menu_img.svg"
+            alt=""
+            className="header__menu-img header__menu-right"
+          />
         </div>
       </div>
     </header>
