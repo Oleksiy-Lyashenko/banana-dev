@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/banana-dev/static/css/main.4573645d.css",
-    "main.js": "/banana-dev/static/js/main.6b25210b.js",
+    "main.js": "/banana-dev/static/js/main.cba5f944.js",
     "static/media/header_img.png": "/banana-dev/static/media/header_img.7e45e9e1becc884a608e.png",
     "static/media/Sugo-Pro-Classic-Thin-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Thin-trial.08ce01ad8a874fb4a8c8.ttf",
     "static/media/Sugo-Pro-Classic-Light-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Light-trial.95d5ce39453ba7a5fb28.ttf",
@@ -39,10 +39,10 @@
     "index.html": "/banana-dev/index.html",
     "static/media/star.svg": "/banana-dev/static/media/star.b73ff636d0fec6ec7bda.svg",
     "main.4573645d.css.map": "/banana-dev/static/css/main.4573645d.css.map",
-    "main.6b25210b.js.map": "/banana-dev/static/js/main.6b25210b.js.map"
+    "main.cba5f944.js.map": "/banana-dev/static/js/main.cba5f944.js.map"
   },
   "entrypoints": [
     "static/css/main.4573645d.css",
-    "static/js/main.6b25210b.js"
+    "static/js/main.cba5f944.js"
   ]
 }
