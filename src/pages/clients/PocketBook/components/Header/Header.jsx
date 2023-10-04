@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
-import '../../styles/components/header.scss';
+import '../../../../../styles/pages/clients/pocketbook/header.scss';
 
-export function Header() {
+export function Header({ buttonClass }) {
   return (
     <header className="header">
       <div className="header__content container">
@@ -33,7 +33,7 @@ export function Header() {
               </a>
             </li>
           </ul>
-          <button className="header__button">inquire now</button>
+          <button className={`${buttonClass}`}>inquire now</button>
           <img
             src="./images/top_page/header/menu_img.svg"
             alt=""

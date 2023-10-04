@@ -30,7 +30,7 @@ function App() {
 
           <StackPage />
 
-          <FormPage />
+          <FormPage title="ready for a quote?" />
 
           <FooterPage />
         </section>

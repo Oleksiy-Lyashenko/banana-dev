@@ -14,6 +14,7 @@
 
   &__block {
     flex: 1 0 100%;
+    text-decoration: none;
 
     @include onSmallDesktop {
       flex: 0;

@@ -51,9 +51,6 @@
   }
 
   &__card {
-    // box-sizing: border-box;
-    // max-width: 32rem;
-    // width: 100%;
     background: url(../../images/our_page_bg_img.svg);
     background-size: cover;
     background-position: center;
@@ -65,8 +62,6 @@
     }
 
     padding: 1rem 1.5rem;
-
-    // background-color: rgba(217, 217, 217, 0.1);
   }
 
   &__top {

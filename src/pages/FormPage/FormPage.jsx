@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import '../../styles/components/form_page.scss';
 import classNames from 'classnames';
 
-export const FormPage = () => {
+export const FormPage = ({ title }) => {
   const [quoteInfo, setQuoteInfo] = useState({
     user_first_name: '',
     user_last_name: '',
@@ -100,7 +100,7 @@ export const FormPage = () => {
   return (
     <div className="form-page">
       <div className="form-page__content container">
-        <div className="form-page__title">Ready for a Quote?</div>
+        <div className="form-page__title">{title}</div>
 
         <img src="./images/quote_page/banan_icon.svg" alt="" className="form-page__banan-img" />
 
@@ -133,7 +133,7 @@ export const FormPage = () => {
             </div>
 
             <div className="form-page__field">
-              <label className="form-page__label">Phone</label>
+              <label className="form-page__label">Phone number</label>
               <input
                 type="phone"
                 name="user_phone"
@@ -146,7 +146,7 @@ export const FormPage = () => {
             </div>
 
             <div className="form-page__field">
-              <label className="form-page__label">Email</label>
+              <label className="form-page__label">Email address</label>
               <input
                 type="email"
                 name="user_email"
