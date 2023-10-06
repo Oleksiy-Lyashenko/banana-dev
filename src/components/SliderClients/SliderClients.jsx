@@ -39,11 +39,11 @@ export const SliderClients = () => {
         <div className="our-clients__column">
           <div className="our-clients__card">
             <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
             </div>
 
             <p className="our-clients__review">
@@ -54,7 +54,7 @@ export const SliderClients = () => {
 
             <div className="our-clients__review-bottom">
               <img
-                src="./images/our_clients/client_img.png"
+                src="./images/our_clients_page/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
@@ -68,11 +68,11 @@ export const SliderClients = () => {
           </div>
           <div className="our-clients__card">
             <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
             </div>
 
             <p className="our-clients__review">
@@ -83,68 +83,7 @@ export const SliderClients = () => {
 
             <div className="our-clients__review-bottom">
               <img
-                src="./images/our_clients/client_img.png"
-                alt=""
-                className="our-clients__client-img"
-              />
-
-              <div className="our-clients__review-bottom-info">
-                <span className="our-clients__name">Mitchel Gronyx</span>
-
-                <div className="our-clients__position">// founder of Microssoft, UK</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="our-clients__column">
-          <div className="our-clients__card">
-            <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-            </div>
-
-            <p className="our-clients__review">
-              I’ve worked with some incredible devs in my career, but the experience I am having
-              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
-              the team!
-            </p>
-
-            <div className="our-clients__review-bottom">
-              <img
-                src="./images/our_clients/client_img.png"
-                alt=""
-                className="our-clients__client-img"
-              />
-
-              <div className="our-clients__review-bottom-info">
-                <span className="our-clients__name">Mitchel Gronyx</span>
-
-                <div className="our-clients__position">// founder of Microssoft, UK</div>
-              </div>
-            </div>
-          </div>
-          <div className="our-clients__card">
-            <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-            </div>
-
-            <p className="our-clients__review">
-              I’ve worked with some incredible devs in my career, but the experience I am having
-              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
-              the team!
-            </p>
-
-            <div className="our-clients__review-bottom">
-              <img
-                src="./images/our_clients/client_img.png"
+                src="./images/our_clients_page/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
@@ -161,11 +100,11 @@ export const SliderClients = () => {
         <div className="our-clients__column">
           <div className="our-clients__card">
             <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
             </div>
 
             <p className="our-clients__review">
@@ -176,7 +115,7 @@ export const SliderClients = () => {
 
             <div className="our-clients__review-bottom">
               <img
-                src="./images/our_clients/client_img.png"
+                src="./images/our_clients_page/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
@@ -190,11 +129,11 @@ export const SliderClients = () => {
           </div>
           <div className="our-clients__card">
             <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
             </div>
 
             <p className="our-clients__review">
@@ -205,7 +144,7 @@ export const SliderClients = () => {
 
             <div className="our-clients__review-bottom">
               <img
-                src="./images/our_clients/client_img.png"
+                src="./images/our_clients_page/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
@@ -222,11 +161,11 @@ export const SliderClients = () => {
         <div className="our-clients__column">
           <div className="our-clients__card">
             <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
             </div>
 
             <p className="our-clients__review">
@@ -237,7 +176,7 @@ export const SliderClients = () => {
 
             <div className="our-clients__review-bottom">
               <img
-                src="./images/our_clients/client_img.png"
+                src="./images/our_clients_page/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
@@ -251,11 +190,11 @@ export const SliderClients = () => {
           </div>
           <div className="our-clients__card">
             <div className="our-clients__top">
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
-              <img src="./images/our_clients/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
             </div>
 
             <p className="our-clients__review">
@@ -266,7 +205,68 @@ export const SliderClients = () => {
 
             <div className="our-clients__review-bottom">
               <img
-                src="./images/our_clients/client_img.png"
+                src="./images/our_clients_page/client_img.png"
+                alt=""
+                className="our-clients__client-img"
+              />
+
+              <div className="our-clients__review-bottom-info">
+                <span className="our-clients__name">Mitchel Gronyx</span>
+
+                <div className="our-clients__position">// founder of Microssoft, UK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="our-clients__column">
+          <div className="our-clients__card">
+            <div className="our-clients__top">
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+            </div>
+
+            <p className="our-clients__review">
+              I’ve worked with some incredible devs in my career, but the experience I am having
+              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
+              the team!
+            </p>
+
+            <div className="our-clients__review-bottom">
+              <img
+                src="./images/our_clients_page/client_img.png"
+                alt=""
+                className="our-clients__client-img"
+              />
+
+              <div className="our-clients__review-bottom-info">
+                <span className="our-clients__name">Mitchel Gronyx</span>
+
+                <div className="our-clients__position">// founder of Microssoft, UK</div>
+              </div>
+            </div>
+          </div>
+          <div className="our-clients__card">
+            <div className="our-clients__top">
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="our-clients__star" />
+            </div>
+
+            <p className="our-clients__review">
+              I’ve worked with some incredible devs in my career, but the experience I am having
+              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
+              the team!
+            </p>
+
+            <div className="our-clients__review-bottom">
+              <img
+                src="./images/our_clients_page/client_img.png"
                 alt=""
                 className="our-clients__client-img"
               />
@@ -286,14 +286,14 @@ export const SliderClients = () => {
           <div className="our-clients__arrow">
             {offset === 0 ? (
               <img
-                src="./images/our_clients/passive_left_arrow.svg"
+                src="./images/our_clients_page/passive_left_arrow.svg"
                 alt=""
                 className="our-clients__arrow-img"
                 onClick={handleLeftArrow}
               />
             ) : (
               <img
-                src="./images/our_clients/active_left_arrow.svg"
+                src="./images/our_clients_page/active_left_arrow.svg"
                 alt=""
                 className="our-clients__arrow-img"
                 onClick={handleLeftArrow}
@@ -302,14 +302,14 @@ export const SliderClients = () => {
 
             {offset <= 0 && offset !== -(REVIEW_WIDTH * 3) ? (
               <img
-                src="./images/our_clients/active_right_arrow.svg"
+                src="./images/our_clients_page/active_right_arrow.svg"
                 alt=""
                 className="our-clients__arrow-img"
                 onClick={handleRightArrow}
               />
             ) : (
               <img
-                src="./images/our_clients/passive_right_arrow.svg"
+                src="./images/our_clients_page/passive_right_arrow.svg"
                 alt=""
                 className="our-clients__arrow-img"
                 onClick={handleRightArrow}

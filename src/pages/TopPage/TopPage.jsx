@@ -23,7 +23,7 @@ export const TopPage = () => {
           <div className="column-1">
             <Card
               number={'1'}
-              img={'./images/person/person_1.svg'}
+              img={'./images/top_page/person/person_1.svg'}
               name={'Yevhenii F.'}
               rate={'45'}
               position={'Senior UI/UX Designer'}
@@ -32,7 +32,7 @@ export const TopPage = () => {
             />
             <Card
               number={'2'}
-              img={'./images/person/person_1.svg'}
+              img={'./images/top_page/person/person_1.svg'}
               name={'Yevhenii F.'}
               rate={'72'}
               position={'Senior Back-End developer'}
@@ -41,7 +41,7 @@ export const TopPage = () => {
             />
             <Card
               number={'3'}
-              img={'./images/person/person_2.svg'}
+              img={'./images/top_page/person/person_2.svg'}
               name={'Maksym L.'}
               rate={'72'}
               position={'Senior UI/UX Designer'}
@@ -50,7 +50,7 @@ export const TopPage = () => {
             />
             <Card
               number={'4'}
-              img={'./images/person/person_3.svg'}
+              img={'./images/top_page/person/person_3.svg'}
               name={'Oleg L.'}
               rate={'47'}
               position={'Senior Full-Stack Developer'}
@@ -59,7 +59,7 @@ export const TopPage = () => {
             />
             <Card
               number={'5'}
-              img={'./images/person/person_4.svg'}
+              img={'./images/top_page/person/person_4.svg'}
               name={'Maksim P.'}
               rate={'47'}
               position={'Senior Mobile Developer'}
@@ -68,7 +68,7 @@ export const TopPage = () => {
             />
             <Card
               number={'6'}
-              img={'./images/person/person_5.svg'}
+              img={'./images/top_page/person/person_5.svg'}
               name={'Den Z.'}
               rate={'60'}
               position={'Senior Back-End Developer'}
@@ -80,7 +80,7 @@ export const TopPage = () => {
           <div className="column-2">
             <Card
               number={'7'}
-              img={'./images/person/person_6.svg'}
+              img={'./images/top_page/person/person_6.svg'}
               name={'Alex L.'}
               rate={'50'}
               position={'Senior Full-Stack Developer'}
@@ -89,7 +89,7 @@ export const TopPage = () => {
             />
             <Card
               number={'8'}
-              img={'./images/person/person_7.svg'}
+              img={'./images/top_page/person/person_7.svg'}
               name={'Igor H.'}
               rate={'62'}
               position={'Senior Python Developer'}
@@ -98,7 +98,7 @@ export const TopPage = () => {
             />{' '}
             <Card
               number={'9'}
-              img={'./images/person/person_8.svg'}
+              img={'./images/top_page/person/person_8.svg'}
               name={'Dmitro M.'}
               rate={'72'}
               position={'Senior Java Developer'}
@@ -107,7 +107,7 @@ export const TopPage = () => {
             />{' '}
             <Card
               number={'10'}
-              img={'./images/person/person_9.svg'}
+              img={'./images/top_page/person/person_9.svg'}
               name={'Igor B.'}
               rate={'72'}
               position={'Senior PHP Designer'}
@@ -116,7 +116,7 @@ export const TopPage = () => {
             />{' '}
             <Card
               number={'11'}
-              img={'./images/person/person_10.svg'}
+              img={'./images/top_page/person/person_10.svg'}
               name={'Oleksandr T.'}
               rate={'35'}
               position={'Middle UI/UX Designer'}
@@ -129,17 +129,17 @@ export const TopPage = () => {
 
       <div className="our-client container">
         <div className="our-client__content">
-          <img src="./images/tape/left-tape.svg" className="our-client__left-tape" />
-          <img src="./images/tape/right-tape.svg" className="our-client__right-tape" />
+          <img src="./images/top_page/tape/left-tape.svg" className="our-client__left-tape" />
+          <img src="./images/top_page/tape/right-tape.svg" className="our-client__right-tape" />
 
           <h3 className="our-client__title">Our clients</h3>
 
           <div className="our-client__block-img">
-            <img src="./images/clients/forbes.svg" className="our-client__img" />
-            <img src="./images/clients/pocketbook.svg" className="our-client__img" />
-            <img src="./images/clients/sps.svg" className="our-client__img" />
-            <img src="./images/clients/syn.svg" className="our-client__img" />
-            <img src="./images/clients/yotta.svg" className="our-client__img" />
+            <img src="./images/top_page/clients/forbes.svg" className="our-client__img" />
+            <img src="./images/top_page/clients/pocketbook.svg" className="our-client__img" />
+            <img src="./images/top_page/clients/sps.svg" className="our-client__img" />
+            <img src="./images/top_page/clients/syn.svg" className="our-client__img" />
+            <img src="./images/top_page/clients/yotta.svg" className="our-client__img" />
           </div>
         </div>
       </div>

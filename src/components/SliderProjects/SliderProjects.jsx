@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../../styles/components/slider_projects.scss';
+import { Link, NavLink } from 'react-router-dom';
 
 let REVIEW_WIDTH = window.screen.width;
 
@@ -35,12 +36,36 @@ export const SliderProjects = () => {
         style={{
           transform: `translateX(${offset}px)`,
         }}>
+        <NavLink to="/pocketbook" preventScrollReset className="slider-projects__block">
+          <div className="slider-projects__card">
+            <h4 className="slider-projects__type-info">Mobile application</h4>
+
+            <img
+              src="./images/clients/pocketbook/logo.svg"
+              alt=""
+              className="slider-projects__company-img"
+            />
+
+            <div className="slider-projects__bottom">
+              <div className="slider-projects__direction">Business</div>
+
+              <div className="slider-projects__direction">Business</div>
+
+              <div className="slider-projects__direction">Business</div>
+
+              <div className="slider-projects__direction">Business</div>
+
+              <div className="slider-projects__direction">Business</div>
+            </div>
+          </div>
+        </NavLink>
+
         <div className="slider-projects__block">
           <div className="slider-projects__card">
             <h4 className="slider-projects__type-info">Mobile application</h4>
 
             <img
-              src="./images/clients/pocketbook.svg"
+              src="./images/clients/pocketbook/logo.svg"
               alt=""
               className="slider-projects__company-img"
             />
@@ -64,31 +89,7 @@ export const SliderProjects = () => {
             <h4 className="slider-projects__type-info">Mobile application</h4>
 
             <img
-              src="./images/clients/pocketbook.svg"
-              alt=""
-              className="slider-projects__company-img"
-            />
-
-            <div className="slider-projects__bottom">
-              <div className="slider-projects__direction">Business</div>
-
-              <div className="slider-projects__direction">Business</div>
-
-              <div className="slider-projects__direction">Business</div>
-
-              <div className="slider-projects__direction">Business</div>
-
-              <div className="slider-projects__direction">Business</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="slider-projects__block">
-          <div className="slider-projects__card">
-            <h4 className="slider-projects__type-info">Mobile application</h4>
-
-            <img
-              src="./images/clients/pocketbook.svg"
+              src="./images/clients/pocketbook/logo.svg"
               alt=""
               className="slider-projects__company-img"
             />
@@ -113,14 +114,14 @@ export const SliderProjects = () => {
           <div className="our-clients__arrow">
             {offset === 0 ? (
               <img
-                src="./images/our_clients/passive_left_arrow.svg"
+                src="./images/our_clients_page/passive_left_arrow.svg"
                 alt=""
                 className="our-clients__arrow-img"
                 onClick={handleLeftArrow}
               />
             ) : (
               <img
-                src="./images/our_clients/active_left_arrow.svg"
+                src="./images/our_clients_page/active_left_arrow.svg"
                 alt=""
                 className="our-clients__arrow-img"
                 onClick={handleLeftArrow}
@@ -129,14 +130,14 @@ export const SliderProjects = () => {
 
             {offset <= 0 && offset !== -(REVIEW_WIDTH * 2) ? (
               <img
-                src="./images/our_clients/active_right_arrow.svg"
+                src="./images/our_clients_page/active_right_arrow.svg"
                 alt=""
                 className="our-clients__arrow-img"
                 onClick={handleRightArrow}
               />
             ) : (
               <img
-                src="./images/our_clients/passive_right_arrow.svg"
+                src="./images/our_clients_page/passive_right_arrow.svg"
                 alt=""
                 className="our-clients__arrow-img"
                 onClick={handleRightArrow}

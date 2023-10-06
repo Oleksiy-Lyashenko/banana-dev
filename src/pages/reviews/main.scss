@@ -1,0 +1,26 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+
+.reviews-main {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__review {
+    &--doshed-bg {
+      background-image: url(../../images/doshed_bg_img.svg);
+    }
+
+    &--position-1 {
+      margin-left: 80px;
+    }
+
+    &--position-2 {
+      margin-left: -70px;
+    }
+  }
+}
