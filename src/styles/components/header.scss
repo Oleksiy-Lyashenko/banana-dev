@@ -16,6 +16,12 @@
     box-shadow: 20px 50px 40px #000000;
   }
 
+  &__portfolio {
+    @include onTablet {
+      box-shadow: none;
+    }
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -61,6 +67,23 @@
   &__right-block {
     display: flex;
     align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+    column-gap: 40px;
+    margin-right: 50px;
+  }
+
+  &__nav-link {
+    color: $white-text-color;
+    font-family: Fira Code;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.4px;
   }
 
   &__button {

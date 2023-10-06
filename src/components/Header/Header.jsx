@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
+import { NavLink } from 'react-router-dom';
 import '../../styles/components/header.scss';
 
 export function Header() {
@@ -18,19 +19,19 @@ export function Header() {
         <div className="header__right-block">
           <ul className="header__nav-list">
             <li className="header__nav-item">
-              <a href="#" className="header__nav-link">
+              <NavLink to="/about-us" className="header__nav-link">
                 About Us
-              </a>
+              </NavLink>
             </li>
             <li className="header__nav-item">
-              <a href="#" className="header__nav-link">
+              <NavLink to="/portfolio" className="header__nav-link">
                 Portfolio
-              </a>
+              </NavLink>
             </li>
             <li className="header__nav-item">
-              <a href="#" className="header__nav-link">
+              <NavLink to="/reviews" className="header__nav-link">
                 Reviews
-              </a>
+              </NavLink>
             </li>
           </ul>
           <button className="header__button">inquire now</button>

@@ -52,8 +52,13 @@
     color: $lightgray-color;
     text-decoration: none;
 
+    &:hover {
+      color: $pink-text-color;
+    }
+
     &--choosen {
       color: $pink-text-color;
+      text-decoration: underline;
     }
   }
 

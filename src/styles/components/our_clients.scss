@@ -52,19 +52,21 @@
 
   &__card {
     background: url(../../images/our_page_bg_img.svg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
 
 
     @include onTablet {
       width: 32rem;
-      padding: 1.5rem 2.5rem;
+      padding: 1.5rem 3.5rem;
     }
 
     padding: 1rem 1.5rem;
   }
 
   &__top {
+    // padding-top: 10px;
     display: flex;
     column-gap: 0.35rem;
 
@@ -88,8 +90,8 @@
     letter-spacing: 1.2px;
 
     @include onDesktop {
-      font-size: 1.15rem;
-      line-height: 30px; /* 150% */
+      font-size: 1rem;
+      line-height: 27px; /* 150% */
     }
   }
 

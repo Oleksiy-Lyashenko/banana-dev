@@ -37,6 +37,10 @@
     letter-spacing: 5.04px;
     text-transform: uppercase;
 
+    &--pink {
+      color: $pink2-text-color;
+    }
+
     @include onSmallDesktop {
       font-size: 4.5rem;
       line-height: 6rem; /* 119.048% */

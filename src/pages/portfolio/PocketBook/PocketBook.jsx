@@ -11,8 +11,7 @@ import { useEffect } from 'react';
 
 export default function PocketBook() {
   useEffect(() => {
-    // 👇️ scroll to top on page load
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, left: 0 });
   }, []);
 
   return (
@@ -39,7 +38,7 @@ export default function PocketBook() {
               <li className="pocketbook-top__item">-</li>
               <li className="pocketbook-top__item">
                 <NavLink
-                  href="/pocketbook"
+                  to="/pocketbook"
                   className="pocketbook-top__link pocketbook-top__link--choosen">
                   Pocketbook
                 </NavLink>
@@ -104,7 +103,10 @@ export default function PocketBook() {
           <div className="our-client container">
             <div className="our-client__content pocketbook-top__info">
               <img src="./images/top_page/tape/left-tape.svg" className="our-client__left-tape" />
-              <img src="./images/top_page/tape/right-tape.svg" className="our-client__right-tape" />
+              <img
+                src="./images/top_page/tape/right-tape.svg"
+                className="our-client__right-tape"
+              />
 
               <div className="our-client__block-img pocketbook-top__block-info">
                 <div className="pocketbook-top__info-block">

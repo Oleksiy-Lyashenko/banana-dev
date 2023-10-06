@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../../styles/components/slider_projects.scss';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 let REVIEW_WIDTH = window.screen.width;
 

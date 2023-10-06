@@ -79,8 +79,9 @@
   }
 
   &__direction {
-    padding: 5px;
-    border: 1px dashed $main-yellow-text-color;
+    block-size: border-box;
+    padding: 7px;
+    border: 1px dashed $pink-text-color;
 
     color: $white-text-color;
     font-family: $fira-code;
@@ -91,7 +92,7 @@
     letter-spacing: 0.6px;
 
     @include onTablet {
-      font-size: 1rem;
+      font-size: .9rem;
     }
   }
 }
