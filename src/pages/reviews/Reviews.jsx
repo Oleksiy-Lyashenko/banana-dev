@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import { NavLink } from 'react-router-dom';
-import { Header } from '../../components/Header';
-import { FooterPage } from '../FooterPage';
+import { Header } from '../components/Header';
 import './main.scss'
 import { useEffect } from 'react';
+import { Footer } from '../components/Footer';
 
 export default function Reviews() {
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function Reviews() {
 
   return (
     <div className="reviews">
-      <Header />
+      <Header headerClass="header--none-shadow" />
 
       <main className="main">
         <section className="portfilio-top">
@@ -25,17 +25,19 @@ export default function Reviews() {
               </li>
               <li className="pocketbook-top__item">-</li>
               <li className="pocketbook-top__item">
-                <NavLink to="/" className="pocketbook-top__link pocketbook-top__link--choosen">
+                <NavLink
+                  to="/"
+                  className="pocketbook-top__link pocketbook-top__link--choosen--reviews">
                   Reviews
                 </NavLink>
               </li>
             </ul>
 
             <div className="portfolio-top__text-block">
-              <h2 className="top-page__main-text top-page__main-text--yellow portfolio-top__main-text--position">
+              <h2 className="home-top__main-text home-top__main-text--yellow portfolio-top__main-text--position">
                 reviews
               </h2>
-              <p className="top-page__sub-text">
+              <p className="home-top__sub-text">
                 Check out the works that we have created for our clients, meeting their business
                 goals and connecting their activity and the digital world.
               </p>
@@ -45,210 +47,210 @@ export default function Reviews() {
 
         <section className="reviews-main">
           <div className="reviews-main__content container">
-            <div className="our-clients__card">
-              <div className="our-clients__top">
+            <div className="reviews-main__card reviews-main__card--position-1">
+              <div className="reviews-main__top">
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
               </div>
 
-              <p className="our-clients__review">
+              <p className="reviews-main__review">
                 I am extremely impressed with the services provided by your web studio. The team
                 took the time to understand my business needs and delivered a website that not only
                 looks amazing
               </p>
 
-              <div className="our-clients__review-bottom">
+              <div className="reviews-main__review-bottom">
                 <img
                   src="./images/our_clients_page/client_img.png"
                   alt=""
-                  className="our-clients__client-img"
+                  className="reviews-main__client-img"
                 />
 
-                <div className="our-clients__review-bottom-info">
-                  <span className="our-clients__name">Mitchel Gronyx</span>
+                <div className="reviews-main__review-bottom-info">
+                  <span className="reviews-main__name">Mitchel Gronyx</span>
 
-                  <div className="our-clients__position">// founder of Microssoft, UK</div>
+                  <div className="reviews-main__position">// founder of Microssoft, UK</div>
                 </div>
               </div>
             </div>
 
-            <div className="our-clients__card reviews-main__review--doshed-bg reviews-main__review--position-2">
-              <div className="our-clients__top">
+            <div className="reviews-main__card reviews-main__card--doshed-bg reviews-main__card--position-1">
+              <div className="reviews-main__top">
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
               </div>
 
-              <p className="our-clients__review">
-                I can't recommend your web studio enough! The professionalism, expertise, and
-                attention to detail displayed by your team are exceptional. From the initial
-                consultation to the final delivery...
+              <p className="reviews-main__review">
+                I am extremely impressed with the services provided by your web studio. The team
+                took the time to understand my business needs and delivered a website that not only
+                looks amazing
               </p>
 
-              <div className="our-clients__review-bottom">
+              <div className="reviews-main__review-bottom">
                 <img
                   src="./images/our_clients_page/client_img.png"
                   alt=""
-                  className="our-clients__client-img"
+                  className="reviews-main__client-img"
                 />
 
-                <div className="our-clients__review-bottom-info">
-                  <span className="our-clients__name">Mitchel Gronyx</span>
+                <div className="reviews-main__review-bottom-info">
+                  <span className="reviews-main__name">Mitchel Gronyx</span>
 
-                  <div className="our-clients__position">// founder of Microssoft, UK</div>
+                  <div className="reviews-main__position">// founder of Microssoft, UK</div>
                 </div>
               </div>
             </div>
 
-            <div className="our-clients__card reviews-main__review--doshed-bg reviews-main__review--position-1">
-              <div className="our-clients__top">
+            <div className="reviews-main__card reviews-main__card--doshed-bg reviews-main__card--position-2">
+              <div className="reviews-main__top">
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
               </div>
 
-              <p className="our-clients__review">
+              <p className="reviews-main__review">
                 I’ve worked with some incredible devs in my career, but the experience I am having
                 with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful
                 to the team!
               </p>
 
-              <div className="our-clients__review-bottom">
+              <div className="reviews-main__review-bottom">
                 <img
                   src="./images/our_clients_page/client_img.png"
                   alt=""
-                  className="our-clients__client-img"
+                  className="reviews-main__client-img"
                 />
 
-                <div className="our-clients__review-bottom-info">
-                  <span className="our-clients__name">Mitchel Gronyx</span>
+                <div className="reviews-main__review-bottom-info">
+                  <span className="reviews-main__name">Mitchel Gronyx</span>
 
-                  <div className="our-clients__position">// founder of Microssoft, UK</div>
+                  <div className="reviews-main__position">// founder of Microssoft, UK</div>
                 </div>
               </div>
             </div>
 
-            <div className="our-clients__card">
-              <div className="our-clients__top">
+            <div className="reviews-main__card reviews-main__card--position-2">
+              <div className="reviews-main__top">
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
                 <img
                   src="./images/our_clients_page/star.svg"
                   alt=""
-                  className="our-clients__star"
+                  className="reviews-main__star"
                 />
               </div>
 
-              <p className="our-clients__review">
+              <p className="reviews-main__review">
                 I’ve worked with some incredible devs in my career, but the experience I am having
                 with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful
                 to the team!
               </p>
 
-              <div className="our-clients__review-bottom">
+              <div className="reviews-main__review-bottom">
                 <img
                   src="./images/our_clients_page/client_img.png"
                   alt=""
-                  className="our-clients__client-img"
+                  className="reviews-main__client-img"
                 />
 
-                <div className="our-clients__review-bottom-info">
-                  <span className="our-clients__name">Mitchel Gronyx</span>
+                <div className="reviews-main__review-bottom-info">
+                  <span className="reviews-main__name">Mitchel Gronyx</span>
 
-                  <div className="our-clients__position">// founder of Microssoft, UK</div>
+                  <div className="reviews-main__position">// founder of Microssoft, UK</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <FooterPage />
       </main>
+
+      <Footer />
     </div>
   );
 }

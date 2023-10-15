@@ -18,6 +18,12 @@
   }
 }
 
+@mixin onBigTablet {
+  @media (min-width: $tablet2-min-width) {
+    @content;
+  }
+}
+
 @mixin onSmallDesktop {
   @media (min-width: $small-desktop-min-width) {
     @content;
@@ -26,6 +32,12 @@
 
 @mixin onDesktop {
   @media (min-width: $desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin onBigDesktop {
+  @media (min-width: $big-desktop-min-width) {
     @content;
   }
 }

@@ -3,54 +3,98 @@
 
 .about-us-top {
   &__block {
-    display: grid;
-    grid-template-columns: minmax(300px, 750px) 400px;
+    display: flex;
+    flex-direction: column;
     column-gap: 70px;
+    align-items: center;
+    justify-content: center;
+
+    @include onSmallDesktop {
+      flex-direction: row;
+    }
+  }
+
+  &__main-text {
+    font-size: 4rem;
+    line-height: 4rem; /* 100% */
+    letter-spacing: 3.12px;
+    text-transform: uppercase;
+
+    @include onBigTablet {
+      font-size: 4.5rem;
+      line-height: 4.5rem; /* 100% */
+    }
+
+    @include onSmallDesktop {
+      font-size: 6rem;
+      line-height: 6rem; /* 100% */
+    }
   }
 
   &__text-block {
-    max-width: 100%;
-    // width: 100%;
+    max-width: 750px;
+    width: 100%;
   }
 
   &__sub-text {
-    font-size: 1.15rem;
+    font-size: .95rem;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.6px;
     font-style: normal;
     font-weight: 500;
-    line-height: 27px; /* 150% */
-    letter-spacing: 1.2px;
+
+    @include onBigTablet {
+      font-size: 1.15rem;
+      line-height: 27px; /* 150% */
+      letter-spacing: 1.2px;
+    }
   }
 
   &__img-block {
     box-sizing: border-box;
 
-    width: 500px;
-    height: 600px;
+    max-width: 550px;
+    width: 100%;
+    height: max-content;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    margin-top: 30px;
-    padding-bottom: 10px;
+    // margin-top: 30px;
+    padding: 40px;
 
     // padding: 4rem;
     // padding-left: 8rem;
 
-    background-image: url('../../images/about-us_block_img.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url('../../images/about-us_block_img.png');
+    background-size: 100% 100%;
+
+    @include onSmallDesktop {
+      padding: 70px 0;
+    }
   }
 
   &__main-contact-text {
-
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: $sugo-pro-display;
     font-size: 3.3rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 3.6px;
     text-transform: uppercase;
+
+    @include onSmallDesktop {
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 3.6px;
+      text-transform: uppercase;
+    }
   }
 
   &__contact-field {
@@ -109,6 +153,10 @@
 .about-us-main {
   &__content {
     padding-top: 150px;
+
+    @include onSmallDesktop {
+      padding-top: 170px;
+    }
   }
 
   &__main-text {
@@ -119,11 +167,15 @@
 
   &__text-block {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 130px;
-
-    padding: 0 30px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
     margin-bottom: 100px;
+
+    @include onBigTablet {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 130px;
+      margin-bottom: 100px;
+    }
   }
 
   &__country-block {

@@ -1,0 +1,367 @@
+@import '../../../styles/utils/vars';
+@import '../../../styles/utils/mixins';
+
+.portfolio-top {
+  &__content {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    &--position {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__main-text {
+    margin-bottom: 10px;
+
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem; /* 100% */
+    letter-spacing: 3.12px;
+
+    @include onTablet {
+      font-size: 4.5rem;
+      font-weight: 400;
+      line-height: 5rem; /* 111.429% */
+      letter-spacing: 4.2px;
+    }
+
+    @include onSmallDesktop {
+      font-size: 5.5rem;
+      font-weight: 400;
+      line-height: 6rem; /* 112% */
+      letter-spacing: 6px;
+    }
+  }
+
+  &__sub-text {
+    margin-bottom: 30px;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.5rem; /* 173.333% */
+    letter-spacing: 0.6px;
+
+    @include onTablet {
+      margin-bottom: 60px;
+      letter-spacing: 0.9px;
+    }
+
+    @include onSmallDesktop {
+      margin-bottom: 80px;
+
+      font-size: 1.2rem;
+      line-height: 1.6rem; /* 173.333% */
+      letter-spacing: 1.2px;
+    }
+  }
+
+  &__text-block {
+    max-width: 650px;
+  }
+
+  &__filter-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @include onBigTablet {
+      flex-direction: row;
+      // column-gap: 30px;
+      
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__filter {
+      width: max-content;
+      // display: flex;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #262626;
+
+      @include onBigTablet {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+
+    &__filters {
+      opacity: 0;
+      height: 0;
+      padding-top: 0;
+
+      transition: height 0.5s, opacity 0.5s, padding-top .5s;
+
+      @include onBigTablet {
+        padding: 15px;
+        position: absolute;
+        background-color: black;
+      }
+    }
+
+    &__filters--open {
+      height: 100px;
+      opacity: 1;
+      padding-top: 20px;
+      transition: height 0.5s, opacity 0.5s, padding-top .5s;
+    }
+
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 25px;
+      row-gap: 25px;
+    }
+
+    &__filters-name {
+      margin: 0;
+      color: white;
+    }
+
+    &__left {
+      align-self: flex-start;
+      margin-bottom: 30px;
+
+      width: 100%;
+      display: flex;
+      flex-direction: inherit;
+      align-items: flex-start;
+      row-gap: 30px;
+
+      @include onBigTablet {
+        align-self: center;
+        flex-direction: inherit;
+        column-gap: 50px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__right {
+      display: flex;
+      column-gap: 15px;
+      width: 100%;
+
+      @include onBigTablet {
+        width: 370px;
+      }
+    }
+
+    &__title {
+      display: inline-block;
+      margin-right: 7px;
+
+      color: $pink-text-color;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.2px;
+
+      cursor: pointer;
+
+      @include onSmallDesktop {
+        font-size: 1.5rem;
+        letter-spacing: 1.68px;
+      }
+    }
+
+    &__checkbox-block {
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+    }
+
+    &__checkbox {
+      appearance: none;
+      -webkit-appearance: none;
+      height: 18px;
+      width: 18px;
+      background-color: black;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        // background-image: url('../../../images/check-mark.svg');
+        content: "\f00c";
+        font-size: 16px;
+        color: black;
+        display: none;
+      }
+
+      &:checked {
+        background-color: $main-yellow-text-color;
+      }
+
+      &:checked::after {
+        display: block;
+      }
+    }
+
+    &__name {
+      color: #fff;
+      font-size: .95rem;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.9px;
+    }
+
+    &__img {
+      width: 17px;
+
+      transform: rotate(0deg);
+      transition: transform 0.5s;
+
+      &--open {
+        transform: rotate(180deg);
+        transition: transform 0.5s;
+      }
+    }
+  }
+
+  &__button {
+    flex-shrink: 2;
+    width: 100%;
+    padding: 15px 0;
+    // width: 150px;
+    // height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.5px solid $violet-text-color;
+
+    color: #808080;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    @include onBigTablet {
+      flex-shrink: 1;
+    }
+
+    &--1 {
+      flex-shrink: 3;
+
+      @include onBigTablet {
+        flex-shrink: 1;
+      }
+    }
+
+    &:hover {
+      background-color: $violet-text-color;
+      color: $white-text-color;
+    }
+
+    &--violet {
+      background-color: $violet-text-color;
+      color: $white-text-color;
+
+      &:hover {
+        background-color: #6924c8;
+      }
+    }
+  }
+}
+
+.portfolio-main {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+    row-gap: 20px;
+
+    @include onBigTablet {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+
+    @include onSmallDesktop {
+      column-gap: 50px;
+    }
+  }
+
+  &__project {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    // width: 650px;
+    // height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 21px;
+    padding-top: 40px;
+
+    text-decoration: none;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+      url('../../../images/portfolio_pocketbok_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include onTablet {
+      padding-top: 35px;
+      padding-bottom: 30px;
+    }
+
+    @include onBigDesktop {
+      width: 650px;
+      height: 400px;
+    }
+
+    &__title {
+      margin: 0;
+      color: $main-yellow-text-color;
+      font-family: $fira-code;
+      font-size: .9rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.78px;
+      text-transform: uppercase;
+
+      @include onTablet {
+        font-size: 1rem;
+        letter-spacing: 0.96px;
+      }
+    }
+
+    &__img {
+      padding-top: 60px;
+      width: 200px;
+
+      @include onTablet {
+        width: 240px;
+      }
+
+      @include onSmallDesktop {
+        width: 300px;
+      }
+    }
+
+    &__bottom {
+      justify-content: flex-start;
+      padding-top: 60px;
+      padding-bottom: 30px;
+
+      @include onBigTablet {
+        justify-content: center;
+      }
+    }
+  }
+}

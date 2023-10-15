@@ -1,0 +1,133 @@
+@import "../../../styles/utils/vars";
+@import "../../../styles/utils/mixins";
+
+.footer {
+  padding-top: 10rem;
+
+  font-family: $fira-code;
+
+  @include onTablet {
+    padding-top: 250px;
+  }
+
+  &__top {
+    height: 100%;
+    width: 100%;
+
+    background: url('../../../images/footer__bg.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top;
+  }
+
+  &__bottom {
+    display: none;
+
+    @include onTablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__block {
+    // display: grid;
+    // grid-template-columns: repeat(1, 1fr);
+    // grid-template-rows: repeat(4, 1fr);
+
+    // row-gap: 3rem;
+
+    // padding-top: 4rem;
+
+    // @include onTablet {
+    //   grid-template-columns: repeat(2, 1fr);
+    //   grid-template-rows: repeat(2, 1fr);
+    //   row-gap: 3rem;
+
+    //   padding-top: 6rem;
+    //   padding-bottom: 4rem;
+    // }
+
+    // @include onSmallDesktop {
+    //   grid-template-columns: repeat(4, 1fr);
+    //   grid-template-rows: none;
+    // }
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 4rem 1rem;
+
+    @include onTablet {
+      flex-direction: row;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 2rem;
+
+    @include onTablet {
+      font-size: 1rem;
+      letter-spacing: 0.96px;
+    }
+
+    @include onSmallDesktop {
+      align-items: flex-start;
+      row-gap: 15px;
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+  }
+
+  &__list-title {
+    color: $main-yellow-text-color;
+    font-weight: 700;
+  }
+
+  &__link {
+    color: $white-text-color;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  &__copyright {
+    margin: 0;
+
+    color: $white-text-color;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 1.44px;
+
+    @include onTablet {
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+    }
+
+    // @include onSmallDesktop {
+    //   font-size: 24px;
+    //   line-height: 42px;
+    //   letter-spacing: 1.44px;
+    // }
+  }
+
+  &__logo {
+    width: 13rem;
+
+    @include onTablet {
+      width: 15rem;
+    }
+  }
+}

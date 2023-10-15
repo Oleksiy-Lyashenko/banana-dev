@@ -4,23 +4,177 @@
 .reviews-main {
   &__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
     justify-content: center;
     align-items: center;
+
+    @include onBigTablet {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+    }
   }
 
-  &__review {
+  &__card {
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    background: url(../../images/our_page_bg_img.png);
+    background-size: 100% 100%;
+    padding: 30px 25px;
+    padding-left: 35px;
+
+    @include onBigTablet {
+      // width: 32rem;
+      // padding: 2rem 4.5rem;
+    }
+    @include onDesktop {
+      padding: 32px 80px;
+    }
+
     &--doshed-bg {
-      background-image: url(../../images/doshed_bg_img.svg);
+      height: max-content;
+      background-image: url(../../images/doshed_bg_img.png);
+      background-size: 100% 100%;
     }
 
     &--position-1 {
-      margin-left: 80px;
+
+      @include onDesktop {
+        margin-right: 80px;
+      }
     }
 
     &--position-2 {
-      margin-left: -70px;
+      @include onDesktop {
+        margin-left: 50px;
+      }
     }
+  }
+
+  &__top {
+    // padding-top: 10px;
+    display: flex;
+    column-gap: 0.35rem;
+
+    margin-bottom: 20px;
+
+    @include onBigTablet {
+      margin-bottom: 16px;
+    }
+
+    @include onSmallDesktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__star {
+    width: 22px;
+
+    @include onBigTablet {
+      width: 26px;
+    }
+
+    @include onSmallDesktop {
+      width: 32px;
+    }
+  }
+
+  &__review {
+    margin: 0;
+    margin-bottom: 16px;
+
+    color: $white-text-color;
+    font-family: $fira-code;
+    font-size: .95rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 160% */
+    letter-spacing: 0.6px;
+
+    @include onDesktop {
+      font-size: 1.15rem;
+      line-height: 27px; /* 150% */
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__client-img {
+    width: 48px;
+    height: 48px;
+
+    @include onBigTablet {
+      width: 52px;
+      height: 52px;
+    }
+
+    @include onDesktop {
+      width: 68px;
+      height: 68px;
+    }
+
+    margin-right: 1.5rem;
+  }
+
+  &__name {
+    color: $main-yellow-text-color;
+    font-family: $fira-code;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.1rem; /* 125% */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+
+    @include onDesktop {
+      font-size: 1.4rem;
+      line-height: 1.4rem; /* 125% */
+    }
+  }
+
+  &__position {
+    color: $white-text-color;
+    font-family: $fira-code;
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 230.769% */
+    letter-spacing: 0.52px;
+
+    @include onBigTablet {
+      font-size: 16px;
+      letter-spacing: 0.64px;
+    }
+
+    @include onDesktop {
+      font-size: 22px;
+      letter-spacing: 1.32px;
+    }
+  }
+
+  &__review-bottom {
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+
+    @include onTablet {
+      flex-direction: row;
+      row-gap: 1rem;
+    }
+
+    @include onDesktop {
+      row-gap: 3rem;
+    }
+  }
+  
+  &__review-bottom-info {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
   }
 }
