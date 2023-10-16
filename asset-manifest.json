@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/banana-dev/static/css/main.d9eda8fa.css",
-    "main.js": "/banana-dev/static/js/main.dded81e9.js",
+    "main.css": "/banana-dev/static/css/main.99b83ac1.css",
+    "main.js": "/banana-dev/static/js/main.489f4bd7.js",
     "static/media/header_img.png": "/banana-dev/static/media/header_img.7e45e9e1becc884a608e.png",
     "static/media/Sugo-Pro-Classic-Thin-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Thin-trial.08ce01ad8a874fb4a8c8.ttf",
     "static/media/Sugo-Pro-Classic-Light-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Light-trial.95d5ce39453ba7a5fb28.ttf",
@@ -27,22 +27,20 @@
     "static/media/FiraCode-SemiBold.woff": "/banana-dev/static/media/FiraCode-SemiBold.19a3cef3cb1f27e6a34c.woff",
     "static/media/FiraCode-Medium.woff": "/banana-dev/static/media/FiraCode-Medium.edb17cd034ab2bf0c2d4.woff",
     "static/media/FiraCode-Light.woff": "/banana-dev/static/media/FiraCode-Light.e37fbea8ec98ce1ed3c5.woff",
+    "static/media/form_bg_img.png": "/banana-dev/static/media/form_bg_img.ec6f9f54185731dfca13.png",
     "static/media/cart_bg.svg": "/banana-dev/static/media/cart_bg.97c47b08df02514aed70.svg",
     "static/media/button_site_mobile.svg": "/banana-dev/static/media/button_site_mobile.1456ee26bff01de2597e.svg",
     "static/media/button_site.svg": "/banana-dev/static/media/button_site.7892cf246cabe47f7dc9.svg",
     "static/media/button_site_tablet.svg": "/banana-dev/static/media/button_site_tablet.c2577012b6613c75f0b6.svg",
     "static/media/button_hover.svg": "/banana-dev/static/media/button_hover.4e1c203de4b743a27c45.svg",
     "static/media/button.svg": "/banana-dev/static/media/button.8709ca2270f59f057ef0.svg",
-    "static/media/form_bg_img.svg": "/banana-dev/static/media/form_bg_img.1abcc29662e4bcffaba6.svg",
-    "static/media/our_page_bg_img.svg": "/banana-dev/static/media/our_page_bg_img.8bab8f73ae1e11f3cc01.svg",
-    "static/media/pocketbook_info_bg.svg": "/banana-dev/static/media/pocketbook_info_bg.b6986a0e1540f7157520.svg",
     "index.html": "/banana-dev/index.html",
     "static/media/star.svg": "/banana-dev/static/media/star.b73ff636d0fec6ec7bda.svg",
-    "main.d9eda8fa.css.map": "/banana-dev/static/css/main.d9eda8fa.css.map",
-    "main.dded81e9.js.map": "/banana-dev/static/js/main.dded81e9.js.map"
+    "main.99b83ac1.css.map": "/banana-dev/static/css/main.99b83ac1.css.map",
+    "main.489f4bd7.js.map": "/banana-dev/static/js/main.489f4bd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9eda8fa.css",
-    "static/js/main.dded81e9.js"
+    "static/css/main.99b83ac1.css",
+    "static/js/main.489f4bd7.js"
   ]
 }
