@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/main.scss';
-import App from './pages/App';
 import {  createHashRouter, RouterProvider } from 'react-router-dom';
 import PocketBook from './pages/portfolio/PocketBook/PocketBook';
 import Portfolio from './pages/portfolio/Portfolio/Portfolio';
 import Reviews from './pages/reviews/Reviews';
 import AboutUs from './pages/about-us/AboutUs';
+import Home from './pages/home/Home';
+
+import './styles/main.scss';
 
 const router = createHashRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Home />,
   },
   {
     path: '/pocketbook',

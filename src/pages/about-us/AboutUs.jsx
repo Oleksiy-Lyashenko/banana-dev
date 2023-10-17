@@ -1,13 +1,18 @@
 import { NavLink } from 'react-router-dom';
-import { Header } from '../../components/Header'
+import { Header } from '../components/Header'
 import './main.scss'
-import { FormPage } from '../FormPage';
-import { FooterPage } from '../FooterPage';
+import { Footer } from '../components/Footer';
+import { Form } from '../components/Form';
+import { useEffect } from 'react';
 
 export default function AboutUs() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
+
   return (
     <div className="about-us">
-      <Header />
+      <Header headerClass="header--none-shadow" />
 
       <main className="main">
         <section className="about-us-top">
@@ -20,17 +25,19 @@ export default function AboutUs() {
               </li>
               <li className="pocketbook-top__item">-</li>
               <li className="pocketbook-top__item">
-                <NavLink to="/" className="pocketbook-top__link pocketbook-top__link--choosen">
+                <NavLink
+                  to="#"
+                  className="pocketbook-top__link pocketbook-top__link--choosen--about-us">
                   About Us
                 </NavLink>
               </li>
             </ul>
             <div className="about-us-top__block">
               <div className="portfolio-top__text-block about-us-top__text-block">
-                <h2 className="top-page__main-text top-page__main-text--yellow portfolio-top__main-text--position">
+                <h2 className="page-title-about-us page-title-about-us--yellow about-us-top__main-text--position">
                   about us
                 </h2>
-                <p className="top-page__sub-text about-us-top__sub-text">
+                <p className="home-top__sub-text about-us-top__sub-text">
                   At Banan.dev, we take pride in our reputation as a top-tier web studio that has
                   truly made its mark in the market. We have consistently delivered outstanding
                   website and mobile app development services, cementing our position as a trusted
@@ -52,12 +59,14 @@ export default function AboutUs() {
               </div>
 
               <div className="about-us-top__img-block">
-                <h2 className="top-page__main-text top-page__main-text--yellow about-us-top__main-contact-text">
+                <h2 className="page-title-about-us--yellow about-us-top__main-contact-text">
                   contact <br /> information
                 </h2>
 
                 <div className="about-us-top__contact-field">
-                  <h4 className="about-us-top__contact-title">United States</h4>
+                  <h4 className="about-us-top__contact-title about-us-top__contact-title">
+                    United States
+                  </h4>
 
                   <div className="about-us-top__contact-block">
                     <img
@@ -78,7 +87,7 @@ export default function AboutUs() {
                       className="about-us-top__contact-img"
                     />
 
-                    <span className="about-us-top__contact-text">+1 (360) 360 9713</span>
+                    <span className="about-us-top__contact-text">+380 (961) 50 4896</span>
                   </div>
                 </div>
 
@@ -116,7 +125,7 @@ export default function AboutUs() {
 
         <section className="about-us-main">
           <div className="about-us-main__content container">
-            <h2 className="top-page__main-text top-page__main-text--yellow about-us-main__main-text--position">
+            <h2 className="home-top__main-text home-top__main-text--yellow about-us-top__main-text">
               our offices
             </h2>
 
@@ -138,9 +147,7 @@ export default function AboutUs() {
                     <h4 className="about-us-main__city">Seeatlle</h4>
 
                     <span className="about-us-main__address">
-                      27214 105th Ave SE,
-                      <br />
-                      Kent WA, 98030
+                      27214 105th Ave SE, Kent WA, 98030
                     </span>
                   </div>
 
@@ -148,9 +155,7 @@ export default function AboutUs() {
                     <h4 className="about-us-main__city">New York</h4>
 
                     <span className="about-us-main__address">
-                      27214 105th Ave SE,
-                      <br />
-                      Kent WA, 98030
+                      27214 105th Ave SE, Kent WA, 98030
                     </span>
                   </div>
                 </div>
@@ -175,9 +180,7 @@ export default function AboutUs() {
                     <h4 className="about-us-main__city">Kyiv</h4>
 
                     <span className="about-us-main__address">
-                      27214 105th Ave SE,
-                      <br />
-                      Kent WA, 98030
+                      27214 105th Ave SE, Kent WA, 98030
                     </span>
                   </div>
 
@@ -185,9 +188,7 @@ export default function AboutUs() {
                     <h4 className="about-us-main__city">Lviv</h4>
 
                     <span className="about-us-main__address">
-                      27214 105th Ave SE,
-                      <br />
-                      Kent WA, 98030
+                      27214 105th Ave SE, Kent WA, 98030
                     </span>
                   </div>
                 </div>
@@ -205,10 +206,10 @@ export default function AboutUs() {
           </div>
         </section>
 
-        <FormPage title="Need help with your business?" titleClass="form-page__title--pink" />
-
-        <FooterPage />
+        <Form title="Need help with your business?" titleClass="form-page__title--pink" />
       </main>
+
+      <Footer />
     </div>
   );
 }

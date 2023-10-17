@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom';
-import { Header } from '../../../components/Header';
-import '../../../styles/pages/portfolio/main.scss';
-import { FooterPage } from '../../FooterPage';
+import { Header } from '../../components/Header';
 import { useEffect } from 'react';
+import Filter from './components/Filter/Filter';
+import { Footer } from '../../components/Footer';
+
+import './main.scss';
 
 export default function Portfolio() {
   useEffect(() => {
@@ -11,7 +13,7 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio">
-      <Header />
+      <Header headerClass="header--none-shadow" />
 
       <main className="main">
         <section className="portfilio-top">
@@ -31,10 +33,10 @@ export default function Portfolio() {
             </ul>
 
             <div className="portfolio-top__text-block">
-              <h2 className="top-page__main-text top-page__main-text--yellow portfolio-top__main-text--position">
+              <h2 className="page-title-portfolio page-title-portfolio--yellow portfolio-top__main-text">
                 portfolio
               </h2>
-              <p className="top-page__sub-text">
+              <p className="home-top__sub-text portfolio-top__sub-text">
                 Check out the works that we have created for our clients, meeting their business
                 goals and connecting their activity and the digital world.
               </p>
@@ -42,38 +44,12 @@ export default function Portfolio() {
 
             <div className="portfolio-top__filter-block">
               <div className="portfolio-top__filter-block__left">
-                <div className="portfolio-top__filter-block__filter">
-                  <span className="portfolio-top__filter-block__title">Technology</span>
-                  <img
-                    src="./images/portfolio/arrow_img.svg"
-                    alt=""
-                    srcset=""
-                    className="portfolio-top__filter-block__img"
-                  />
-                </div>
-
-                <div className="portfolio-top__filter-block__filter">
-                  <span className="portfolio-top__filter-block__title">Platform</span>
-                  <img
-                    src="./images/portfolio/arrow_img.svg"
-                    alt=""
-                    srcset=""
-                    className="portfolio-top__filter-block__img"
-                  />
-                </div>
-
-                <div className="portfolio-top__filter-block__filter">
-                  <span className="portfolio-top__filter-block__title">Development</span>
-                  <img
-                    src="./images/portfolio/arrow_img.svg"
-                    alt=""
-                    srcset=""
-                    className="portfolio-top__filter-block__img"
-                  />
-                </div>
+                <Filter name="Technology" />
+                <Filter name="Platform" />
+                <Filter name="Development" />
               </div>
               <div className="portfolio-top__filter-block__right">
-                <div className="portfolio-top__button">clear all</div>
+                <div className="portfolio-top__button portfolio-top__button--1">clear all</div>
                 <div className="portfolio-top__button portfolio-top__button--violet">
                   apply tags
                 </div>
@@ -84,30 +60,30 @@ export default function Portfolio() {
 
         <section className="portfolio-main">
           <div className="portfolio-main__content container">
-            <NavLink to='/pocketbook' className="portfolio-main__project">
+            <NavLink to="/pocketbook" className="portfolio-main__project">
               <h4 className="portfolio-main__project__title">Mobile application</h4>
 
               <img
-                src="./images/clients/pocketbook/logo.svg"
+                src="./images/clients/pocketbook/logo.png"
                 alt=""
                 className="portfolio-main__project__img"
               />
 
-              <div className="slider-projects__bottom">
-                <div className="slider-projects__direction">Business</div>
+              <div className="portfolio-main__project__bottom">
+                <div className="portfolio-main__project__direction">Business</div>
 
-                <div className="slider-projects__direction">Redesign</div>
+                <div className="portfolio-main__project__direction">Redesign</div>
 
-                <div className="slider-projects__direction">Web development</div>
+                <div className="portfolio-main__project__direction">Web development</div>
 
-                <div className="slider-projects__direction">E-commerce</div>
+                <div className="portfolio-main__project__direction">E-commerce</div>
               </div>
             </NavLink>
           </div>
         </section>
-
-        <FooterPage />
       </main>
+
+      <Footer />
     </div>
   );
 }

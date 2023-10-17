@@ -28,7 +28,19 @@ code {
   max-width: 1350px;
   width: 100%;
   margin: 0 auto;
-  padding-inline: .5rem;
+  padding-inline: 16px;
+
+  @include onBigPhone {
+    padding-inline: 30px;
+  }
+
+  @include onBigTablet {
+    padding-inline: 50px;
+  }
+
+  @include onBigDesktop {
+    padding-inline: 0;
+  }
 
   &--our-clients {
     position: relative;
@@ -46,6 +58,14 @@ code {
 .main {
   overflow: hidden;
 
+  &__content {
+    padding-top: 150px;
+
+    @include onSmallDesktop {
+      padding-top: 100px;
+    }
+  }
+
   &__page-title {
     margin: 0;
 
@@ -60,13 +80,16 @@ code {
     text-transform: uppercase;
 
     text-shadow: -1px -1px 0px #000000,
-      3px 3px 0px #000000,
-      4px 4px 0px #808080;
+      1.5px 1.5px 0px #000000,
+      3px 3px 0px #808080;
 
     @include onTablet {
       font-size: 4rem;
       line-height: 4rem;
       letter-spacing: 6.6px;
+      text-shadow: -1px -1px 0px #000000,
+        3px 3px 0px #000000,
+        4px 4px 0px #808080;
     }
 
     @include onSmallDesktop {
@@ -76,3 +99,44 @@ code {
     }
   }
 }
+
+// .page-title {
+//   margin: 0;
+
+//   position: relative;
+//   display: inline-block;
+
+//   font-family: $sugo-pro-display;
+//   color: $white-text-color;
+//   font-size: 52px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 52px; /* 100% */
+//   letter-spacing: 3.12px;
+//   text-transform: uppercase;
+
+//   text-shadow: -1px -1px 0px #000000,
+//     1.5px 1.5px 0px #000000,
+//     2px 2px 0px #808080;
+
+//   @include onBigTablet {
+//     font-size: 70px;
+//     line-height: 70px; /* 100% */
+//     letter-spacing: 4.2px;
+
+//     margin-bottom: 50px;
+//   }
+
+//   @include onSmallDesktop {
+//     font-size: 5.6rem;
+//     line-height: 6rem;
+//     text-shadow: -1px -1px 0px #000000,
+//       1.5px 1.5px 0px #000000,
+//       2px 2px 0px #808080;
+//   }
+  
+
+//   &--yellow {
+//     color: $main-yellow-text-color;
+//   }
+// }
