@@ -32,9 +32,45 @@ export const Stack = () => {
   return (
     <div className="stack-page">
       <div className="stack-page__content">
-        <h2 className="main__page-title stack-page__title container"> Our Tech stack</h2>
+        <div className="container">
+          <div className="stack-page__block">
+            <h2 className="page-title page-title--yellow stack-page__title"> Our Tech stack</h2>
+
+            <p className="stack-page__sub-text">
+              We work with the latest and greatest mobile, cross-platform and web technologies and
+              tools to provide you with a powerful custom tech stack for your project.
+            </p>
+          </div>
+        </div>
 
         <div className="main-stack container--stack">
+          <img
+            src="./images/stack_page/right_shadow.png"
+            alt=""
+            srcset=""
+            className="main-stack__right-shadow"
+          />
+          <img
+            src="./images/stack_page/top_shadow.png"
+            alt=""
+            srcset=""
+            className="main-stack__top-shadow"
+          />
+
+          <img
+            src="./images/stack_page/left_shadow.png"
+            alt=""
+            srcset=""
+            className="main-stack__left-shadow"
+          />
+
+          <img
+            src="./images/stack_page/bottom_shadow.png"
+            alt=""
+            srcset=""
+            className="main-stack__bottom-shadow"
+          />
+
           <div className="container">
             <div
               className="main-stack__block"
@@ -297,14 +333,14 @@ export const Stack = () => {
                   <img
                     src="./images/our_clients_page/passive_left_arrow.svg"
                     alt=""
-                    className="home-clients__arrow-img"
+                    className="main-stack__arrow-img"
                     onClick={handleLeftArrow}
                   />
                 ) : (
                   <img
                     src="./images/our_clients_page/active_left_arrow.svg"
                     alt=""
-                    className="home-clients__arrow-img"
+                    className="main-stack__arrow-img"
                     onClick={handleLeftArrow}
                   />
                 )}
@@ -315,14 +351,14 @@ export const Stack = () => {
                   <img
                     src="./images/our_clients_page/active_right_arrow.svg"
                     alt=""
-                    className="home-clients__arrow-img"
+                    className="main-stack__arrow-img"
                     onClick={handleRightArrow}
                   />
                 ) : (
                   <img
                     src="./images/our_clients_page/passive_right_arrow.svg"
                     alt=""
-                    className="home-clients__arrow-img"
+                    className="main-stack__arrow-img"
                     onClick={handleRightArrow}
                   />
                 )}

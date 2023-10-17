@@ -33,7 +33,7 @@ export default function Portfolio() {
             </ul>
 
             <div className="portfolio-top__text-block">
-              <h2 className="home-top__main-text home-top__main-text--yellow portfolio-top__main-text">
+              <h2 className="page-title-portfolio page-title-portfolio--yellow portfolio-top__main-text">
                 portfolio
               </h2>
               <p className="home-top__sub-text portfolio-top__sub-text">
@@ -64,39 +64,19 @@ export default function Portfolio() {
               <h4 className="portfolio-main__project__title">Mobile application</h4>
 
               <img
-                src="./images/clients/pocketbook/logo.svg"
+                src="./images/clients/pocketbook/logo.png"
                 alt=""
                 className="portfolio-main__project__img"
               />
 
-              <div className="slider-projects__bottom portfolio-main__project__bottom">
-                <div className="slider-projects__direction">Business</div>
+              <div className="portfolio-main__project__bottom">
+                <div className="portfolio-main__project__direction">Business</div>
 
-                <div className="slider-projects__direction">Redesign</div>
+                <div className="portfolio-main__project__direction">Redesign</div>
 
-                <div className="slider-projects__direction">Web development</div>
+                <div className="portfolio-main__project__direction">Web development</div>
 
-                <div className="slider-projects__direction">E-commerce</div>
-              </div>
-            </NavLink>
-
-            <NavLink to="/pocketbook" className="portfolio-main__project">
-              <h4 className="portfolio-main__project__title">Mobile application</h4>
-
-              <img
-                src="./images/clients/pocketbook/logo.svg"
-                alt=""
-                className="portfolio-main__project__img"
-              />
-
-              <div className="slider-projects__bottom portfolio-main__project__bottom">
-                <div className="slider-projects__direction">Business</div>
-
-                <div className="slider-projects__direction">Redesign</div>
-
-                <div className="slider-projects__direction">Web development</div>
-
-                <div className="slider-projects__direction">E-commerce</div>
+                <div className="portfolio-main__project__direction">E-commerce</div>
               </div>
             </NavLink>
           </div>

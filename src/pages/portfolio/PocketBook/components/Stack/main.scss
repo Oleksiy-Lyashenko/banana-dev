@@ -1,6 +1,51 @@
 @import "../../../../../styles/utils/vars";
 @import "../../../../../styles/utils/mixins";
 
+.stack-page-title {
+  display: block;
+  margin: 0;
+  position: relative;
+  // display: inline-block;
+
+
+  font-family: $sugo-pro-display;
+  color: $white-text-color;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px; /* 100% */
+  letter-spacing: 3.12px;
+  text-transform: uppercase;
+
+  text-shadow: -1px -1px 0px #000000,
+    1.5px 1.5px 0px #000000,
+    2px 2px 0px #808080;
+
+  @include onBigTablet {
+    font-size: 70px;
+    line-height: 70px; /* 100% */
+    letter-spacing: 4.2px;
+
+  }
+
+  @include onSmallDesktop {
+    font-size: 5.6rem;
+    line-height: 6rem;
+    text-shadow: -1px -1px 0px #000000,
+      1.5px 1.5px 0px #000000,
+      2px 2px 0px #808080;
+  }
+  
+
+  &--yellow {
+    color: $main-yellow-text-color;
+  }
+
+  &--pink {
+    color: $pink2-text-color;
+  }
+}
+
 .stack-page {
   &__content {
     padding-top: 10rem;
@@ -31,22 +76,30 @@
   }
 }
 
-.main-stack {
+.main-stack-pocketbook {
   height: 630px;
   background-size: 150px 150px;
   position: relative;
-  background-position: 56px 64px;
+  background-position: 65px 64px;
+
+  @include onBigPhone {
+    background-position: 76px 64px;
+  }
 
   @include onTablet {
     height: 520px;
 
     background-size: 200px 200px;
-    background-position: 56px 64px;
+    background-position: 80px 64px;
+  }
+
+  @include onBigTablet {
+    background-position: 100px 63.5px;
   }
 
   @include onBigDesktop {
     height: 750px;
-    background-position: calc((100% - 1350px) / 2 + 55px) 63px;
+    background-position: 23px 63.5px;
   }
 
   &--pocketbook {

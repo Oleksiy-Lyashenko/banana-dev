@@ -3,8 +3,13 @@ import { Header } from '../components/Header'
 import './main.scss'
 import { Footer } from '../components/Footer';
 import { Form } from '../components/Form';
+import { useEffect } from 'react';
 
 export default function AboutUs() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
+
   return (
     <div className="about-us">
       <Header headerClass="header--none-shadow" />
@@ -29,7 +34,7 @@ export default function AboutUs() {
             </ul>
             <div className="about-us-top__block">
               <div className="portfolio-top__text-block about-us-top__text-block">
-                <h2 className="home-top__main-text home-top__main-text--yellow portfolio-top__main-text--position about-us-top__main-text">
+                <h2 className="page-title-about-us page-title-about-us--yellow about-us-top__main-text--position">
                   about us
                 </h2>
                 <p className="home-top__sub-text about-us-top__sub-text">
@@ -54,12 +59,14 @@ export default function AboutUs() {
               </div>
 
               <div className="about-us-top__img-block">
-                <h2 className="home-top__main-text--yellow about-us-top__main-contact-text">
+                <h2 className="page-title-about-us--yellow about-us-top__main-contact-text">
                   contact <br /> information
                 </h2>
 
                 <div className="about-us-top__contact-field">
-                  <h4 className="about-us-top__contact-title">United States</h4>
+                  <h4 className="about-us-top__contact-title about-us-top__contact-title">
+                    United States
+                  </h4>
 
                   <div className="about-us-top__contact-block">
                     <img
@@ -80,7 +87,7 @@ export default function AboutUs() {
                       className="about-us-top__contact-img"
                     />
 
-                    <span className="about-us-top__contact-text">+1 (360) 360 9713</span>
+                    <span className="about-us-top__contact-text">+380 (961) 50 4896</span>
                   </div>
                 </div>
 
@@ -140,9 +147,7 @@ export default function AboutUs() {
                     <h4 className="about-us-main__city">Seeatlle</h4>
 
                     <span className="about-us-main__address">
-                      27214 105th Ave SE,
-                      <br />
-                      Kent WA, 98030
+                      27214 105th Ave SE, Kent WA, 98030
                     </span>
                   </div>
 
@@ -150,9 +155,7 @@ export default function AboutUs() {
                     <h4 className="about-us-main__city">New York</h4>
 
                     <span className="about-us-main__address">
-                      27214 105th Ave SE,
-                      <br />
-                      Kent WA, 98030
+                      27214 105th Ave SE, Kent WA, 98030
                     </span>
                   </div>
                 </div>
@@ -177,9 +180,7 @@ export default function AboutUs() {
                     <h4 className="about-us-main__city">Kyiv</h4>
 
                     <span className="about-us-main__address">
-                      27214 105th Ave SE,
-                      <br />
-                      Kent WA, 98030
+                      27214 105th Ave SE, Kent WA, 98030
                     </span>
                   </div>
 
@@ -187,9 +188,7 @@ export default function AboutUs() {
                     <h4 className="about-us-main__city">Lviv</h4>
 
                     <span className="about-us-main__address">
-                      27214 105th Ave SE,
-                      <br />
-                      Kent WA, 98030
+                      27214 105th Ave SE, Kent WA, 98030
                     </span>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Header } from '../components/Header';
-import { Card } from '../components/Card';
+import { Card } from '../components/Card/';
 import { SliderClients } from './components/SliderClients';
 import { SliderProjects } from './components/SliderProjects';
 import { Stack } from './components/Stack';
@@ -11,6 +11,10 @@ import { Footer } from '../components/Footer';
 import './main.scss'
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
+
   return (
     <div className="page">
       <Header />
@@ -20,8 +24,8 @@ export default function Home() {
           <section className="home-top">
             <div className="home-top__block container">
               <div className="home-top__text-block">
-                <h2 className="home-top__main-text">
-                  <span className="home-top__main-text--yellow">Accelerate</span>
+                <h2 className="page-title home-top__page-title">
+                  <span className="page-title--yellow">Accelerate</span>
                   <br />
                   Your SuccesS with Banan.dev
                 </h2>
@@ -192,7 +196,7 @@ export default function Home() {
                 className="home-money__dev-bg"
               />
 
-              <h2 className="main__page-title home-money__title">
+              <h2 className="page-title page-title--yellow home-money__page-title--position">
                 Start making <br /> a lot of profit
               </h2>
 
@@ -241,7 +245,7 @@ export default function Home() {
 
           <section className="home-offer">
             <div className="home-offer__content container">
-              <h2 className="main__page-title home-offer__title">What we offer</h2>
+              <h2 className="page-title page-title--yellow home-offer__title">What we offer</h2>
 
               <div className="home-offer__block">
                 <div className="home-offer__card home-offer__card--1">
@@ -391,7 +395,9 @@ export default function Home() {
           <section className="home-clients">
             <div className="home-clients__content">
               <div className="container">
-                <h2 className="main__page-title home-clients__title">our clients say</h2>
+                <h2 className="page-title page-title--yellow home-clients__page-title--position">
+                  our clients say
+                </h2>
               </div>
 
               <SliderClients />
@@ -400,16 +406,16 @@ export default function Home() {
 
           <section className="home-wow">
             <div className="home-wow__content container">
-              <h2 className="main__page-title home-wow__title home-wow__title--mobile">
+              <h2 className="page-title page-title--yellow home-wow__page-title home-wow__page-title--mobile">
                 Give Your <br />
                 product that <br />
-                <span className="home-wow__title--pink">Wow</span> Factor
+                <span className="page-title--pink">Wow</span> Factor
               </h2>
               <div className="home-wow__info">
-                <h2 className="main__page-title home-wow__title">
+                <h2 className="page-title page-title--yellow home-wow__page-title">
                   Give Your <br />
                   product that <br />
-                  <span className="home-wow__title--pink">Wow</span> Factor
+                  <span className="page-title--pink">Wow</span> Factor
                 </h2>
 
                 <img
@@ -467,7 +473,7 @@ export default function Home() {
           <section className="home-projects">
             <div className="home-projects__content">
               <div className="container">
-                <h2 className="main__page-title our-clients__title">featured projects </h2>
+                <h2 className="page-title page-title--yellow home-projects__page-title">featured projects </h2>
 
                 <SliderProjects />
               </div>

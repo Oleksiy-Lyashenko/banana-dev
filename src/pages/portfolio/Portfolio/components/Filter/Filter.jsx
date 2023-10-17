@@ -1,15 +1,29 @@
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 export default function Filter({ name }) {
   const [openMenu, setOpenMenu] = useState(false)
+  const popupRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (popupRef.current && !popupRef.current.contains(event.target)) {
+      setOpenMenu(false);
+    }
+  };
 
   const handleMenu = () => {
     setOpenMenu(!openMenu)
   }
 
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="portfolio-top__filter-block__filter">
+    <div className="portfolio-top__filter-block__filter" ref={popupRef}>
       <div className="" onClick={handleMenu}>
         <span className="portfolio-top__filter-block__title">{name}</span>
         <img
@@ -63,7 +77,6 @@ export default function Filter({ name }) {
             />
             <span className="portfolio-top__filter-block__name">java</span>
           </label>
-          
         </div>
       </div>
     </div>

@@ -45,9 +45,9 @@ export default function PocketBook() {
               </li>
             </ul>
 
-            <div className="home-top__text-block pocketbook-top__text-block">
-              <h2 className="home-top__main-text pocketbook-top__main-text">
-                <span className="home-top__main-text--yellow">Pocketbook</span>
+            <div className="pocketbook-top__text-block">
+              <h2 className="page-title-pocketbook pocketbook-top__main-text">
+                <span className="page-title-pocketbook--yellow">Pocketbook</span>
                 <br />
                 store redesign
               </h2>
@@ -112,47 +112,38 @@ export default function PocketBook() {
             />
           </div>
 
-          <img
-            src="./images/clients/pocketbook/bottom_shadow_img.png"
-            alt=""
-            srcset=""
-            className="pocketbook-top__bottom-shadow"
-          />
-
           <div className="home-top__our-client container">
-            <div className="home-top__our-client__content pocketbook-top__info">
-              <div className="pocketbook-top__info">
-                <img
-                  src="./images/top_page/tape/left-tape.svg"
-                  className="home-top__our-client__left-tape"
-                />
-                <img
-                  src="./images/top_page/tape/right-tape.svg"
-                  className="home-top__our-client__right-tape"
-                />
-
-                <div className="home-top__our-client__block-img pocketbook-top__block-info">
-                  <div className="pocketbook-top__info-block">
-                    <span className="pocketbook-top__info-block__type">industry</span>
-                    <span className="pocketbook-top__info-block__description">
-                      Online distribution
-                    </span>
-                  </div>
-                  <div className="pocketbook-top__line"></div>
-                  <div className="pocketbook-top__info-block">
-                    <span className="pocketbook-top__info-block__type">team</span>
-                    <span className="pocketbook-top__info-block__description">5 members</span>
-                  </div>
-                  <div className="pocketbook-top__line"></div>
-                  <div className="pocketbook-top__info-block">
-                    <span className="pocketbook-top__info-block__type">project state</span>
-                    <span className="pocketbook-top__info-block__description">Finalised</span>
-                  </div>
-                  <div className="pocketbook-top__line"></div>
-                  <div className="pocketbook-top__info-block">
-                    <span className="pocketbook-top__info-block__type">country</span>
-                    <span className="pocketbook-top__info-block__description">Swetzerland</span>
-                  </div>
+            <div className="pocketbook-top__info">
+              <img
+                src="./images/top_page/tape/left-tape.svg"
+                className="pocketbook-top__left-tape"
+              />
+              <img
+                src="./images/top_page/tape/right-tape.svg"
+                className="pocketbook-top__right-tape"
+              />
+              <div className="pocketbook-top__block-info">
+                <div className="pocketbook-top__info-block">
+                  <span className="pocketbook-top__info-block__type">industry</span>
+                  <span className="pocketbook-top__info-block__description">
+                    Online <br className="pocketbook-top__br" />
+                    distribution
+                  </span>
+                </div>
+                <div className="pocketbook-top__line"></div>
+                <div className="pocketbook-top__info-block">
+                  <span className="pocketbook-top__info-block__type">team</span>
+                  <span className="pocketbook-top__info-block__description">5 members</span>
+                </div>
+                <div className="pocketbook-top__line"></div>
+                <div className="pocketbook-top__info-block">
+                  <span className="pocketbook-top__info-block__type">project state</span>
+                  <span className="pocketbook-top__info-block__description">Finalised</span>
+                </div>
+                <div className="pocketbook-top__line"></div>
+                <div className="pocketbook-top__info-block">
+                  <span className="pocketbook-top__info-block__type">project state</span>
+                  <span className="pocketbook-top__info-block__description">Finalised</span>
                 </div>
               </div>
             </div>
@@ -163,8 +154,8 @@ export default function PocketBook() {
           <div className="pocketbook-about__content container">
             <div className="pocketbook-about__top">
               <div className="pocketbook-about__block">
-                <h2 className="home-top__main-text pocketbook-about__title">
-                  <span className="home-top__main-text--yellow pocketbook-about__title">
+                <h2 className="page-title-pocketbook pocketbook-about__title">
+                  <span className="page-title-pocketbook--yellow pocketbook-about__title">
                     about project
                   </span>
                 </h2>
@@ -177,10 +168,8 @@ export default function PocketBook() {
               </div>
 
               <div className="pocketbook-about__block">
-                <h2 className="home-top__main-text pocketbook-about__title">
-                  <span className="pocketbook-about__title pocketbook-about__title--pink">
-                    about client
-                  </span>
+                <h2 className="page-title-pocketbook pocketbook-about__title">
+                  <span className="page-title-pocketbook--pink">about client</span>
                 </h2>
                 <p className="home-top__sub-text pocketbook-about__text">
                   Kör Teknologi AS decided to build their first educational platform for Norwegian
@@ -230,7 +219,9 @@ export default function PocketBook() {
 
         <section className="pocketbook-goal">
           <div className="pocketbook-goal__content container">
-            <h2 className="main__page-title pocketbook-goal__title">project goals</h2>
+            <h2 className="page-title-pocketbook page-title-pocketbook--yellow pocketbook-goal__title">
+              project goals
+            </h2>
 
             <div className="pocketbook-goal__main">
               <div className="pocketbook-goal__block">
@@ -307,29 +298,12 @@ export default function PocketBook() {
         <section className="pocketbook-responsive">
           <div className="pocketbook-responsive__content container">
             <div className="pocketbook-responsive__text-block">
-              <h2 className="main__page-title pocketbook-responsive__title">
+              <h2 className="page-title-pocketbook page-title-pocketbook--yellow pocketbook-responsive__title">
                 responsive <br /> design
               </h2>
 
               <div className="pocketbook-responsive__img-block pocketbook-responsive__img-block--mobile">
                 <div className="pocketbook-responsive__block-img">
-                  {/* <div className="pocketbook-responsive__tab-img-block">
-                    <img
-                      src="./images/clients/pocketbook/tab_img.png"
-                      alt=""
-                      srcset=""
-                      className="pocketbook-responsive__tab-img"
-                    />
-                  </div>
-                  <div className="pocketbook-responsive__phone-img-block">
-                    <img
-                      src="./images/clients/pocketbook/phone_responsive_img.png"
-                      alt=""
-                      srcset=""
-                      className="pocketbook-responsive__phone-img"
-                    />
-                  </div> */}
-
                   <img
                     src="./images/clients/pocketbook/responsive_img.svg"
                     alt=""
@@ -339,12 +313,12 @@ export default function PocketBook() {
                 </div>
               </div>
 
-              <div className="what-offer__list">
-                <div className="what-offer__proposal">
+              <div className="pocketbook-responsive__list">
+                <div className="pocketbook-responsive__proposal">
                   <img
                     src="./images/what_offer_page/banan_list.svg"
                     alt=""
-                    className="what-offer__list-img pocketbook-responsive__position-img"
+                    className="pocketbook-responsive__list-img pocketbook-responsive__position-img"
                   />
 
                   <span className="pocketbook-responsive__list-text">
@@ -353,11 +327,11 @@ export default function PocketBook() {
                   </span>
                 </div>
 
-                <div className="what-offer__proposal">
+                <div className="pocketbook-responsive__proposal">
                   <img
                     src="./images/what_offer_page/banan_list.svg"
                     alt=""
-                    className="what-offer__list-img pocketbook-responsive__position-img"
+                    className="pocketbook-responsive__list-img pocketbook-responsive__position-img"
                   />
 
                   <span className="pocketbook-responsive__list-text">
@@ -366,11 +340,11 @@ export default function PocketBook() {
                   </span>
                 </div>
 
-                <div className="what-offer__proposal">
+                <div className="pocketbook-responsive__proposal">
                   <img
                     src="./images/what_offer_page/banan_list.svg"
                     alt=""
-                    className="what-offer__list-img pocketbook-responsive__position-img"
+                    className="pocketbook-responsive__list-img pocketbook-responsive__position-img"
                   />
 
                   <span className="pocketbook-responsive__list-text">
@@ -397,7 +371,7 @@ export default function PocketBook() {
         <section className="pocketbook-branding">
           <div className="pocketbook-branding__content container">
             <div className="pocketbook-about__block pocketbook-branding__top">
-              <h2 className="home-top__main-text home-top__main-text--yellow pocketbook-branding__title">
+              <h2 className="page-title-pocketbook page-title-pocketbook--yellow pocketbook-branding__title">
                 branding
               </h2>
               <p className="home-top__sub-text pocketbook-branding__text">
@@ -656,22 +630,6 @@ export default function PocketBook() {
         <section className="pocketbook-mobile-app">
           <div className="pocketbook-mobile-app__content container">
             <div className="pocketbook-mobile-app__img-block pocketbook-mobile-app__img-block--desktop">
-              {/* <div className="pocketbook-mobile-app__block-img pocketbook-mobile-app__block-img--1">
-                <img
-                  src="./images/clients/pocketbook/mobile_app_img_1.png"
-                  alt=""
-                  srcset=""
-                  className="pocketbook-mobile-app__img"
-                />
-              </div>
-              <div className="pocketbook-mobile-app__block-img pocketbook-mobile-app__block-img--2">
-                <img
-                  src="./images/clients/pocketbook/mobile_app_img_2.png"
-                  alt=""
-                  srcset=""
-                  className="pocketbook-mobile-app__img"
-                />
-              </div> */}
               <img
                 src="./images/clients/pocketbook/mobile_app_img.png"
                 alt=""
@@ -681,26 +639,10 @@ export default function PocketBook() {
             </div>
 
             <div className="pocketbook-mobile-app__text-block">
-              <h2 className="home-top__main-text home-top__main-text--yellow pocketbook-mobile-app__title">
+              <h2 className="page-title-pocketbook page-title-pocketbook--yellow pocketbook-mobile-app__title">
                 mobile app
               </h2>
               <div className="pocketbook-mobile-app__img-block pocketbook-mobile-app__img-block--mobile">
-                {/* <div className="pocketbook-mobile-app__block-img pocketbook-mobile-app__block-img--1">
-                  <img
-                    src="./images/clients/pocketbook/mobile_app_img_1.png"
-                    alt=""
-                    srcset=""
-                    className="pocketbook-mobile-app__img"
-                  />
-                </div>
-                <div className="pocketbook-mobile-app__block-img pocketbook-mobile-app__block-img--2">
-                  <img
-                    src="./images/clients/pocketbook/mobile_app_img_2.png"
-                    alt=""
-                    srcset=""
-                    className="pocketbook-mobile-app__img"
-                  />
-                </div> */}
                 <img
                   src="./images/clients/pocketbook/mobile_app_img.svg"
                   alt=""
@@ -726,7 +668,7 @@ export default function PocketBook() {
         <section className="pocketbook-result">
           <div className="pocketbook-result__content container">
             <div className="pocketbook-result__text-content">
-              <h2 className="home-top__main-text pocketbook-result__title home-top__main-text--yellow">
+              <h2 className="page-title-pocketbook page-title-pocketbook--yellow pocketbook-result__title">
                 result
               </h2>
               <img
@@ -735,7 +677,7 @@ export default function PocketBook() {
                 srcset=""
                 className="pocketbook-result__img pocketbook-result__img--mobile"
               />
-              <p className="home-top__sub-text pocketbook-result__text-block">
+              <p className="pocketbook-result__text-block">
                 The redesigned online store played a pivotal role in expanding the company's
                 presence across multiple countries. By implementing a modern and user-friendly
                 interface, we created a seamless shopping experience for customers worldwide.
@@ -772,7 +714,7 @@ export default function PocketBook() {
             </div>
 
             <div className="pocketbook-review__text-block">
-              <h2 className="home-top__main-text home-top__main-text--yellow pocketbook-review__title pocketbook-review__title--position">
+              <h2 className="page-title-pocketbook page-title-pocketbook--yellow pocketbook-review__title pocketbook-review__title--position">
                 client’s <br /> review
               </h2>
 
@@ -788,7 +730,7 @@ export default function PocketBook() {
               <span className="pocketbook-review__name">Mitchel Gronyx</span>
               <span className="pocketbook-review__position">// CEO of Pocketbook</span>
 
-              <p className="home-top__sub-text pocketbook-review__text-block">
+              <p className="pocketbook-review__sub-text">
                 I am absolutely blown away by the exceptional work done by BANAN.DEV. The redesign
                 of their online store and the development of their mobile app have completely
                 transformed my shopping experience. Not only did they create a visually stunning and

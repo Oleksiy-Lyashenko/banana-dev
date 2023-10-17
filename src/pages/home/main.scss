@@ -1,6 +1,50 @@
 @import "../../styles/utils/vars";
 @import "../../styles/utils/mixins";
 
+.page-title {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+
+
+  font-family: $sugo-pro-display;
+  color: $white-text-color;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px; /* 100% */
+  letter-spacing: 3.12px;
+  text-transform: uppercase;
+
+  text-shadow: -1px -1px 0px #000000,
+    1.5px 1.5px 0px #000000,
+    2px 2px 0px #808080;
+
+  @include onBigTablet {
+    font-size: 70px;
+    line-height: 70px; /* 100% */
+    letter-spacing: 4.2px;
+
+  }
+
+  @include onSmallDesktop {
+    font-size: 5.6rem;
+    line-height: 6rem;
+    text-shadow: -1px -1px 0px #000000,
+      1.5px 1.5px 0px #000000,
+      2px 2px 0px #808080;
+  }
+  
+
+  &--yellow {
+    color: $main-yellow-text-color;
+  }
+
+  &--pink {
+      color: $pink2-text-color;
+  }
+}
+
 .home-top {
   z-index: 1;
 
@@ -22,7 +66,7 @@
     position: relative;
     z-index: 2;
 
-    box-shadow: 15px 70px 60px 45px #000000;
+    box-shadow: 0px 30px 80px 80px #000000;
 
     @include onTablet {
       margin-top: 5rem;
@@ -34,27 +78,23 @@
     }
   }
 
-  &__main-text {
-    margin: 0;
+  &__page-title {
+    margin-bottom: 44px;
+    &--position {
+      margin-bottom: 44px;
 
-    position: relative;
-    display: inline-block;
+      @include onBigTablet {
+        margin-bottom: 50px;
+      }
+    }
 
-    margin-bottom: 30px;
+    @include onBigTablet {
+      font-size: 70px;
+      line-height: 70px; /* 100% */
+      letter-spacing: 4.2px;
 
-    font-family: $sugo-pro-display;
-    color: $white-text-color;
-    font-size: 3.5rem;
-    font-style: normal;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 4.2rem;
-    letter-spacing: 6.6px;
-    text-transform: uppercase;
-
-    text-shadow: -1px -1px 0px #000000,
-      1.5px 1.5px 0px #000000,
-      2px 2px 0px #808080;
+      margin-bottom: 50px;
+    }
 
     @include onSmallDesktop {
       font-size: 5.6rem;
@@ -71,22 +111,35 @@
   }
 
   &__sub-text {
+    margin: 0;
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 
     font-family: $fira-code;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 1.2px;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.6px;
     color: $white-text-color;
+
+    @include onBigTablet {
+      font-size: 18px;
+      line-height: 30px; /* 166.667% */
+      letter-spacing: 0.72px;
+    }
+
+    @include onSmallDesktop {
+      font-size: 18px;
+      line-height: 30px; /* 150% */
+      letter-spacing: 1px;
+    }
   }
 
   &__button {
     padding-top: 4px;
-    width: 365px;
-    height: 80px;
+    width: 350px;
+    height: 70px;
 
     background: url('../../images/button.svg');
     background-size: cover;
@@ -97,13 +150,27 @@
     font-family: $fira-code;
     color: #000;
     text-align: center;
-    font-size: 22px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 0.44px;
+    letter-spacing: 0.3px;
 
     cursor: pointer;
+
+    @include onBigTablet {
+      font-size: 18px;
+      letter-spacing: 0.36px;
+      width: 300px;
+      height: 74px;
+    }
+
+    @include onSmallDesktop {
+      width: 365px;
+      height: 82px;
+      font-size: 22px;
+      letter-spacing: 0.36px;
+    }
 
     &:hover {
       color: $white-text-color;
@@ -111,8 +178,7 @@
       // height: 80px;
 
       background: url('../../images/button_hover.svg');
-      background-size: cover;
-      background-position: center;
+      background-size: 100% 100%;
     }
   }
 
@@ -203,31 +269,28 @@
     position: relative;
     margin-top: -1rem;
 
-    // padding: 1.5rem 1.2rem;
-    // background-color: $gray-color;
-
-    padding: 20px 20px;
-    // width: 100%;
+    padding: 50px 20px;
     height: max-content;
-    background-image: url('../../images/project_info_img.png');
+    background-image: url('../../images/project_info_mobile_img.png');
     background-size: 100% 100%;
-    background-repeat: no-repeat;
 
     &::after {
       z-index: 5;
       content: '';
       position: absolute;
-      top: 0;
+      top: 10px;
       left: 0;
       display: block;
       width: 100%;
       height: 100%;
-      box-shadow: 1rem -50px 40px 20px #000000;
+      box-shadow: 0 -50px 55px 30px #000000;
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
     }
 
     @include onTablet {
       margin: 0 1rem;
-      margin-top: -8rem;
+      // margin-top: -8rem;
       position: relative;
       z-index: 10;
       
@@ -236,7 +299,7 @@
         z-index: 1;
         content: '';
         position: absolute;
-        top: 0;
+        top: 10px;
         left: 0;
         display: block;
         width: 100%;
@@ -248,6 +311,23 @@
     @include onSmallDesktop {
       padding: 2.5rem 4.5rem;
       margin: 0;
+    }
+
+    &--pocketbook {
+      margin-top: 30px;
+      box-shadow: none;
+
+      &::after {
+        box-shadow: none;
+      }
+
+      @include onBigTablet {
+        margin-top: 75px;
+      }
+
+      @include onSmallDesktop {
+        margin-top: 150px;
+      }
     }
   }
 
@@ -329,17 +409,18 @@
 .home-money {
   &__content {
     box-sizing: border-box;
-    padding-top: 10rem;
+    padding-top: 100px;
     position: relative;
     overflow: hidden;
     z-index: -100px;
 
-    @include onTablet {
+    @include onBigTablet {
       padding-top: 200px;
     }
 
     @include onDesktop {
       overflow: visible;
+      padding-top: 300px;
     }
   }
 
@@ -395,10 +476,26 @@
     }
   }
 
+  &__page-title {
+    &--position {
+      margin-bottom: 70px;
+
+      @include onBigTablet {
+        margin-bottom: 100px;
+      }
+    }
+  }
+
   &__title {
-    z-index: 2;
-    position: relative;
-    margin-bottom: 4rem;
+    color: $main-yellow-text-color;
+    font-family: $sugo-pro-display;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px; /* 103.846% */
+    letter-spacing: 3.12px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
 
     @include onTablet {
       margin-bottom: 6rem;
@@ -410,9 +507,10 @@
   }
 
   &__img {
+    box-sizing: border-box;
     max-width: 25rem;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 
     &--2 {
       height: 27rem;
@@ -439,6 +537,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 
 
     &--1 {
@@ -500,11 +599,27 @@
 
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1.2rem;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 1.2px;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.6px;
+
+    @include onBigTablet {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: 0.72px;
+    }
+
+    @include onSmallDesktop {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 150% */
+      letter-spacing: 1.2px;
+    }
 
     &--2 {
 
@@ -515,11 +630,10 @@
   }
 
   &__button {
-    padding: 1.5rem 4.5rem;
-
+    width: 365px;
+    height: 82px;
     background: url('../../images/button.svg');
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
 
     border: none;
 
@@ -536,22 +650,37 @@
 
     &:hover {
       color: $white-text-color;
-      padding: 1.5rem 4.5rem;
+      // padding: 1.5rem 4.5rem;
 
       background: url('../../images/button_hover.svg');
-      background-size: cover;
-      background-position: center;
+      background-size: 100% 100%;
+    }
+
+    @include onBigTablet {
+      width: 300px;
+      height: 74px;
+
+      font-size: 18px;
+      letter-spacing: 0.36px;
+    }
+
+    @include onSmallDesktop {
+      width: 365px;
+      height: 82px;
+
+      font-size: 22px;
+      letter-spacing: 0.44px;
     }
 
     &--position {
       display: block;
       margin-top: -5rem;
 
-      @include onTablet {
+      @include onBigTablet {
         display: block;
 
         position: absolute;
-        bottom: 4rem;
+        bottom: 35px;
         right: 0;
       }
 
@@ -565,19 +694,22 @@
 
 .home-offer {
   &__content {
-    padding-top: 10rem;
+    padding-top: 160px;
 
-    @include onTablet {
-      padding-top: 200px;
+    @include onBigTablet {
+      padding-top: 230px;
+    }
+
+    @include onDesktop {
+      padding-top: 250px;
     }
   }
 
   &__title {
-    margin-bottom: 4rem;
+    margin-bottom: 25px;
 
-    @include onTablet {
-      padding-left: 2rem;
-      margin-bottom: 6rem;
+    @include onBigTablet {
+      margin-bottom: 50px;
     }
   }
 
@@ -588,10 +720,7 @@
     align-items: center;
     row-gap: 5rem;
 
-    @include onTablet {
-      // display: grid;
-      // grid-template-columns: (3, 1fr);
-      // column-gap: 10rem;
+    @include onBigTablet {
       flex-direction: row;
       column-gap: 2rem;
       justify-content: space-between;
@@ -631,9 +760,9 @@
     max-width: 16rem;
     width: 100%;
     align-self: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 32px;
 
-    @include onTablet {
+    @include onBigTablet {
       height: 10rem;
     }
 
@@ -644,48 +773,53 @@
 
   &__card-title {
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 16px;
 
     color: $main-yellow-text-color;
     font-family: $fira-code;
-    font-size: 1.3rem;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.3rem; /* 100% */
-    letter-spacing: 1.8px;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: 0.72px;
 
-    @include onTablet {
-      font-size: .9rem;
-      line-height: .9rem; /* 100% */
+    @include onBigTablet {
+      font-size: 18px;
+      line-height: 32px; /* 177.778% */
+      letter-spacing: 0.72px;
     }
 
-    @include onDesktop {
-      font-size: 1.6rem;
-      line-height: 1.6rem; /* 150% */
+    @include onSmallDesktop {
+      margin-bottom: 40px;
+
+      font-size: 26px;
+      line-height: 30px; /* 100% */
+      letter-spacing: 1.8px;
     }
   }
 
   &__card-info {
-    max-width: 350px;
+    max-width: 380px;
     margin: 0;
     margin-bottom: 1.6rem;
 
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1rem;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.6rem; /* 150% */
-    letter-spacing: 1.2px;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.6px;
 
-    @include onTablet {
+    @include onBigTablet {
       font-size: .9rem;
       line-height: 1.3rem; /* 150% */
     }
 
     @include onDesktop {
-      font-size: 1.2rem;
-      line-height: 1.8rem; /* 150% */
+      font-size: 18px;
+      line-height: 30px; /* 150% */
+      letter-spacing: 1.2px;
     }
   }
 
@@ -710,19 +844,18 @@
   &__list-text {
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1.1rem;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.1rem; /* 150% */
-    letter-spacing: 1.2px;
+    line-height: 30px; /* 200% */
+    letter-spacing: 0.6px;
 
-    @include onTablet {
-      font-size: .9rem;
-      line-height: 1.2rem; /* 150% */
-    }
-
-    @include onDesktop {
-      font-size: 1.2rem;
+    @include onSmallDesktop {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 150% */
+      letter-spacing: 1.2px;
     }
   }
 }
@@ -739,13 +872,17 @@
     }
   }
 
-  &__title {
-    margin-bottom: 2rem;
+  &__page-title {
+    &--position {
+      margin-bottom: 35px;
 
-    @include onTablet {
-      text-align: right;
-      margin-right: 2rem;
-      margin-bottom: 5rem;
+      @include onBigTablet {
+        margin-bottom: 50px;
+      }
+
+      @include onSmallDesktop {
+        margin-bottom: 64px;
+      }
     }
   }
 
@@ -753,42 +890,66 @@
     display: flex;
     width: 100%;
     height: 100%;
-    column-gap: 2rem;
     margin-bottom: 3rem;
 
     position: relative;
+    column-gap: 20px;
 
     transition: translate;
     transition-property: transform;
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
+
+    @include onTablet {
+      column-gap: 0;
+    }
   }
 
   &__column {
     flex: 1 0 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 12px;
+
+    margin-bottom: 26px;
 
     @include onTablet {
       flex: content;
+      row-gap: 24px;
+      
+      margin-bottom: 55px;
 
+    }
+
+    @include onSmallDesktop {
+      margin-bottom: 72px;
     }
   }
 
   &__card {
-    background: url(../../images/our_page_bg_img.svg);
-    background-size: contain;
+    box-sizing: border-box;
+    height: max-content;
+    background: url(../../images/our_page_mobile_bg_img.png);
+    // background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: 100% 100%;
+
+    padding: 36px;
 
 
     @include onTablet {
-      width: 32rem;
-      padding: 1.5rem 3.5rem;
+      width: 600px;
+      padding: 30px 60px;
+
+      background: url(../../images/our_page_bg_img.png);
+    // background-size: contain;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
 
-    padding: 1rem 1.5rem;
+    @include onSmallDesktop {
+      // width: 370px;
+    }
   }
 
   &__top {
@@ -816,8 +977,9 @@
     letter-spacing: 1.2px;
 
     @include onDesktop {
-      font-size: 1rem;
+      font-size: 18px;
       line-height: 27px; /* 150% */
+      letter-spacing: 1.2px;
     }
   }
 
@@ -850,7 +1012,7 @@
   }
 
   &__position {
-    color: $white-text-color;
+    color: $pink-text-color;
     font-family: $fira-code;
     font-size: 1rem;
     font-style: normal;
@@ -859,8 +1021,11 @@
     letter-spacing: 1.2px;
 
     @include onDesktop {
-      font-size: 1.2rem;
-      line-height: 1.3rem; /* 125% */
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 136.364% */
+      letter-spacing: 1.32px;
     }
   }
 
@@ -888,11 +1053,12 @@
   &__bottom {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 24px;
 
     @include onTablet {
       flex-direction: row;
       justify-content: space-between;
+      margin-left: 35px;
     }
   }
 
@@ -940,7 +1106,7 @@
 
 .home-wow {
   &__content {
-    padding-top: 10rem;
+    padding-top: 114px;
 
     display: flex;
     flex-direction: column;
@@ -948,12 +1114,11 @@
     justify-content: center;
 
     @include onTablet {
-      padding-top: 250px;
-
-
+      padding-top: 170px;
     }
 
     @include onSmallDesktop {
+      padding-top: 250px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -973,7 +1138,7 @@
     }
   }
 
-  &__title {
+  &__page-title {
     margin-right: 0;
     margin-bottom: 3rem;
     justify-self: flex-start;
@@ -1070,7 +1235,8 @@
 
     @include onDesktop {
       max-width: 45rem;
-      // margin-right: -10rem;
+      // width: 100%;
+      margin-right: -40px;
     }
   }
 
@@ -1090,7 +1256,21 @@
 }
 
 .home-projects {
-    &__content {
+  &__content {
     padding-top: 10rem;
+  }
+
+  &__page-title {
+    display: block;
+    text-align: right;
+    margin-bottom: 50px;
+
+    @include onBigTablet {
+      margin-bottom: 50px;
+    }
+
+    @include onSmallDesktop {
+      margin-bottom: 80px;
+    }
   }
 }

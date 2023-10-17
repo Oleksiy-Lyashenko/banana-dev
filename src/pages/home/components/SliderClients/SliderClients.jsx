@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import { useState } from 'react';
 import '../../main.scss'
+import { NavLink } from 'react-router-dom';
 
 let REVIEW_WIDTH = window.screen.width;
 
@@ -316,7 +317,9 @@ export const SliderClients = () => {
               />
             )}
           </div>
-          <button className="home-clients__button">all reviews</button>
+          <NavLink to="/reviews">
+            <button className="home-clients__button">all reviews</button>
+          </NavLink>
         </div>
       </div>
     </>

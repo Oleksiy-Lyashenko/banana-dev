@@ -31,37 +31,21 @@
   }
 
   &__block {
-    // display: grid;
-    // grid-template-columns: repeat(1, 1fr);
-    // grid-template-rows: repeat(4, 1fr);
-
-    // row-gap: 3rem;
-
-    // padding-top: 4rem;
-
-    // @include onTablet {
-    //   grid-template-columns: repeat(2, 1fr);
-    //   grid-template-rows: repeat(2, 1fr);
-    //   row-gap: 3rem;
-
-    //   padding-top: 6rem;
-    //   padding-bottom: 4rem;
-    // }
-
-    // @include onSmallDesktop {
-    //   grid-template-columns: repeat(4, 1fr);
-    //   grid-template-rows: none;
-    // }
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
     row-gap: 2rem;
     padding: 4rem 1rem;
 
-    @include onTablet {
-      flex-direction: row;
+    @include onBigTablet {
+      grid-template-columns: repeat(4, 1fr);
     }
+  }
+
+  &__list-block {
+    justify-self: flex-end;
   }
 
   &__list {
@@ -88,46 +72,167 @@
       font-size: 1.3rem;
       line-height: 2rem;
     }
+
+    &--logo {
+      padding: 0;
+      margin-top: -2px;
+      row-gap: 0;
+      list-style: none;
+
+      @include onBigTablet {
+        // margin-top: -10px;
+      }
+    }
+
+    &--position-2 {
+      margin-left: 40px;
+    }
+  }
+
+  &__img {
+    width: 150px;
+
+    @include onBigTablet {
+      width: 170px;
+    }
+
+    @include onDesktop {
+      width: 240px;
+    }
+  }
+
+  &__text {
+    display: block;
+
+    margin-bottom: 23px;
+
+    color: $white-text-color;
+    font-family: $fira-code;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 250% */
+    letter-spacing: 0.48px;
+
+    @include onBigTablet {
+      font-size: 14px;
+      letter-spacing: 0.84px;
+    }
+
+    @include onSmallDesktop {
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.8px;
+    }
+  }
+
+  &__button {
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 2px solid $main-yellow-text-color;
+
+    color: $main-yellow-text-color;
+    text-align: center;
+    font-family: $fira-code;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $main-yellow-text-color;
+      color: $white-text-color;
+    }
+
+    @include onBigTablet {
+      padding: 15px 30px;
+      font-size: 15px;
+    }
+
+    @include onSmallDesktop {
+      padding: 17px 48px;
+
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.4px;
+
+    }
   }
 
   &__list-title {
     color: $main-yellow-text-color;
+
+    font-family: $fira-code;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 40px; /* 250% */
+    letter-spacing: 0.64px;
+
+    @include onBigTablet {
+      font-size: 18px;
+      line-height: 40px; /* 222.222% */
+      letter-spacing: 1.08px;
+    }
+
+    @include onDesktop {
+      font-size: 26px;
+      line-height: 58px; /* 223.077% */
+      letter-spacing: 1.56px;
+    }
   }
 
   &__link {
-    color: $white-text-color;
     text-decoration: none;
-    font-weight: 500;
-  }
-
-  &__copyright {
-    margin: 0;
-
-    color: $white-text-color;
-    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Fira Code;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.5rem;
-    letter-spacing: 1.44px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
 
-    @include onTablet {
-      font-size: 1.5rem;
-      line-height: 2.1rem;
+    @include onBigTablet {
+      font-size: 16px;
+      letter-spacing: 0.96px;
     }
 
-    // @include onSmallDesktop {
-    //   font-size: 24px;
-    //   line-height: 42px;
-    //   letter-spacing: 1.44px;
-    // }
+    @include onDesktop {
+      font-size: 24px;
+      line-height: 58px;
+      letter-spacing: 1.44px;
+    }
   }
 
-  &__logo {
-    width: 13rem;
+  &__bottom-text {
+    padding: 19px 0;
+    margin: 0 auto;
 
-    @include onTablet {
-      width: 15rem;
+    color: #868686;
+    font-family: $fira-code;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 216.667% */
+    letter-spacing: 0.72px;
+
+    @include onBigTablet {
+      font-size: 16px;
+      line-height: 42px; /* 262.5% */
+      letter-spacing: 0.96px;
+    }
+    
+    @include onDesktop {
+      font-size: 24px;
+      letter-spacing: 1.44px;
     }
   }
 }

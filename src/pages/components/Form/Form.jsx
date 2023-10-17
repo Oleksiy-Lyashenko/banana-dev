@@ -99,85 +99,89 @@ export const Form = ({ title, titleClass }) => {
 
   return (
     <div className="form-page">
-      <div className="form-page__content container">
-        <div className={`form-page__title ${titleClass}`}>{title}</div>
+      <div className="container">
+        <div className="form-page__content">
+          {/* <div className="form-page__block"> */}
+          <div className={`form-page__title ${titleClass}`}>{title}</div>
 
-        <img src="./images/quote_page/banan_icon.svg" alt="" className="form-page__banan-img" />
+          <img src="./images/quote_page/banan_icon.svg" alt="" className="form-page__banan-img" />
 
-        <form onSubmit={sendEmail} className="form-page__block">
-          <div className="form-page__form">
-            <div className="form-page__field">
-              <label className="form-page__label">First Name</label>
-              <input
-                type="text"
-                name="user_first_name"
-                value={quoteInfo['user_first_name']}
-                className={classNames('form-page__input', {
-                  'form-page__input--danger': errorMessage['user_first_name'],
-                })}
-                onChange={handleInfoChange}
-              />
+          <form onSubmit={sendEmail} className="form-page__block">
+            <div className="form-page__form">
+              <div className="form-page__field">
+                <label className="form-page__label">First Name</label>
+                <input
+                  type="text"
+                  name="user_first_name"
+                  value={quoteInfo['user_first_name']}
+                  className={classNames('form-page__input', {
+                    'form-page__input--danger': errorMessage['user_first_name'],
+                  })}
+                  onChange={handleInfoChange}
+                />
+              </div>
+
+              <div className="form-page__field">
+                <label className="form-page__label">Last Name</label>
+                <input
+                  type="text"
+                  name="user_last_name"
+                  value={quoteInfo['user_last_name']}
+                  className={classNames('form-page__input', {
+                    'form-page__input--danger': errorMessage['user_last_name'],
+                  })}
+                  onChange={handleInfoChange}
+                />
+              </div>
+
+              <div className="form-page__field">
+                <label className="form-page__label">Phone number</label>
+                <input
+                  type="phone"
+                  name="user_phone"
+                  value={quoteInfo['user_phone']}
+                  className={classNames('form-page__input', {
+                    'form-page__input--danger': errorMessage['user_phone'],
+                  })}
+                  onChange={handleInfoChange}
+                />
+              </div>
+
+              <div className="form-page__field">
+                <label className="form-page__label">Email address</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  value={quoteInfo['user_email']}
+                  className={classNames('form-page__input', {
+                    'form-page__input--danger': errorMessage['user_email'],
+                  })}
+                  onChange={handleInfoChange}
+                />
+              </div>
+
+              <div className="form-page__field form-page__field--description form-page__field--position-3-1_2">
+                <label className="form-page__label form-page__label--description">describe your challenge</label>
+                <textarea
+                  name="message"
+                  value={quoteInfo['message']}
+                  className={classNames('form-page__input', {
+                    'form-page__input--danger': errorMessage['message'],
+                  })}
+                  rows="1"
+                  onChange={handleInfoChange}
+                />
+              </div>
             </div>
 
-            <div className="form-page__field">
-              <label className="form-page__label">Last Name</label>
-              <input
-                type="text"
-                name="user_last_name"
-                value={quoteInfo['user_last_name']}
-                className={classNames('form-page__input', {
-                  'form-page__input--danger': errorMessage['user_last_name'],
-                })}
-                onChange={handleInfoChange}
-              />
-            </div>
+            {proudMessage && <span className="form-page__proud">Proud of you</span>}
 
-            <div className="form-page__field">
-              <label className="form-page__label">Phone number</label>
-              <input
-                type="phone"
-                name="user_phone"
-                value={quoteInfo['user_phone']}
-                className={classNames('form-page__input', {
-                  'form-page__input--danger': errorMessage['user_phone'],
-                })}
-                onChange={handleInfoChange}
-              />
-            </div>
-
-            <div className="form-page__field">
-              <label className="form-page__label">Email address</label>
-              <input
-                type="email"
-                name="user_email"
-                value={quoteInfo['user_email']}
-                className={classNames('form-page__input', {
-                  'form-page__input--danger': errorMessage['user_email'],
-                })}
-                onChange={handleInfoChange}
-              />
-            </div>
-
-            <div className="form-page__field form-page__field--position-3-1_2">
-              <label className="form-page__label">describe your challenge</label>
-              <textarea
-                name="message"
-                value={quoteInfo['message']}
-                className={classNames('form-page__input', {
-                  'form-page__input--danger': errorMessage['message'],
-                })}
-                rows="1"
-                onChange={handleInfoChange}
-              />
-            </div>
-          </div>
-
-          {proudMessage && <span className="form-page__proud">Proud of you</span>}
-
-          <button type="submit" className="form-page__button">
-            Submit
-          </button>
-        </form>
+            <button type="submit" className="form-page__button">
+              Submit
+            </button>
+          </form>
+          {/* </div> */}
+        </div>
       </div>
     </div>
   );

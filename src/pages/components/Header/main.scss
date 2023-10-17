@@ -179,7 +179,7 @@
   overflow-y: auto;
 
   @include onTablet {
-    width: 380px;
+    width: 420px;
   }
 
   @include onSmallDesktop {
@@ -199,6 +199,7 @@
   &__content {
     block-size: border-box;
     padding: 24px;
+    padding-top: 0;
     justify-content: space-between;
     height: 100%;
 
@@ -206,7 +207,7 @@
     flex-direction: column;
 
     @include onTablet {
-      padding: 24px 32px;
+      padding: 24px 0;
     }
   }
 
@@ -234,6 +235,10 @@
     line-height: 30px; /* 107.143% */
     letter-spacing: 0.56px;
     text-decoration: none;
+  }
+
+  &__contact-block {
+    align-self: center;
   }
 
   &__text-block {

@@ -9,24 +9,36 @@
   }
 
   &__content {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 3rem 2rem;
+    // width: 100%;
+    // box-sizing: border-box;
+    padding: 50px 30px;
 
-    background-image: url('../../../images/form_bg_img.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../../../images/form_bg_img.png');
+    // background-position: center;
+    // background-repeat: no-repeat;
+    background-size: 100% 100%;
 
     position: relative;
 
+    @include onTablet {
+      padding: 50px 45px;
+    }
+
+    @include onBigTablet {
+      padding: 50px 55px;
+    }
+
     @include onSmallDesktop {
-      padding: 6rem 9rem;
+      padding: 55px 85px;
+    }
+
+    @include onDesktop {
+      padding: 90px 140px;
     }
   }
 
   &__title {
-    margin-bottom: 4rem;
+    margin-bottom: 25px;
 
     color: $pink-text-color;
     text-align: left;
@@ -42,10 +54,19 @@
       color: $pink2-text-color;
     }
 
-    @include onSmallDesktop {
-      font-size: 4.5rem;
-      line-height: 6rem;
+    @include onTablet {
+      margin-bottom: 25px;
+    }
+
+    @include onDesktop {
+      font-size: 84px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100px; /* 119.048% */
       letter-spacing: 5.04px;
+      text-transform: uppercase;
+
+      margin-bottom: 65px;
     }
   }
 
@@ -79,8 +100,9 @@
       grid-template-rows: repeat(3, auto);
     }
 
-    @include onSmallDesktop {
+    @include onDesktop {
       row-gap: 3rem;
+      margin-bottom: 40px;
     }
   }
 
@@ -94,8 +116,12 @@
     letter-spacing: 1.44px;
     text-transform: lowercase;
 
-    @include onSmallDesktop {
-      font-size: 1.3rem;
+    @include onDesktop {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.44px;
     }
 
     &--position-3-1_2 {
@@ -120,6 +146,10 @@
       width: 10px;
       height: 10px;
       background: url('../../../images/star.svg')
+    }
+
+    &--description {
+      margin-bottom: 35px;
     }
   }
 
@@ -168,7 +198,6 @@
   }
 
   &__button {
-    margin-top: 20px;
     align-self: center;
     padding: 1.35rem 7.2rem;
 

@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 let REVIEW_WIDTH = window.screen.width;
 
 if (window.screen.width >= 1065) {
-  REVIEW_WIDTH = 680;
+  REVIEW_WIDTH = 850;
 }
 
 export const SliderProjects = () => {
@@ -32,7 +32,7 @@ export const SliderProjects = () => {
   return (
     <>
       <div
-        className="slider-projects container"
+        className="slider-projects"
         style={{
           transform: `translateX(${offset}px)`,
         }}>
@@ -41,7 +41,7 @@ export const SliderProjects = () => {
             <h4 className="slider-projects__type-info">Mobile application</h4>
 
             <img
-              src="./images/clients/pocketbook/logo.svg"
+              src="./images/clients/pocketbook/logo.png"
               alt=""
               className="slider-projects__company-img"
             />
@@ -49,13 +49,11 @@ export const SliderProjects = () => {
             <div className="slider-projects__bottom">
               <div className="slider-projects__direction">Business</div>
 
-              <div className="slider-projects__direction">Business</div>
+              <div className="slider-projects__direction">Redesign</div>
 
-              <div className="slider-projects__direction">Business</div>
+              <div className="slider-projects__direction">Web development</div>
 
-              <div className="slider-projects__direction">Business</div>
-
-              <div className="slider-projects__direction">Business</div>
+              <div className="slider-projects__direction">E-commerce</div>
             </div>
           </div>
         </NavLink>
@@ -73,13 +71,11 @@ export const SliderProjects = () => {
             <div className="slider-projects__bottom">
               <div className="slider-projects__direction">Business</div>
 
-              <div className="slider-projects__direction">Business</div>
+              <div className="slider-projects__direction">Redesign</div>
 
-              <div className="slider-projects__direction">Business</div>
+              <div className="slider-projects__direction">Web development</div>
 
-              <div className="slider-projects__direction">Business</div>
-
-              <div className="slider-projects__direction">Business</div>
+              <div className="slider-projects__direction">E-commerce</div>
             </div>
           </div>
         </div>
@@ -97,19 +93,17 @@ export const SliderProjects = () => {
             <div className="slider-projects__bottom">
               <div className="slider-projects__direction">Business</div>
 
-              <div className="slider-projects__direction">Business</div>
+              <div className="slider-projects__direction">Redesign</div>
 
-              <div className="slider-projects__direction">Business</div>
+              <div className="slider-projects__direction">Web development</div>
 
-              <div className="slider-projects__direction">Business</div>
-
-              <div className="slider-projects__direction">Business</div>
+              <div className="slider-projects__direction">E-commerce</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container">
+      <div className="">
         <div className="home-clients__bottom">
           <div className="home-clients__arrow">
             {offset === 0 ? (
@@ -144,7 +138,9 @@ export const SliderProjects = () => {
               />
             )}
           </div>
-          <button className="home-clients__button">all projects</button>
+          <NavLink to="/portfolio">
+            <button className="home-clients__button">all projects</button>
+          </NavLink>
         </div>
       </div>
     </>
