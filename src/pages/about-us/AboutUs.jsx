@@ -37,7 +37,7 @@ export default function AboutUs() {
                 <h2 className="page-title-about-us page-title-about-us--yellow about-us-top__main-text--position">
                   about us
                 </h2>
-                <p className="home-top__sub-text about-us-top__sub-text">
+                <p className="about-us-top__sub-text">
                   At Banan.dev, we take pride in our reputation as a top-tier web studio that has
                   truly made its mark in the market. We have consistently delivered outstanding
                   website and mobile app development services, cementing our position as a trusted
@@ -125,7 +125,7 @@ export default function AboutUs() {
 
         <section className="about-us-main">
           <div className="about-us-main__content container">
-            <h2 className="home-top__main-text home-top__main-text--yellow about-us-top__main-text">
+            <h2 className="page-title-about-us page-title-about-us--yellow about-us-main__main-text">
               our offices
             </h2>
 
@@ -193,6 +193,15 @@ export default function AboutUs() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="about-us-main__img">
+              <img
+                src="./images/about-us/world_mobile_img.svg"
+                alt=""
+                srcset=""
+                className="about-us-main__world-img--mobile"
+              />
             </div>
 
             <div className="about-us-main__img">

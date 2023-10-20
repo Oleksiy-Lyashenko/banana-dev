@@ -9,7 +9,7 @@ export const Footer = () => {
           <div className="footer__block container">
             <ul className="footer__list--logo">
               <li className="footer__item">
-                <NavLink to="/">
+                <NavLink to="/" className="footer__img-block">
                   <img
                     src="./images/footer_page/footer_logo.svg"
                     alt=""

@@ -14,10 +14,17 @@
     height: 100%;
     width: 100%;
 
-    background: url('../../../images/footer__bg.png');
+    background: url('../../../images/footer_mobile_bg.svg');
     background-size: cover;
     background-repeat: repeat;
     background-position: top;
+
+    @include onBigTablet {
+      background: url('../../../images/footer_bg.svg');
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: top;
+    }
   }
 
   &__bottom {
@@ -40,7 +47,9 @@
     padding: 4rem 1rem;
 
     @include onBigTablet {
-      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
@@ -64,28 +73,33 @@
     @include onTablet {
       font-size: 1rem;
       letter-spacing: 0.96px;
+      row-gap: 3.5px;
     }
 
     @include onSmallDesktop {
       align-items: flex-start;
-      row-gap: 15px;
       font-size: 1.3rem;
       line-height: 2rem;
     }
 
     &--logo {
       padding: 0;
-      margin-top: -2px;
+      margin-top: -5px;
       row-gap: 0;
       list-style: none;
 
       @include onBigTablet {
-        // margin-top: -10px;
+        margin-top: -10px;
       }
     }
 
     &--position-2 {
       margin-left: 40px;
+
+      @include onBigTablet {
+        margin-left: 0;
+        column-gap: 20px;
+      }
     }
   }
 
@@ -101,9 +115,17 @@
     }
   }
 
+  &__img-block {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+  }
+
   &__text {
     display: block;
 
+    margin-top: -10px;
     margin-bottom: 23px;
 
     color: $white-text-color;
