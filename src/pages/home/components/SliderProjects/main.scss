@@ -52,7 +52,7 @@
     }
 
     @include onDesktop {
-      padding-top: 100px;
+      padding: 100px 0;
     }
   }
 
@@ -69,7 +69,15 @@
     letter-spacing: 1.44px;
     text-transform: uppercase;
 
-    @include onBigTablet {
+    @include onDesktop {
+      margin-bottom: 120px;
+
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.44px;
+      text-transform: uppercase;
     }
   }
 
@@ -79,6 +87,11 @@
 
     @include onTablet {
       margin-bottom: 5rem;
+    }
+
+    @include onDesktop {
+      width: 330px;
+      margin-bottom: 120px;
     }
   }
 
@@ -108,7 +121,20 @@
     letter-spacing: 0.6px;
 
     @include onTablet {
-      font-size: .9rem;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.9px;
+    }
+
+    @include onDesktop {
+      padding: 10px 14px;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.26px;
     }
   }
 }

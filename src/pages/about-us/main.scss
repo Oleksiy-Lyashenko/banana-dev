@@ -27,7 +27,7 @@
 
   }
 
-  @include onSmallDesktop {
+  @include onDesktop {
     font-size: 5.6rem;
     line-height: 6rem;
     text-shadow: -1px -1px 0px #000000,
@@ -50,10 +50,11 @@
     display: flex;
     flex-direction: column;
     column-gap: 70px;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
 
     @include onSmallDesktop {
+      align-items: flex-start;
       flex-direction: row;
     }
   }
@@ -70,26 +71,33 @@
   }
 
   &__sub-text {
-    font-size: .95rem;
-    line-height: 26px; /* 173.333% */
-    letter-spacing: 0.6px;
+    margin-top: 0;
+    margin-bottom: 60px;
+
+    color: $white-text-color;
+    font-family: $fira-code;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
-    margin-bottom: 40px;
+    line-height: 22px; /* 169.231% */
+    letter-spacing: 0.52px;
 
-    @include onBigTablet {
+    @include onDesktop {
       margin-bottom: 70px;
 
-      font-size: 1.15rem;
-      line-height: 27px; /* 150% */
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 150% */
       letter-spacing: 1.2px;
     }
   }
 
   &__img-block {
     box-sizing: border-box;
+    align-self: center;
 
-    max-width: 550px;
+    max-width: 400px;
     width: 100%;
     height: max-content;
 
@@ -98,32 +106,31 @@
     justify-content: center;
     align-items: center;
 
-    // margin-top: 30px;
     padding: 40px;
 
-    // padding: 4rem;
-    // padding-left: 8rem;
 
     background-image: url('../../images/about-us_block_img.png');
     background-size: 100% 100%;
 
-    @include onSmallDesktop {
+    @include onDesktop {
+      align-self: flex-start;
+      max-width: 550px;
       padding: 70px 0;
     }
   }
 
   &__main-contact-text {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     font-family: $sugo-pro-display;
-    font-size: 3.3rem;
+    font-size: 48px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: 3.6px;
+    line-height: 54px; /* 112.5% */
+    letter-spacing: 2.88px;
     text-transform: uppercase;
 
-    @include onSmallDesktop {
+    @include onDesktop {
       font-size: 60px;
       font-style: normal;
       font-weight: 400;
@@ -134,10 +141,13 @@
   }
 
   &__contact-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
     margin-bottom: 30px;
 
-    &:last-child {
-      margin-bottom: 0;
+    @include onDesktop {
+      row-gap: 18px;
     }
   }
 
@@ -145,7 +155,7 @@
     display: flex;
     align-items: center;
 
-    margin-bottom: 5px;
+    // margin-bottom: 16px;
 
     &:last-child {
       margin-bottom: 0;
@@ -154,15 +164,21 @@
 
   &__contact-title {
     margin: 0;
-    margin-bottom: 15px;
 
     color: $pink2-text-color;
     font-family: Fira Code;
-    font-size: 1.3rem;
+    font-size: 17px;
     font-style: normal;
     font-weight: 600;
-    line-height: 36px; /* 150% */
-    letter-spacing: 1.44px;
+    line-height: normal;
+    letter-spacing: 1.02px;
+
+    @include onDesktop {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px; /* 150% */
+      letter-spacing: 1.44px;
+    }
 
     &--blue {
       color: $blue-text-color;
@@ -178,24 +194,41 @@
 
     color: $lightgray-text-color;
     font-family: Fira Code;
-    font-size: 1.2rem;
+    font-size: 17px;
     font-style: normal;
     font-weight: 450;
-    line-height: 36px; /* 163.636% */
-    letter-spacing: 1.32px;
+    line-height: normal;
+    letter-spacing: 1.02px;
+
+    @include onDesktop {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 450;
+      line-height: 36px; /* 163.636% */
+      letter-spacing: 1.32px;
+    }
   }
 }
 
 .about-us-main {
   &__content {
-    padding-top: 100px;
+    padding-top: 80px;
 
-    @include onSmallDesktop {
+    @include onBigTablet {
+      padding-top: 130px;
+    }
+
+    @include onDesktop {
       padding-top: 170px;
     }
   }
 
   &__main-text {
+    margin-bottom: 40px;
+
+    @include onDesktop {
+      margin-bottom: 80px;
+    }
     &--position {
       margin-bottom: 80px;
     }
@@ -218,29 +251,60 @@
     display: flex;
     align-items: center;
 
-    margin-bottom: 35px;
+    margin-bottom: 24px;
+
+    @include onDesktop {
+      margin-bottom: 32px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 48px;
+    }
   }
 
   &__city-container {
     display: flex;
     justify-content: space-between;
-    column-gap: 10px;
+    column-gap: 40px;
+
+    @include onBigTablet {
+      column-gap: 32px;
+    }
+
+    @include onDesktop {
+      column-gap: 50px;
+    }
   }
 
   &__country-img {
     width: 30px;
-    margin-right: 15px;
+    margin-right: 12px;
+
+    @include onDesktop {
+      margin-right: 16px;
+    }
   }
 
   &__country {
     margin-top: 5px;
 
     color: $pink2-text-color;
-    font-size: 1.3rem;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px; /* 115.385% */
-    letter-spacing: 1.56px;
+    line-height: 22px; /* 110% */
+    letter-spacing: 1.2px;
+
+    @include onBigTablet {
+      font-size: 22px;
+      line-height: 30px; /* 136.364% */
+      letter-spacing: 1.32px;
+    }
+
+    @include onDesktop {
+      font-size: 26px;
+      letter-spacing: 1.56px;
+    }
 
     &--blue {
       color: $blue-text-color;
@@ -249,20 +313,25 @@
 
   &__city {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 
     color: $white-text-color;
     font-family: Fira Code;
-    font-size: 20px;
+    font-size: 17px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 26px; /* 173.333% */
-    letter-spacing: 0.9px;
+    font-weight: 600;
+    line-height: 30px; /* 176.471% */
+    letter-spacing: 1.02px;
 
-    @include onSmallDesktop {
+    @include onBigTablet {
+      font-size: 18px;
+      letter-spacing: 1.08px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 16px;
+
       font-size: 24px;
-      font-weight: 600;
-      line-height: 30px; /* 125% */
       letter-spacing: 1.44px;
     }
   }
@@ -270,14 +339,22 @@
   &__address {
     color: #808080;
     font-family: Fira Code;
-    font-size: 14px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 150% */
-    letter-spacing: 1.2px;
+    line-height: 22px; /* 169.231% */
+    letter-spacing: 0.78px;
 
-    @include onSmallDesktop {
+    @include onBigTablet {
+      font-size: 15px;
+      line-height: 24px; /* 160% */
+      letter-spacing: 0.9px;
+    }
+
+    @include onDesktop {
       font-size: 20px;
+      line-height: 30px; /* 150% */
+      letter-spacing: 1.2px;
     }
   }
 
@@ -287,7 +364,24 @@
   }
 
   &__world-img {
-    width: 95%;
+    display: none;
+    width: 100%;
     margin: 0 auto;
+
+    @include onBigTablet {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &--mobile {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+
+      @include onBigTablet {
+        display: none;
+      }
+    }
   }
 }

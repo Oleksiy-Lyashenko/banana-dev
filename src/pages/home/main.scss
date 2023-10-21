@@ -31,8 +31,8 @@
     font-size: 5.6rem;
     line-height: 6rem;
     text-shadow: -1px -1px 0px #000000,
-      1.5px 1.5px 0px #000000,
-      2px 2px 0px #808080;
+      2.5px 2.5px 0px #000000,
+      3.5px 3.5px 0px #808080;
   }
   
 
@@ -61,7 +61,7 @@
 
   &__text-block {
     max-width: 500px;
-    min-width: 350px;
+    min-width: 330px;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -100,8 +100,8 @@
       font-size: 5.6rem;
       line-height: 6rem;
       text-shadow: -1px -1px 0px #000000,
-        1.5px 1.5px 0px #000000,
-        2px 2px 0px #808080;
+        2.5px 2.5px 0px #000000,
+        3.5px 3.5px 0px #808080;
     }
     
 
@@ -137,13 +137,23 @@
   }
 
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 4px;
-    width: 350px;
-    height: 70px;
+    min-width: 328px;
+    width: 100%;
+    height: 62px;
 
     background: url('../../images/button.svg');
-    background-size: cover;
-    background-position: center;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: 100% 100%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
 
     border: none;
 
@@ -155,6 +165,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.3px;
+    text-decoration: none;
 
     cursor: pointer;
 
@@ -260,9 +271,14 @@
 
   &__our-client {
       block-size: border-box;
+      width: 100%;
 
-  @include onTablet {
-    // margin-top: 2rem;
+  @include onSmallDesktop {
+    padding-top: 50px;
+  }
+
+  @include onDesktop {
+    padding-top: 0;
   }
 
   &__content {
@@ -271,8 +287,22 @@
 
     padding: 50px 20px;
     height: max-content;
-    background-image: url('../../images/project_info_mobile_img.png');
+    background-image: url('../../images/project_info_mobile_img.svg');
+    background-position-x: 0px;
+    background-position-y: 0px;
     background-size: 100% 100%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+
+    @include onSmallDesktop {
+      background-image: url('../../images/project_info_img.svg');
+    }
+
+    
+    // background-size: 100% 100%;
 
     &::after {
       z-index: 5;
@@ -299,7 +329,7 @@
         z-index: 1;
         content: '';
         position: absolute;
-        top: 10px;
+        top: 0;
         left: 0;
         display: block;
         width: 100%;
@@ -524,7 +554,7 @@
     position: relative;
     z-index: 2;
 
-    @include onTablet {
+    @include onBigTablet {
       display: grid;
       grid-template-columns: (2, 1fr);
       grid-template-rows: (3, 1fr);
@@ -542,7 +572,7 @@
 
     &--1 {
 
-      @include onTablet {
+      @include onBigTablet {
         grid-column: 1;
         grid-row: 1;
         padding-right: 6rem;
@@ -555,7 +585,7 @@
     &--2 {
       text-align: right;
 
-      @include onTablet {
+      @include onBigTablet {
         grid-column: 2;
         grid-row: 2;
         justify-self: center;
@@ -572,7 +602,7 @@
 
     &--3 {
 
-      @include onTablet {
+      @include onBigTablet {
         grid-column: 1;
         grid-row: 3;
         justify-self: center;
@@ -630,21 +660,28 @@
   }
 
   &__button {
-    width: 365px;
-    height: 82px;
+    width: 100%;
+    height: 60px;
     background: url('../../images/button.svg');
+    background-position-x: 0px;
+    background-position-y: 0px;
     background-size: 100% 100%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
 
     border: none;
 
     font-family: $fira-code;
     color: #000;
     text-align: center;
-    font-size: 22px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 0.44px;
+    letter-spacing: 0.32px;
 
     cursor: pointer;
 
@@ -701,7 +738,7 @@
     }
 
     @include onDesktop {
-      padding-top: 250px;
+      padding-top: 300px;
     }
   }
 
@@ -867,8 +904,12 @@
 
     overflow: hidden;
 
-    @include onTablet {
-      padding-top: 250px;
+    @include onBigTablet {
+      padding-top: 230px;
+    }
+
+    @include onDesktop {
+      padding-top: 300px;
     }
   }
 
@@ -1113,8 +1154,8 @@
     align-items: center;
     justify-content: center;
 
-    @include onTablet {
-      padding-top: 170px;
+    @include onBigTablet {
+      padding-top: 230px;
     }
 
     @include onSmallDesktop {
@@ -1123,6 +1164,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+    }
+
+    @include onDesktop {
+      padding-top: 300px;
     }
   }
 
@@ -1258,6 +1303,14 @@
 .home-projects {
   &__content {
     padding-top: 10rem;
+
+    @include onBigTablet {
+      padding-top: 230px;
+    }
+
+    @include onDesktop {
+      padding-top: 300px;
+    }
   }
 
   &__page-title {
