@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/banana-dev/static/css/main.0e136471.css",
-    "main.js": "/banana-dev/static/js/main.d648c9e7.js",
+    "main.css": "/banana-dev/static/css/main.f6562064.css",
+    "main.js": "/banana-dev/static/js/main.35ca272f.js",
     "static/media/header_img.png": "/banana-dev/static/media/header_img.7e45e9e1becc884a608e.png",
     "static/media/Sugo-Pro-Classic-Thin-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Thin-trial.08ce01ad8a874fb4a8c8.ttf",
     "static/media/Sugo-Pro-Classic-Light-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Light-trial.95d5ce39453ba7a5fb28.ttf",
@@ -32,17 +32,19 @@
     "static/media/button_site_mobile.svg": "/banana-dev/static/media/button_site_mobile.1456ee26bff01de2597e.svg",
     "static/media/button_site.svg": "/banana-dev/static/media/button_site.7892cf246cabe47f7dc9.svg",
     "static/media/button_site_tablet.svg": "/banana-dev/static/media/button_site_tablet.c2577012b6613c75f0b6.svg",
-    "static/media/button_hover.svg": "/banana-dev/static/media/button_hover.4e1c203de4b743a27c45.svg",
-    "static/media/button.svg": "/banana-dev/static/media/button.d4648afc0e35b86b7d6d.svg",
+    "static/media/button_hover.svg": "/banana-dev/static/media/button_hover.4397da9508bcab1dd9eb.svg",
+    "static/media/project_info_img.svg": "/banana-dev/static/media/project_info_img.756ba47e54dede3ea944.svg",
+    "static/media/button.svg": "/banana-dev/static/media/button.2e2fc09c1e4de370ee28.svg",
     "static/media/footer_mobile_bg.svg": "/banana-dev/static/media/footer_mobile_bg.8068b9313f816229620a.svg",
     "static/media/footer_bg.svg": "/banana-dev/static/media/footer_bg.7c54f4ebeeaca87d533d.svg",
     "index.html": "/banana-dev/index.html",
+    "static/media/project_info_mobile_img.svg": "/banana-dev/static/media/project_info_mobile_img.2ce6bbc29f3f777a242a.svg",
     "static/media/star.svg": "/banana-dev/static/media/star.b73ff636d0fec6ec7bda.svg",
-    "main.0e136471.css.map": "/banana-dev/static/css/main.0e136471.css.map",
-    "main.d648c9e7.js.map": "/banana-dev/static/js/main.d648c9e7.js.map"
+    "main.f6562064.css.map": "/banana-dev/static/css/main.f6562064.css.map",
+    "main.35ca272f.js.map": "/banana-dev/static/js/main.35ca272f.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e136471.css",
-    "static/js/main.d648c9e7.js"
+    "static/css/main.f6562064.css",
+    "static/js/main.35ca272f.js"
   ]
 }
