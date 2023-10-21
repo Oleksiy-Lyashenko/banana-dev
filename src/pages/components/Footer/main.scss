@@ -6,8 +6,12 @@
 
   font-family: $fira-code;
 
-  @include onTablet {
+  @include onBigTablet {
     padding-top: 250px;
+  }
+
+  @include onDesktop {
+    padding-top: 300px;
   }
 
   &__top {

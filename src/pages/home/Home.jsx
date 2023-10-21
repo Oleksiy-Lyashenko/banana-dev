@@ -33,7 +33,7 @@ export default function Home() {
                   wasting time and money hiring delinquent devs? get devotees to build your vision –
                   diabolically fast
                 </p>
-                <button className="home-top__button">let’s go banana</button>
+                <a href='/' className="home-top__button">let’s go banana</a>
               </div>
 
               <div className="home-top__column">

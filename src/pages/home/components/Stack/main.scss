@@ -5,8 +5,12 @@
   &__content {
     padding-top: 10rem;
 
-    @include onTablet {
+    @include onBigTablet {
       padding-top: 250px;
+    }
+
+    @include onDesktop {
+      padding-top: 300px;
     }
   }
 
