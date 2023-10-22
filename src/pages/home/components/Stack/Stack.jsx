@@ -6,6 +6,8 @@ let REVIEW_WIDTH = 650;
 
 if (window.screen.width >= 600) {
   REVIEW_WIDTH = 700;
+} else if (window.screen.width < 600) {
+  REVIEW_WIDTH = 300;
 }
 
 export const Stack = () => {

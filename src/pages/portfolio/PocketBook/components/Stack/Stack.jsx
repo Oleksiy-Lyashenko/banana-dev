@@ -5,6 +5,8 @@ let REVIEW_WIDTH = 650;
 
 if (window.screen.width >= 600) {
   REVIEW_WIDTH = 700;
+} else if (window.screen.width < 600) {
+  REVIEW_WIDTH = 300;
 }
 
 export const Stack = () =>  {
@@ -19,10 +21,16 @@ export const Stack = () =>  {
   };
 
   const handleRightArrow = () => {
+    let countOfSwipe = 1
+
+    if (window.screen.width <= 1023) {
+      countOfSwipe = 2
+    }
+
     setOffset((currentOffset) => {
       const newOffset = currentOffset - REVIEW_WIDTH;
 
-      const maxOffset = -(REVIEW_WIDTH * 2);
+      const maxOffset = -(REVIEW_WIDTH * countOfSwipe);
 
       return Math.max(newOffset, maxOffset);
     });
@@ -67,54 +75,108 @@ export const Stack = () =>  {
                 transform: `translateX(${offset}px)`,
               }}>
               <div className="main-stack-pocketbook_wrap">
-                <div className="main-stack-pocketbook__direction-block">
-                  <span className="main-stack-pocketbook__direction">UI/UX Design</span>
+                <div className="main-stack-pocketbook__block-desktop">
+                  <div className="main-stack-pocketbook__direction-block">
+                    <span className="main-stack-pocketbook__direction">UI/UX Design</span>
 
-                  <div className="main-stack-pocketbook__tool-block">
-                    <div className="main-stack-pocketbook__tool">
-                      <div className="main-stack-pocketbook__block-img">
-                        <img
-                          src="./images/stack_page/figma_logo.svg"
-                          alt=""
-                          className="main-stack-pocketbook__img"
-                        />
+                    <div className="main-stack-pocketbook__tool-block">
+                      <div className="main-stack-pocketbook__tool">
+                        <div className="main-stack-pocketbook__block-img">
+                          <img
+                            src="./images/stack_page/figma_logo.svg"
+                            alt=""
+                            className="main-stack-pocketbook__img"
+                          />
+                        </div>
+
+                        <span className="main-stack-pocketbook__tool-name">Figma</span>
                       </div>
 
-                      <span className="main-stack-pocketbook__tool-name">Figma</span>
+                      <div className="main-stack-pocketbook__tool">
+                        <div className="main-stack-pocketbook__block-img">
+                          <img
+                            src="./images/stack_page/ai_logo.svg"
+                            alt=""
+                            className="main-stack-pocketbook__img"
+                          />
+                        </div>
+
+                        <span className="main-stack-pocketbook__tool-name">Illustrator</span>
+                      </div>
+                      <div className="main-stack-pocketbook__tool">
+                        <div className="main-stack-pocketbook__block-img">
+                          <img
+                            src="./images/stack_page/ae_logo.svg"
+                            alt=""
+                            className="main-stack-pocketbook__img"
+                          />
+                        </div>
+
+                        <span className="main-stack-pocketbook__tool-name">After Effects</span>
+                      </div>
+                      <div className="main-stack-pocketbook__tool">
+                        <div className="main-stack-pocketbook__block-img">
+                          <img
+                            src="./images/stack_page/ps_logo.svg"
+                            alt=""
+                            className="main-stack-pocketbook__img"
+                          />
+                        </div>
+
+                        <span className="main-stack-pocketbook__tool-name">Photoshop</span>
+                      </div>
                     </div>
+                  </div>
 
-                    <div className="main-stack-pocketbook__tool">
-                      <div className="main-stack-pocketbook__block-img">
-                        <img
-                          src="./images/stack_page/ai_logo.svg"
-                          alt=""
-                          className="main-stack-pocketbook__img"
-                        />
+                  <div className="main-stack-pocketbook__direction-bloc main-stack-pocketbook__direction-block--small-desktop">
+                    <span className="main-stack-pocketbook__direction">backend</span>
+
+                    <div className="main-stack-pocketbook__tool-block">
+                      <div className="main-stack-pocketbook__tool">
+                        <div className="main-stack-pocketbook__block-img">
+                          <img
+                            src="./images/stack_page/firebase_logo.svg"
+                            alt=""
+                            className="main-stack-pocketbook__img"
+                          />
+                        </div>
+
+                        <span className="main-stack-pocketbook__tool-name">Firebase</span>
                       </div>
 
-                      <span className="main-stack-pocketbook__tool-name">Illustrator</span>
-                    </div>
-                    <div className="main-stack-pocketbook__tool">
-                      <div className="main-stack-pocketbook__block-img">
-                        <img
-                          src="./images/stack_page/ae_logo.svg"
-                          alt=""
-                          className="main-stack-pocketbook__img"
-                        />
-                      </div>
+                      <div className="main-stack-pocketbook__tool">
+                        <div className="main-stack-pocketbook__block-img">
+                          <img
+                            src="./images/stack_page/mongo_logo.svg"
+                            alt=""
+                            className="main-stack-pocketbook__img"
+                          />
+                        </div>
 
-                      <span className="main-stack-pocketbook__tool-name">After Effects</span>
-                    </div>
-                    <div className="main-stack-pocketbook__tool">
-                      <div className="main-stack-pocketbook__block-img">
-                        <img
-                          src="./images/stack_page/ps_logo.svg"
-                          alt=""
-                          className="main-stack-pocketbook__img"
-                        />
+                        <span className="main-stack-pocketbook__tool-name">Mongo DB</span>
                       </div>
+                      <div className="main-stack-pocketbook__tool">
+                        <div className="main-stack-pocketbook__block-img">
+                          <img
+                            src="./images/stack_page/node_logo.svg"
+                            alt=""
+                            className="main-stack-pocketbook__img"
+                          />
+                        </div>
 
-                      <span className="main-stack-pocketbook__tool-name">Photoshop</span>
+                        <span className="main-stack-pocketbook__tool-name">NodeJS</span>
+                      </div>
+                      <div className="main-stack-pocketbook__tool">
+                        <div className="main-stack-pocketbook__block-img">
+                          <img
+                            src="./images/stack_page/mysql_logo.svg"
+                            alt=""
+                            className="main-stack-pocketbook__img"
+                          />
+                        </div>
+
+                        <span className="main-stack-pocketbook__tool-name">MySQL</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -174,7 +236,7 @@ export const Stack = () =>  {
                 </div>
               </div>
 
-              <div className="main-stack-pocketbook_wrap">
+              <div className="main-stack-pocketbook_wrap main-stack-pocketbook__direction-block--big-desktop">
                 <div className="main-stack-pocketbook__direction-block">
                   <span className="main-stack-pocketbook__direction">backend</span>
 

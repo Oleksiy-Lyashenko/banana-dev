@@ -51,7 +51,7 @@ export default function PocketBook() {
                 <br />
                 store redesign
               </h2>
-              <p className="home-top__sub-text pocketbook-top__sub-text">
+              <p className="pocketbook-top__sub-text">
                 wasting time and money hiring delinquent devs? get devotees to build your vision –
                 diabolically fast wasting time and money hiring delinquent devs? get devotees to
                 build your vision – diabolically fast
@@ -154,12 +154,10 @@ export default function PocketBook() {
           <div className="pocketbook-about__content container">
             <div className="pocketbook-about__top">
               <div className="pocketbook-about__block">
-                <h2 className="page-title-pocketbook pocketbook-about__title">
-                  <span className="page-title-pocketbook--yellow pocketbook-about__title">
-                    about project
-                  </span>
+                <h2 className="page-title-pocketbook page-title-pocketbook--yellow page-title-pocketbook--about pocketbook-about__title">
+                  about project
                 </h2>
-                <p className="home-top__sub-text pocketbook-about__text">
+                <p className="pocketbook-about__text">
                   Kör Teknologi AS decided to build their first educational platform for Norwegian
                   drivers, they trusted us with the product’s development. Their main goal was to
                   create MVP (Minimum Viable Product), then go to users with the real app and test
@@ -168,10 +166,10 @@ export default function PocketBook() {
               </div>
 
               <div className="pocketbook-about__block">
-                <h2 className="page-title-pocketbook pocketbook-about__title">
-                  <span className="page-title-pocketbook--pink">about client</span>
+                <h2 className="page-title-pocketbook page-title-pocketbook--pink page-title-pocketbook--about pocketbook-about__title">
+                  about client
                 </h2>
-                <p className="home-top__sub-text pocketbook-about__text">
+                <p className="pocketbook-about__text">
                   Kör Teknologi AS decided to build their first educational platform for Norwegian
                   drivers, they trusted us with the product’s development. Their main goal was to
                   create MVP (Minimum Viable Product), then go to users with the real app and test
@@ -374,7 +372,7 @@ export default function PocketBook() {
               <h2 className="page-title-pocketbook page-title-pocketbook--yellow pocketbook-branding__title">
                 branding
               </h2>
-              <p className="home-top__sub-text pocketbook-branding__text">
+              <p className="pocketbook-branding__text">
                 Dived into UX, we created the Bloss logo, typography, identity, and a user-friendly
                 engaging web design.
               </p>
