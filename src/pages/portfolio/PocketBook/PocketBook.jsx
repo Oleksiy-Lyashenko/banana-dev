@@ -29,13 +29,17 @@ export default function PocketBook() {
                   Home
                 </NavLink>
               </li>
-              <li className="pocketbook-top__item">-</li>
+              <li className="pocketbook-top__item">
+                <span className="pocketbook-top__line">-</span>
+              </li>
               <li className="pocketbook-top__item">
                 <NavLink to="/" className="pocketbook-top__link">
                   Portfolio
                 </NavLink>
               </li>
-              <li className="pocketbook-top__item">-</li>
+              <li className="pocketbook-top__item">
+                <span className="pocketbook-top__line">-</span>
+              </li>
               <li className="pocketbook-top__item">
                 <NavLink
                   to="/pocketbook"

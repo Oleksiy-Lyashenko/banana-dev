@@ -24,7 +24,9 @@ export default function Portfolio() {
                   Home
                 </NavLink>
               </li>
-              <li className="pocketbook-top__item">-</li>
+              <li className="pocketbook-top__item">
+                <span className="pocketbook-top__line">-</span>
+              </li>
               <li className="pocketbook-top__item">
                 <NavLink to="/" className="pocketbook-top__link pocketbook-top__link--choosen">
                   Portfolio
@@ -36,7 +38,7 @@ export default function Portfolio() {
               <h2 className="page-title-portfolio page-title-portfolio--yellow portfolio-top__main-text">
                 portfolio
               </h2>
-              <p className="home-top__sub-text portfolio-top__sub-text">
+              <p className="portfolio-top__sub-text">
                 Check out the works that we have created for our clients, meeting their business
                 goals and connecting their activity and the digital world.
               </p>

@@ -36,7 +36,10 @@ export const Stack = () => {
       <div className="stack-page__content">
         <div className="container">
           <div className="stack-page__block">
-            <h2 className="page-title page-title--yellow stack-page__title"> Our Tech stack</h2>
+            <h2 className="page-title-stack page-title-stack--yellow stack-page__title">
+              {' '}
+              Our Tech stack
+            </h2>
 
             <p className="stack-page__sub-text">
               We work with the latest and greatest mobile, cross-platform and web technologies and

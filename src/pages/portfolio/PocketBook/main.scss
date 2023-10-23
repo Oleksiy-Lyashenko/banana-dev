@@ -24,14 +24,15 @@
     font-size: 70px;
     line-height: 70px; /* 100% */
     letter-spacing: 4.2px;
+    text-shadow: -1px -1px 0px #000000,
+      2.5px 2.5px 0px #000000,
+      3.5px 3.5px 0px #808080;
   }
 
   @include onBigDesktop {
-    font-size: 5.6rem;
-    line-height: 6rem;
-    text-shadow: -1px -1px 0px #000000,
-      1.5px 1.5px 0px #000000,
-      2px 2px 0px #808080;
+    font-size: 110px;
+    line-height: 112px; /* 101.818% */
+    letter-spacing: 6.6px;
   }
 
   &--about {
@@ -173,10 +174,33 @@
     }
   }
 
-  &__link {
-    font-size: 15px;
-    color: $lightgray-color;
+  &__line {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 230.769% */
+    letter-spacing: 0.78px;
     text-decoration: none;
+
+    @include onBigDesktop {
+      font-size: 20px;
+      letter-spacing: 1.2px;
+    }
+  }
+
+  &__link {
+    color: $lightgray-color;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 230.769% */
+    letter-spacing: 0.78px;
+    text-decoration: none;
+
+    @include onBigDesktop {
+      font-size: 20px;
+      letter-spacing: 1.2px;
+    }
 
     &:hover {
       color: $pink-text-color;
@@ -291,14 +315,8 @@
     text-decoration: none;
 
     background-image: url('../../../images/button_site_mobile.svg');
-    background-position-x: 0px;
-    background-position-y: 0px;
     background-size: 100% 100%;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
+    background-repeat: no-repeat;
 
     @include onTablet {
       width: 177px;

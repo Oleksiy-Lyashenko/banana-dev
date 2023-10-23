@@ -23,7 +23,9 @@ export default function Reviews() {
                   Home
                 </NavLink>
               </li>
-              <li className="pocketbook-top__item">-</li>
+              <li className="pocketbook-top__item">
+                <span className="pocketbook-top__line">-</span>
+              </li>
               <li className="pocketbook-top__item">
                 <NavLink
                   to="/"
@@ -33,11 +35,11 @@ export default function Reviews() {
               </li>
             </ul>
 
-            <div className="portfolio-top__text-block">
+            <div className="reviews-top__text-block">
               <h2 className="page-title-reviews page-title-reviews--yellow reviews-main__page-title--position">
                 reviews
               </h2>
-              <p className="home-top__sub-text">
+              <p className="reviews-top__sub-text">
                 Check out the works that we have created for our clients, meeting their business
                 goals and connecting their activity and the digital world.
               </p>

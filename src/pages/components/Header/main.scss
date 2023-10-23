@@ -87,7 +87,7 @@
         display: block;
       }
 
-      @include onSmallDesktop {
+      @include onDesktop {
         display: none;
       }
     }
@@ -101,7 +101,7 @@
   &__nav-list {
     display: none;
 
-    @include onSmallDesktop {
+    @include onDesktop {
       display: flex;
       column-gap: 40px;
       margin-right: 50px;
@@ -182,7 +182,7 @@
     width: 420px;
   }
 
-  @include onSmallDesktop {
+  @include onDesktop {
     display: none;
   }
 

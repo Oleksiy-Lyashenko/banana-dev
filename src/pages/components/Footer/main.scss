@@ -231,7 +231,7 @@
       letter-spacing: 0.96px;
     }
 
-    @include onDesktop {
+    @include onBigDesktop {
       font-size: 24px;
       line-height: 58px;
       letter-spacing: 1.44px;
