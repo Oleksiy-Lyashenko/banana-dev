@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/banana-dev/static/css/main.9f5bb0bf.css",
-    "main.js": "/banana-dev/static/js/main.bc2945ef.js",
+    "main.css": "/banana-dev/static/css/main.4de5bc23.css",
+    "main.js": "/banana-dev/static/js/main.70115758.js",
+    "static/media/projects_bg.svg": "/banana-dev/static/media/projects_bg.e95591284668dc11f0c3.svg",
     "static/media/header_img.png": "/banana-dev/static/media/header_img.7e45e9e1becc884a608e.png",
     "static/media/Sugo-Pro-Classic-Thin-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Thin-trial.08ce01ad8a874fb4a8c8.ttf",
     "static/media/Sugo-Pro-Classic-Light-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Light-trial.95d5ce39453ba7a5fb28.ttf",
     "static/media/Sugo-Pro-Classic-Bold-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Bold-trial.0da79f137b8a422c0e7b.ttf",
-    "static/media/projects_bg.png": "/banana-dev/static/media/projects_bg.ab64c530d4492c463893.png",
     "static/media/Sugo-Pro-Display-ExtraLight-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Display-ExtraLight-trial.dd7e38018b5c88e0784c.ttf",
     "static/media/Sugo-Pro-Display-Light-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Display-Light-trial.ed9e1fb3baf228a6e509.ttf",
     "static/media/Sugo-Pro-Display-Thin-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Display-Thin-trial.2298309635d1e618a007.ttf",
@@ -28,21 +28,26 @@
     "static/media/FiraCode-Medium.woff": "/banana-dev/static/media/FiraCode-Medium.edb17cd034ab2bf0c2d4.woff",
     "static/media/FiraCode-Light.woff": "/banana-dev/static/media/FiraCode-Light.e37fbea8ec98ce1ed3c5.woff",
     "static/media/form_bg_img.png": "/banana-dev/static/media/form_bg_img.ec6f9f54185731dfca13.png",
+    "static/media/reviews_doshed_bg.svg": "/banana-dev/static/media/reviews_doshed_bg.35c102b2ce3578e5092b.svg",
+    "static/media/reviews_doshed_mobile_bg.svg": "/banana-dev/static/media/reviews_doshed_mobile_bg.c26d2fdcf2c3251f3495.svg",
     "static/media/cart_bg.svg": "/banana-dev/static/media/cart_bg.97c47b08df02514aed70.svg",
     "static/media/button_site_mobile.svg": "/banana-dev/static/media/button_site_mobile.6327b6d1bfe2a0861382.svg",
     "static/media/button_hover.svg": "/banana-dev/static/media/button_hover.4397da9508bcab1dd9eb.svg",
     "static/media/project_info_img.svg": "/banana-dev/static/media/project_info_img.756ba47e54dede3ea944.svg",
+    "static/media/about-us_block_img.svg": "/banana-dev/static/media/about-us_block_img.3ea5e2fd092ec31d3ec5.svg",
     "static/media/button.svg": "/banana-dev/static/media/button.2e2fc09c1e4de370ee28.svg",
+    "static/media/reviews_bg.svg": "/banana-dev/static/media/reviews_bg.90fad9b226e77267802f.svg",
+    "static/media/reviews_mobile_bg.svg": "/banana-dev/static/media/reviews_mobile_bg.010167896a54ed8aefbc.svg",
     "static/media/footer_mobile_bg.svg": "/banana-dev/static/media/footer_mobile_bg.8068b9313f816229620a.svg",
     "static/media/footer_bg.svg": "/banana-dev/static/media/footer_bg.7c54f4ebeeaca87d533d.svg",
     "index.html": "/banana-dev/index.html",
     "static/media/project_info_mobile_img.svg": "/banana-dev/static/media/project_info_mobile_img.2ce6bbc29f3f777a242a.svg",
     "static/media/star.svg": "/banana-dev/static/media/star.b73ff636d0fec6ec7bda.svg",
-    "main.9f5bb0bf.css.map": "/banana-dev/static/css/main.9f5bb0bf.css.map",
-    "main.bc2945ef.js.map": "/banana-dev/static/js/main.bc2945ef.js.map"
+    "main.4de5bc23.css.map": "/banana-dev/static/css/main.4de5bc23.css.map",
+    "main.70115758.js.map": "/banana-dev/static/js/main.70115758.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f5bb0bf.css",
-    "static/js/main.bc2945ef.js"
+    "static/css/main.4de5bc23.css",
+    "static/js/main.70115758.js"
   ]
 }
