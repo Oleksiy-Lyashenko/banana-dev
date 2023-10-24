@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {  createHashRouter, RouterProvider } from 'react-router-dom';
+import {  createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import PocketBook from './pages/portfolio/PocketBook/PocketBook';
 import Portfolio from './pages/portfolio/Portfolio/Portfolio';
 import Reviews from './pages/reviews/Reviews';
@@ -9,7 +9,7 @@ import Home from './pages/home/Home';
 
 import './styles/main.scss';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,

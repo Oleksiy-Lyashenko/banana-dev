@@ -197,11 +197,13 @@ export default function PocketBook() {
                 className="pocketbook-about__bottom-shadow"
               />
 
-              <img
-                src="./images/clients/pocketbook/about_img.png"
-                alt=""
-                className="pocketbook-about__img"
-              />
+              <div className="pocketbook-about__img-block">
+                <img
+                  src="./images/clients/pocketbook/about_img.svg"
+                  alt=""
+                  className="pocketbook-about__img"
+                />
+              </div>
             </div>
 
             <div className="pocketbook-about__bottom">
@@ -383,7 +385,7 @@ export default function PocketBook() {
             </div>
 
             <img
-              src="./images/clients/pocketbook/icon_branding_img.png"
+              src="./images/clients/pocketbook/icon_branding_img.svg"
               alt=""
               srcset=""
               className="pocketbook-branding__img"

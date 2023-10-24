@@ -33,6 +33,9 @@
     font-size: 110px;
     line-height: 112px; /* 101.818% */
     letter-spacing: 6.6px;
+    text-shadow: -1px -1px 0px #000000,
+      3.5px 3.5px 0px #000000,
+      5px 5px 0px #808080;
   }
 
   &--about {
@@ -459,7 +462,11 @@
   }
 
   &__left-tape {
-    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 85px;
+    top: -10px;
+    left: -20px;
 
     // @include onBigTablet {
     //   display: none;
@@ -481,7 +488,11 @@
   }
 
   &__right-tape {
-    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 85px;
+    top: -10px;
+    right: -20px;
 
     @include onBigTablet {
       display: block;
@@ -645,12 +656,20 @@
     flex-direction: column;
     justify-content: space-between;
     row-gap: 24px;
+    margin-bottom: 50px;
 
     @include onTablet {
       flex-direction: row;
       column-gap: 60px;
     }
 
+    @include onSmallDesktop {
+      margin-bottom: 100px;
+    }
+
+    @include onBigDesktop {
+      margin-bottom: 80px;
+    }
 
   }
 
@@ -705,7 +724,7 @@
     position: absolute;
     top: 0;
 
-    width: max-content;
+    width: 100%;
     height: 60px;
 
     @include onTablet {
@@ -713,15 +732,31 @@
     }
   }
 
+  &__img-block {
+    overflow: hidden;
+    @include onBigTablet {
+      height: 520px;
+    }
+
+    @include onBigDesktop {
+      height: 860px;
+    }
+  }
+
   &__img {
     width: 100%;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.3))
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.3));
+
+    @include onSmallDesktop {
+      width: 100%;
+      // height: 520px;
+    }
   }
 
   &__bottom-shadow {
     position: absolute;
     bottom: 0;
-    width: max-content;
+    width: 100%;
     height: 60px;
 
     @include onTablet {
@@ -801,7 +836,7 @@
     &--4 {
       height: 130px;
 
-      @include onSmallDesktop {
+      @include onBigDesktop {
         height: 170px;
       }
     }
@@ -873,11 +908,11 @@
 
     @include onSmallDesktop {
       padding-top: 250px;
-      column-gap: 50px;
+      column-gap: 0;
     }
 
     @include onBigDesktop {
-      column-gap: 100px;
+      column-gap: 50px;
     }
   }
 
@@ -894,8 +929,12 @@
   }
 
   &__text-block {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
+
+    @include onBigDesktop {
+      max-width: 600px;
+    }
   }
 
   &__position-img {
@@ -940,6 +979,10 @@
       @include onBigTablet {
         display: block;
         margin-top: 100px;
+      }
+
+      @include onSmallDesktop {
+        margin-top: 90px;
       }
     }
     
@@ -1280,7 +1323,7 @@
     }
 
     @include onSmallDesktop {
-      column-gap: 100px;
+      column-gap: 0;
       padding-top: 250px;
     }
 
@@ -1308,6 +1351,10 @@
     flex-direction: column;
 
     max-width: 600px;
+
+    @include onSmallDesktop {
+      margin-left: 60px;
+    }
 
     &--position {
       justify-content: center;
@@ -1660,7 +1707,7 @@
   }
 
   &__name {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 
     color: $pink2-text-color;
     font-size: 26px;
@@ -1669,13 +1716,6 @@
     line-height: 30px; /* 115.385% */
     letter-spacing: 1.56px;
     text-transform: uppercase;
-
-    // @include onTablet {
-    //   font-size: 1.4rem;
-    //   line-height: 30px; /* 115.385% */
-    //   letter-spacing: 1.56px;
-    //   margin-bottom: 10px;
-    // }
 
     @include onBigDesktop {
       font-size: 40px;

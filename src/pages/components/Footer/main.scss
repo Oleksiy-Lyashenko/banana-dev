@@ -110,7 +110,7 @@
   &__img {
     width: 150px;
 
-    @include onBigTablet {
+    @include onSmallDesktop {
       width: 170px;
     }
 
@@ -128,7 +128,7 @@
 
   &__text {
     display: block;
-
+    margin-left: 5px;
     margin-top: -10px;
     margin-bottom: 23px;
 
@@ -140,12 +140,14 @@
     line-height: 30px; /* 250% */
     letter-spacing: 0.48px;
 
-    @include onBigTablet {
+    @include onSmallDesktop {
+      margin-left: 2px;
+
       font-size: 14px;
       letter-spacing: 0.84px;
     }
 
-    @include onSmallDesktop {
+    @include onBigDesktop {
     margin-bottom: 32px;
 
     font-size: 20px;
@@ -157,7 +159,8 @@
   }
 
   &__button {
-    padding: 15px 20px;
+    width: 150px;
+    height: 50px;
     background-color: transparent;
     border: 2px solid $main-yellow-text-color;
 
@@ -176,13 +179,15 @@
       color: $white-text-color;
     }
 
-    @include onBigTablet {
-      padding: 15px 30px;
+    @include onSmallDesktop {
+      width: 170px;
+      height: 48px;
       font-size: 15px;
     }
 
-    @include onSmallDesktop {
-      padding: 17px 48px;
+    @include onBigDesktop {
+      width: 236px;
+      height: 60px;
 
       font-size: 20px;
       font-style: normal;

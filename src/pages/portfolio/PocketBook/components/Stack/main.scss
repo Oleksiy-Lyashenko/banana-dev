@@ -18,8 +18,8 @@
   text-transform: uppercase;
 
   text-shadow: -1px -1px 0px #000000,
-    1.5px 1.5px 0px #000000,
-    2px 2px 0px #808080;
+    2.5px 2.5px 0px #000000,
+    3.5px 3.5px 0px #808080;
 
   @include onSmallDesktop {
     font-size: 70px;
@@ -254,8 +254,13 @@
   }
 
   &__img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+
+    @include onBigTablet {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__tool-name {
@@ -269,22 +274,23 @@
 
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1rem;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
-    letter-spacing: 1.2px;
+    line-height: normal;
+    letter-spacing: 0.6px;
 
-    @include onTablet {
+    @include onSmallDesktop {
       margin-top: 1px;
       width: 190px;
       height: 98px;
-
-      font-size: 1.2rem;
-      letter-spacing: 1.2px;
     }
 
     @include onDesktop {
       height: 97.5px;
+
+      font-size: 20px;
+      letter-spacing: 1.2px;
     }
 
   }

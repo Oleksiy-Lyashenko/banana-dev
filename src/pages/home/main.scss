@@ -17,8 +17,8 @@
   text-transform: uppercase;
 
   text-shadow: -1px -1px 0px #000000,
-    1.5px 1.5px 0px #000000,
-    2px 2px 0px #808080;
+    2.5px 2.5px 0px #000000,
+    3.5px 3.5px 0px #808080;
 
   @include onSmallDesktop {
     font-size: 70px;
@@ -34,6 +34,9 @@
     font-size: 110px;
     line-height: 112px; /* 101.818% */
     letter-spacing: 6.6px;
+    text-shadow: -1px -1px 0px #000000,
+      3.5px 3.5px 0px #000000,
+      5px 5px 0px #808080;
   }
   
 
@@ -401,7 +404,11 @@
   }
 
   &__left-tape {
-    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 85px;
+    top: -10px;
+    left: -20px;
 
     @include onTablet {
       width: 100px;
@@ -417,7 +424,11 @@
   }
 
   &__right-tape {
-    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 85px;
+    top: -10px;
+    right: -20px;
 
     @include onTablet {
       width: 100px;
@@ -759,7 +770,7 @@
   }
 
   &__title {
-    margin-bottom: 25px;
+    margin-bottom: 70px;
 
     @include onBigTablet {
       margin-bottom: 50px;
@@ -976,7 +987,7 @@
     }
 
     @include onSmallDesktop {
-      margin-bottom: 72px;
+      margin-bottom: 50px;
     }
   }
 
@@ -990,7 +1001,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-    padding: 36px;
+    padding: 30px 18px;
 
 
     @include onTablet {
@@ -1067,9 +1078,9 @@
   &__client-img {
     width: 48px;
     height: 48px;
-    width: 100%;
+    // width: 100%;
 
-    margin-right: 1.5rem;
+    margin-right: 20px;
 
     @include onSmallDesktop {
       width: 52px;
@@ -1145,7 +1156,8 @@
 
   &__bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     row-gap: 24px;
 
     @include onTablet {
@@ -1168,8 +1180,8 @@
 
   &__button {
     // padding: 1.35rem 5rem;
-    width: 100%;
-    height: max-content;
+    width: 215px;
+    height: 60px;
 
     background: url('../../images/button.svg');
     background-size: 100% 100%;

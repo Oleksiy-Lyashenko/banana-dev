@@ -16,6 +16,10 @@
     column-gap: 12px;
   }
 
+  @include onSmallDesktop {
+    margin-bottom: 50px;
+  }
+
   &__block {
     display: block;
     flex: 1 0 100%;
@@ -67,19 +71,22 @@
 
   &__type-info {
     margin-top: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 70px;
 
     color: $main-yellow-text-color;
     font-family: $fira-code;
-    font-size: 17px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 1.02px;
+    letter-spacing: 0.78px;
     text-transform: uppercase;
 
     @include onSmallDesktop {
       margin-bottom: 75px;
+
+      font-size: 17px;
+      letter-spacing: 1.02px;
     }
 
     @include onBigDesktop {
@@ -91,8 +98,8 @@
   }
 
   &__company-img {
-    width: 240px;
-    margin-bottom: 6rem;
+    width: 170px;
+    margin-bottom: 70px;
 
     @include onTablet {
       margin-bottom: 5rem;
@@ -100,6 +107,7 @@
 
     @include onSmallDesktop {
       margin-bottom: 110px;
+      width: 240px;
     }
 
     @include onBigDesktop {
@@ -111,9 +119,9 @@
   &__bottom {
     display: flex;
     justify-content: center;
-    column-gap: .5rem;
+    column-gap: 12px;
     flex-wrap: wrap;
-    row-gap: .5rem;
+    row-gap: 12px;
 
     @include onBigTablet {
       column-gap: 12px;
@@ -127,11 +135,17 @@
 
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 15px;
+    font-size: 10px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.6px;
+
+    @include onSmallDesktop {
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.9px;
+    }
 
     @include onBigDesktop {
       padding: 10px 14px;
