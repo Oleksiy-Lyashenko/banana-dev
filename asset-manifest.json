@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/banana-dev/static/css/main.fb4bd3f7.css",
-    "main.js": "/banana-dev/static/js/main.386f3ac1.js",
+    "main.css": "/banana-dev/static/css/main.1f54f80a.css",
+    "main.js": "/banana-dev/static/js/main.b673ab87.js",
     "static/media/portfolio_pocketbok_img.svg": "/banana-dev/static/media/portfolio_pocketbok_img.7b6159b973161bb5a0fb.svg",
     "static/media/projects_bg.svg": "/banana-dev/static/media/projects_bg.e95591284668dc11f0c3.svg",
     "static/media/header_img.png": "/banana-dev/static/media/header_img.7e45e9e1becc884a608e.png",
@@ -43,11 +43,11 @@
     "index.html": "/banana-dev/index.html",
     "static/media/project_info_mobile_img.svg": "/banana-dev/static/media/project_info_mobile_img.2ce6bbc29f3f777a242a.svg",
     "static/media/star.svg": "/banana-dev/static/media/star.b73ff636d0fec6ec7bda.svg",
-    "main.fb4bd3f7.css.map": "/banana-dev/static/css/main.fb4bd3f7.css.map",
-    "main.386f3ac1.js.map": "/banana-dev/static/js/main.386f3ac1.js.map"
+    "main.1f54f80a.css.map": "/banana-dev/static/css/main.1f54f80a.css.map",
+    "main.b673ab87.js.map": "/banana-dev/static/js/main.b673ab87.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb4bd3f7.css",
-    "static/js/main.386f3ac1.js"
+    "static/css/main.1f54f80a.css",
+    "static/js/main.b673ab87.js"
   ]
 }
