@@ -46,6 +46,14 @@
     }
   }
 
+  &__logo {
+    width: 190px;
+
+    @include onSmallDesktop {
+      width: 236px;
+    }
+  }
+
   &__content {  
 
     // @include onTablet {
