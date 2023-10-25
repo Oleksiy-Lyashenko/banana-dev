@@ -17,22 +17,26 @@
   text-transform: uppercase;
 
   text-shadow: -1px -1px 0px #000000,
-    1.5px 1.5px 0px #000000,
-    2px 2px 0px #808080;
+    2.5px 2.5px 0px #000000,
+    3.5px 3.5px 0px #808080;
 
-  @include onBigTablet {
+  @include onSmallDesktop {
     font-size: 70px;
     line-height: 70px; /* 100% */
     letter-spacing: 4.2px;
+    text-shadow: -1px -1px 0px #000000,
+      2.5px 2.5px 0px #000000,
+      3.5px 3.5px 0px #808080;
 
   }
 
-  @include onDesktop {
-    font-size: 5.6rem;
-    line-height: 6rem;
+  @include onBigDesktop {
+    font-size: 100px;
+    line-height: 112px; /* 112% */
+    letter-spacing: 6px;
     text-shadow: -1px -1px 0px #000000,
-      1.5px 1.5px 0px #000000,
-      2px 2px 0px #808080;
+      3.5px 3.5px 0px #000000,
+      5px 5px 0px #808080;
   }
   
 
@@ -96,8 +100,6 @@
   &__img-block {
     box-sizing: border-box;
     align-self: center;
-
-    max-width: 400px;
     width: 100%;
     height: max-content;
 
@@ -109,13 +111,50 @@
     padding: 40px;
 
 
-    background-image: url('../../images/about-us_block_img.png');
+    background-image: url('../../images/about-us_block_img.svg');
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    @include onBigTablet {
+      padding: 42px 56px;
+    }
+
+    @include onSmallDesktop {
+      max-width: 400px;
+      margin-bottom: 50px;
+    }
 
     @include onDesktop {
       align-self: flex-start;
       max-width: 550px;
       padding: 70px 0;
+    }
+  }
+
+  &__br {
+    display: block;
+
+    @include onBigTablet {
+      display: none;
+    }
+
+    @include onSmallDesktop {
+      display: block;
+    }
+  }
+
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+
+    @include onBigTablet {
+      flex-direction: row;
+      column-gap: 95px;
+      justify-content: space-between;
+    }
+
+    @include onSmallDesktop {
+      flex-direction: column;
     }
   }
 
@@ -129,6 +168,25 @@
     line-height: 54px; /* 112.5% */
     letter-spacing: 2.88px;
     text-transform: uppercase;
+
+    @include onBigTablet {
+      align-self: flex-start;
+
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 54px; /* 135% */
+      letter-spacing: 2.4px;
+    }
+
+    @include onSmallDesktop {
+      align-self: center;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 54px; /* 112.5% */
+      letter-spacing: 2.88px;
+    }
 
     @include onDesktop {
       font-size: 60px;
@@ -199,6 +257,22 @@
     font-weight: 450;
     line-height: normal;
     letter-spacing: 1.02px;
+
+    @include onBigTablet {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 450;
+      line-height: normal;
+      letter-spacing: 0.96px;
+    }
+
+    @include onSmallDesktop {
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 450;
+      line-height: normal;
+      letter-spacing: 1.02px;
+    }
 
     @include onDesktop {
       font-size: 22px;
@@ -296,6 +370,12 @@
     letter-spacing: 1.2px;
 
     @include onBigTablet {
+      font-size: 18px;
+      line-height: 22px; /* 122.222% */
+      letter-spacing: 1.08px;
+    }
+
+    @include onSmallDesktop {
       font-size: 22px;
       line-height: 30px; /* 136.364% */
       letter-spacing: 1.32px;
@@ -324,7 +404,14 @@
     letter-spacing: 1.02px;
 
     @include onBigTablet {
+      font-size: 15px;
+      line-height: 30px; /* 200% */
+      letter-spacing: 0.9px;
+    }
+
+    @include onSmallDesktop {
       font-size: 18px;
+      line-height: 30px; /* 166.667% */
       letter-spacing: 1.08px;
     }
 
@@ -345,13 +432,13 @@
     line-height: 22px; /* 169.231% */
     letter-spacing: 0.78px;
 
-    @include onBigTablet {
+    @include onSmallDesktop {
       font-size: 15px;
       line-height: 24px; /* 160% */
       letter-spacing: 0.9px;
     }
 
-    @include onDesktop {
+    @include onBigDesktop {
       font-size: 20px;
       line-height: 30px; /* 150% */
       letter-spacing: 1.2px;

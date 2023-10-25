@@ -20,19 +20,42 @@
     1.5px 1.5px 0px #000000,
     2px 2px 0px #808080;
 
-  @include onBigTablet {
+  @include onSmallDesktop {
     font-size: 70px;
     line-height: 70px; /* 100% */
     letter-spacing: 4.2px;
-
+    text-shadow: -1px -1px 0px #000000,
+      2.5px 2.5px 0px #000000,
+      3.5px 3.5px 0px #808080;
   }
 
-  @include onSmallDesktop {
-    font-size: 5.6rem;
-    line-height: 6rem;
+  @include onBigDesktop {
+    font-size: 110px;
+    line-height: 112px; /* 101.818% */
+    letter-spacing: 6.6px;
     text-shadow: -1px -1px 0px #000000,
-      1.5px 1.5px 0px #000000,
-      2px 2px 0px #808080;
+      3.5px 3.5px 0px #000000,
+      5px 5px 0px #808080;
+  }
+
+  &--about {
+    @include onSmallDesktop {
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 78px; /* 121.875% */
+      letter-spacing: 3.84px;
+      text-transform: uppercase;
+    }
+
+    @include onBigDesktop {
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 112px; /* 112% */
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
   }
   
 
@@ -96,7 +119,7 @@
       padding-top: 36px;
     }
 
-    @include onSmallDesktop {
+    @include onBigDesktop {
       max-width: 700px;
       padding-top: 70px;
     }
@@ -116,18 +139,25 @@
 
   &__sub-text {
     margin-bottom: 35px;
-    font-size: .95rem;
+    color: $white-text-color;
+
+    font-family: $fira-code;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
 
-    @include onTablet {
-      font-size: 1rem;
-      line-height: 26px; /* 173.333% */
+    @include onSmallDesktop {
+      font-size: 15px;
+      font-style: normal;
       letter-spacing: 0.9px;
     }
 
-    @include onSmallDesktop {
-      font-size: 1.2rem;
+    @include onBigDesktop {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
       line-height: 30px; /* 150% */
       letter-spacing: 1.2px;
     }
@@ -147,10 +177,33 @@
     }
   }
 
-  &__link {
-    font-size: 1.1rem;
-    color: $lightgray-color;
+  &__line {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 230.769% */
+    letter-spacing: 0.78px;
     text-decoration: none;
+
+    @include onBigDesktop {
+      font-size: 20px;
+      letter-spacing: 1.2px;
+    }
+  }
+
+  &__link {
+    color: $lightgray-color;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 230.769% */
+    letter-spacing: 0.78px;
+    text-decoration: none;
+
+    @include onBigDesktop {
+      font-size: 20px;
+      letter-spacing: 1.2px;
+    }
 
     &:hover {
       color: $pink-text-color;
@@ -198,8 +251,8 @@
     @include onSmallDesktop {
       margin-bottom: 70px;
 
-      column-gap: 20px;
-      row-gap: 20px;
+      column-gap: 16px;
+      row-gap: 16px;
     }
   }
 
@@ -211,14 +264,20 @@
     font-size: .9rem;
     font-weight: 400;
     letter-spacing: 1.2px;
-
-    @include onTablet {
-      font-size: 1rem;
-      letter-spacing: 0.9px;
-    }
     
     @include onSmallDesktop {
-      font-size: 1.1rem;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px; /* 173.333% */
+      letter-spacing: 0.9px;
+    }
+
+    @include onBigDesktop {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 150% */
       letter-spacing: 1.2px;
     }
   }
@@ -236,8 +295,13 @@
     }
 
     @include onSmallDesktop {
-      width: 700px;
+      width: 550px;
       column-gap: 15px;
+    }
+
+    @include onBigDesktop {
+      width: 700px;
+      column-gap: 24px;
     }
   }
 
@@ -248,20 +312,20 @@
     column-gap: 10px;
     margin: 0 auto;
 
-    width: 328px;
+    width: 100%;
     height: 56px;
 
     text-decoration: none;
 
     background-image: url('../../../images/button_site_mobile.svg');
-    block-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 
     @include onTablet {
-      width: 165px;
+      width: 177px;
       height: 50px;
 
-      background-image: url('../../../images/button_site_tablet.svg');
+      // background-image: url('../../../images/button_site_tablet.svg');
       block-size: contain;
       background-repeat: no-repeat;
     }
@@ -269,12 +333,12 @@
     @include onSmallDesktop {
       column-gap: 20px;
 
+      width: 168px;
+    }
+
+    @include onBigDesktop {
       width: 217px;
       height: 72px;
-
-      background-image: url('../../../images/button_site.svg');
-      block-size: contain;
-      background-repeat: no-repeat;
     }
 
     &__img {
@@ -285,7 +349,11 @@
       }
 
       @include onSmallDesktop {
-        width: 31px;
+        width: 26px;
+      }
+
+      @include onBigDesktop {
+        width: 33px;
       }
     }
 
@@ -303,7 +371,12 @@
       }
 
       @include onSmallDesktop {
-        font-size: 1.2rem;
+        font-size: 15px;
+        line-height: 30px; /* 200% */
+      }
+
+      @include onBigDesktop {
+        font-size: 20px;
         letter-spacing: 1.2px;
       }
     }
@@ -327,9 +400,15 @@
       z-index: 1;
       position: absolute;
       bottom: 10px;
-      right: 10px;
+      right: 50px;
 
-      width: 350px;
+      width: 260px;
+    }
+
+
+    @include onBigDesktop {
+      width: 390px;
+      right: 0;
     }
 
     &--mobile {
@@ -367,7 +446,15 @@
     }
 
     @include onSmallDesktop {
-      padding: 20px 30px;
+      background-image: url('../../../images/project_info_img.svg');
+      background-position-x: 0px;
+      background-position-y: 0px;
+      background-size: 100% 100%;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
     }
     &::after {
       box-shadow: none;
@@ -375,24 +462,50 @@
   }
 
   &__left-tape {
-    width: 90px;
+    z-index: 10;
     position: absolute;
-    top: -15px;
-    left: -15px;
+    width: 85px;
+    top: -10px;
+    left: -20px;
+
+    // @include onBigTablet {
+    //   display: none;
+    // }
 
     @include onBigTablet {
-      display: none;
+      display: block;
+      width: 85px;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+    }
+
+    @include onBigDesktop {
+      width: 120px;
+      top: -25px;
+      left: -25px;
     }
   }
 
   &__right-tape {
-    width: 90px;
+    z-index: 10;
     position: absolute;
-    top: -15px;
-    right: -15px;
+    width: 85px;
+    top: -10px;
+    right: -20px;
 
     @include onBigTablet {
-      display: none;
+      display: block;
+      width: 85px;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+    }
+
+    @include onBigDesktop {
+      width: 120px;
+      top: -25px;
+      right: -25px;
     }
   }
 
@@ -409,6 +522,14 @@
       justify-content: space-between;
       padding: 35px 50px;
       padding-top: 50px;
+    }
+
+    @include onSmallDesktop {
+      padding: 37px 32px;
+    }
+
+    @include onBigDesktop {
+      padding: 50px;
     }
   }
 
@@ -455,19 +576,18 @@
 
     &__type {
       color: $white-text-color;
-      font-size: 1.1rem;
+      font-family: $fira-code;
+      font-size: 16px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      letter-spacing: 1.2px;
+      letter-spacing: 0.96px;
 
-      @include onTablet {
-        font-size: 1rem;
-        letter-spacing: 0.96px;
-      }
-
-      @include onSmallDesktop {
-        font-size: 1.1rem;
+      @include onBigDesktop {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
         letter-spacing: 1.2px;
       }
     }
@@ -481,15 +601,24 @@
       letter-spacing: 0.96px;
       text-align: right;
 
-      @include onBigTablet {
-        font-size: 1.05rem;
-        text-align: left;
+      @include onSmallDesktop {
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: 1.08px;
       }
 
-      @include onSmallDesktop {
-        font-size: 1.3rem;
+      @include onBigDesktop {
+        font-size: 26px;
         letter-spacing: 1.56px;
       }
+    }
+  }
+
+  &__br {
+    display: block;
+
+    @include onSmallDesktop {
+      display: none;
     }
   }
 
@@ -505,6 +634,10 @@
     @include onSmallDesktop {
       height: 65px;
     }
+
+    @include onBigDesktop {
+      height: 82px;
+    }
   }
 }
 
@@ -513,7 +646,7 @@
     z-index: 6;
     padding-top: 80px;
 
-    @include onSmallDesktop {
+    @include onBigDesktop {
       padding-top: 250px;
     }
   }
@@ -522,54 +655,62 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    row-gap: 24px;
+    margin-bottom: 50px;
 
     @include onTablet {
       flex-direction: row;
       column-gap: 60px;
     }
 
+    @include onSmallDesktop {
+      margin-bottom: 100px;
+    }
+
+    @include onBigDesktop {
+      margin-bottom: 80px;
+    }
 
   }
 
   &__block {
     max-width: 550px;
+
+    @include onSmallDesktop {
+      max-width: 400px;
+    }
+
+    @include onBigDesktop {
+      max-width: 580px;
+    }
   }
 
   &__title {
-    font-size: 4rem;
-    letter-spacing: 3.12px;
-    margin-bottom: 25px;
-
-    @include onTablet {
-      margin-bottom: 27px;
-      font-size: 3.5rem;
-      letter-spacing: 3.84px;
-    }
+    margin-bottom: 16px;
 
     @include onSmallDesktop {
-      margin-bottom: 44px;
-      font-size: 5rem;
-      letter-spacing: 6px;
+      margin-bottom: 27px;
     }
 
-    &--pink {
-      color: $pink2-text-color;
+    @include onBigDesktop {
+      margin-bottom: 44px;
     }
   }
 
   &__text {
-    font-size: 1rem;
-    line-height: 1.6rem;
+    margin: 0;
+    color: $white-text-color;
 
-    @include onTablet {
-      font-size: .9rem;
-      line-height: 1.4rem;
-      letter-spacing: 0.78px;
-    }
+    font-family: $fira-code;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 169.231% */
+    letter-spacing: 0.78px;
 
-    @include onSmallDesktop {
-      font-size: 1.1rem;
-      line-height: 30px;
+    @include onBigDesktop {
+      font-size: 20px;
+      line-height: 30px; /* 150% */
       letter-spacing: 1.2px;
     }
   }
@@ -583,7 +724,7 @@
     position: absolute;
     top: 0;
 
-    width: max-content;
+    width: 100%;
     height: 60px;
 
     @include onTablet {
@@ -591,15 +732,31 @@
     }
   }
 
+  &__img-block {
+    overflow: hidden;
+    @include onBigTablet {
+      height: 520px;
+    }
+
+    @include onBigDesktop {
+      height: 860px;
+    }
+  }
+
   &__img {
     width: 100%;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.3))
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.3));
+
+    @include onSmallDesktop {
+      width: 100%;
+      // height: 520px;
+    }
   }
 
   &__bottom-shadow {
     position: absolute;
     bottom: 0;
-    width: max-content;
+    width: 100%;
     height: 60px;
 
     @include onTablet {
@@ -617,31 +774,22 @@
 
 .pocketbook-goal {
   &__content {
-    padding-top: 150px;
+    padding-top: 100px;
 
-    @include onTablet {
-      padding-top: 100px;
-    }
-
-    @include onSmallDesktop {
+    @include onBigDesktop {
       padding-top: 250px;
     }
   }
 
   &__title {
     text-align: right;
-    font-size: 4rem;
-    letter-spacing: 3.12px;
-    
     margin-bottom: 70px;
 
-    @include onTablet {
-      margin-bottom: 70px;
-      letter-spacing: 4.08px;
+    @include onSmallDesktop {
+      margin-bottom: 50px;
     }
 
-    @include onSmallDesktop {
-      font-size: 6rem;
+    @include onBigDesktop {
       margin-bottom: 100px;
     }
   }
@@ -673,23 +821,27 @@
       @include onTablet {
         margin-top: 60px;
       }
+
+      @include onSmallDesktop {
+        align-items: flex-start;
+      }
     }
   }
 
   &__img {
-    width: 130px;
+    width: 125px;
     margin-bottom: 25px;
     justify-self: right;
 
     &--4 {
       height: 130px;
 
-      @include onSmallDesktop {
+      @include onBigDesktop {
         height: 170px;
       }
     }
 
-    @include onSmallDesktop {
+    @include onBigDesktop {
       width: 170px;
     }
   }
@@ -704,16 +856,13 @@
     line-height: 32px;
     letter-spacing: 1.32px;
 
-    @include onTablet {
-      margin-bottom: 15px;
-
-      font-size: 1.1rem;
-      line-height: 32px; /* 160% */
+    @include onSmallDesktop {
+      font-size: 20px;
       letter-spacing: 1.2px;
     }
 
-    @include onSmallDesktop {
-      font-size: 1.4rem;
+    @include onBigDesktop {
+      font-size: 26px;
       letter-spacing: 1.56px;
     }
   }
@@ -726,14 +875,8 @@
     line-height: 26px; /* 150% */
     letter-spacing: .9px;
 
-    @include onTablet {
-      font-size: .9rem;
-      line-height: 26px; /* 173.333% */
-      letter-spacing: 0.9px;
-    }
-
-    @include onSmallDesktop {
-      font-size: 1.17rem;
+    @include onBigDesktop {
+      font-size: 20px;
       line-height: 30px; /* 150% */
       letter-spacing: 1.2px;
     }
@@ -765,32 +908,33 @@
 
     @include onSmallDesktop {
       padding-top: 250px;
+      column-gap: 0;
+    }
+
+    @include onBigDesktop {
+      column-gap: 50px;
     }
   }
 
   &__title {
     margin-bottom: 30px;
-    font-size: 4rem;
-    letter-spacing: 3.12px;
-
-    @include onTablet {
-      margin-bottom: 40px;
-
-      font-size: 5rem;
-      letter-spacing: 4px;
-    }
 
     @include onSmallDesktop {
-      margin-bottom: 70px;
+      margin-bottom: 40px;
+    }
 
-      font-size: 6rem;
-      letter-spacing: 6.6px;
+    @include onBigDesktop {
+      margin-bottom: 70px;
     }
   }
 
   &__text-block {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
+
+    @include onBigDesktop {
+      max-width: 600px;
+    }
   }
 
   &__position-img {
@@ -811,22 +955,16 @@
   &__list-text {
     color: #FFF;
     font-family: Fira Code;
-    font-size: .9rem;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.5rem; /* 150% */
-    letter-spacing: 1.2px;
+    line-height: 22px; /* 169.231% */
+    letter-spacing: 0.78px;
 
-    @include onTablet {
-      font-size: .9rem;
-      line-height: 22px; /* 169.231% */
-      letter-spacing: 0.78px;
-    }
-
-    @include onSmallDesktop {
-      font-size: 1.2rem;
-      letter-spacing: 1.2px;
+    @include onBigDesktop {
+      font-size: 20px;
       line-height: 30px; /* 150% */
+      letter-spacing: 1.2px;
     }
   }
 
@@ -841,6 +979,10 @@
       @include onBigTablet {
         display: block;
         margin-top: 100px;
+      }
+
+      @include onSmallDesktop {
+        margin-top: 90px;
       }
     }
     
@@ -883,23 +1025,23 @@
     margin-right: 1rem;
   }
 
-  &__list-text {
-    color: $white-text-color;
-    font-family: $fira-code;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px; /* 200% */
-    letter-spacing: 0.6px;
+  // &__list-text {
+  //   color: $white-text-color;
+  //   font-family: $fira-code;
+  //   font-size: 15px;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   line-height: 30px; /* 200% */
+  //   letter-spacing: 0.6px;
 
-    @include onSmallDesktop {
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 30px; /* 150% */
-      letter-spacing: 1.2px;
-    }
-  }
+  //   @include onSmallDesktop {
+  //     font-size: 18px;
+  //     font-style: normal;
+  //     font-weight: 500;
+  //     line-height: 30px; /* 150% */
+  //     letter-spacing: 1.2px;
+  //   }
+  // }
 
   &__img {
     width: 100%;
@@ -919,30 +1061,26 @@
   &__img {
     display: none;
 
-    @include onTablet {
+    @include onSmallDesktop {
       display: block;
       width: 280px;
       position: absolute;
       top: 0;
       top: 260px;
-      right: 20px;
+      right: 50px;
     }
 
-    @include onSmallDesktop {
-      width: 400px;
+    @include onBigDesktop {
+      width: 450px;
+      right: 0;
     }
   }
 
   &__title {
     margin-bottom: 16px;
 
-    @include onTablet {
-      margin-bottom: 24px;
-    }
-
     @include onSmallDesktop {
-      font-size: 6rem;
-      margin-bottom: 50px;
+      margin-bottom: 24px;
     }
   }
 
@@ -968,19 +1106,17 @@
 
   &__text {
     margin: 0;
-    max-width: 400px;
-    font-size: .9rem;
+    color: $white-text-color;
+
+    font-family: $fira-code;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.9px;
 
-    @include onTablet {
-      // font-size: .9rem;
-      // line-height: 26px; /* 173.333% */
-      // letter-spacing: 0.9px;
-    }
-
-    @include onSmallDesktop {
-      font-size: 1.2rem;
+    @include onBigDesktop {
+      font-size: 20px;
       line-height: 30px; /* 150% */
       letter-spacing: 1.2px;
     }
@@ -998,7 +1134,11 @@
     }
 
     @include onSmallDesktop {
-      column-gap: 150px;
+      column-gap: 100px;
+    }
+
+    @include onBigDesktop {
+      column-gap: 250px;
     }
   }
 
@@ -1014,22 +1154,29 @@
       margin-bottom: 35px;
 
       color: $main-yellow-text-color;
-      font-size: 1.5rem;
+      font-size: 20px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
       letter-spacing: 1.2px;
 
-      @include onTablet {
-        margin-bottom: 50px;
+      // @include onTablet {
+      //   margin-bottom: 50px;
 
-        font-size: 1.5rem;
+      //   font-size: 1.5rem;
+      //   letter-spacing: 1.56px;
+      // }
+
+      @include onSmallDesktop {
+        font-size: 26px;
         letter-spacing: 1.56px;
       }
 
-      @include onSmallDesktop {
-        font-size: 2.2rem;
+      @include onBigDesktop {
         margin-bottom: 70px;
+
+        font-size: 40px;
+        letter-spacing: 2.4px;
       }
     }
   }
@@ -1095,13 +1242,16 @@
   &__typography {
     margin-bottom: 70px;
 
-    @include onTablet {
-      margin-top: -90px;
-    }
+    // @include onTablet {
+    //   margin-top: -90px;
+    // }
 
     @include onSmallDesktop {
-      margin-top: -120px;
-      margin-bottom: 70px;
+      margin-top: -70px;
+    }
+
+    @include onBigDesktop {
+      margin-top: -110px;
     }
 
     &__subtitle {
@@ -1116,23 +1266,23 @@
       align-items: flex-end;
       margin-bottom: 50px;
 
-      @include onTablet {
-        margin-bottom: 45px;
+      @include onSmallDesktop {
+        margin-bottom: 35px;
       }
 
-      @include onSmallDesktop {
+      @include onBigDesktop {
         margin-bottom: 70px;
       }
     }
 
     &__img {
-      width: 80px;
-
-      @include onTablet {
-        width: 100px;
-      }
+      width: 68px;
 
       @include onSmallDesktop {
+        width: 80px;
+      }
+
+      @include onBigDesktop {
         width: 130px;
       }
     }
@@ -1150,169 +1300,6 @@
       border-bottom: 1px solid #262626;
     }
 
-    &__title {
-      color: $pink2-text-color;
-      font-family: $fira-code;
-      font-weight: 400;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: 2.88px;
-
-      &--1 {
-        font-size: 30px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 48px;
-        }
-      }
-
-      &--2 {
-        font-size: 22px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 32px;
-        }
-      }
-
-      &--3 {
-        font-size: 16px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 23px;
-        }
-      }
-
-      &--4 {
-        font-size: 13px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 18px;
-        }
-      }
-
-      &--5 {
-        font-size: 12px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 16px;
-        }
-      }
-
-      &--6 {
-        font-size: 11px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 14px;
-        }
-      }
-
-      &--7 {
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 12px;
-        }
-      }
-
-      &--8 {
-        font-size: 10px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 12px;
-        }
-      }
-    }
-
-    &__size {
-      color: #848484;
-      font-family: $fira-code;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: 2.88px;
-
-      &--1 {
-        font-size: 30px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 48px;
-        }
-      }
-
-      &--2 {
-        font-size: 22px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 32px;
-        }
-      }
-
-      &--3 {
-        font-size: 16px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 23px;
-        }
-      }
-
-      &--4 {
-        font-size: 13px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 18px;
-        }
-      }
-
-      &--5 {
-        font-size: 12px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 16px;
-        }
-      }
-
-      &--6 {
-        font-size: 11px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 14px;
-        }
-      }
-
-      &--7 {
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 12px;
-        }
-      }
-
-      &--8 {
-        font-size: 10px;
-        letter-spacing: 0.5px;
-
-        @include onSmallDesktop {
-          font-size: 12px;
-        }
-      }
-    }
   }
 }
 
@@ -1336,8 +1323,12 @@
     }
 
     @include onSmallDesktop {
-      column-gap: 140px;
+      column-gap: 0;
       padding-top: 250px;
+    }
+
+    @include onBigDesktop {
+      column-gap: 250px;
     }
   }
 
@@ -1361,6 +1352,10 @@
 
     max-width: 600px;
 
+    @include onSmallDesktop {
+      margin-left: 60px;
+    }
+
     &--position {
       justify-content: center;
     }
@@ -1372,24 +1367,20 @@
   }
 
   &__sub-text {
+    margin: 0;
     color: $white-text-color;
 
     font-family: Fira Code;
-    font-size: .85rem;
+    font-size: 13px;
+    font-style: normal;
     font-weight: 500;
     line-height: 22px; /* 169.231% */
     letter-spacing: 0.78px;
 
-    @include onTablet {
-      font-size: .85rem;
-      line-height: 22px; /* 169.231% */
-      letter-spacing: 0.78px;
-    }
-
-    @include onSmallDesktop {
-      font-size: 1.2rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.78px;
+    @include onBigDesktop {
+      font-size: 20px;
+      line-height: 30px; /* 150% */
+      letter-spacing: 1.2px;
     }
   }
 
@@ -1561,6 +1552,8 @@
   }
 
   &__text-block {
+    max-width: 550px;
+
     margin: 0;
     color: $white-text-color;
     font-family: $fira-code;
@@ -1569,16 +1562,14 @@
     font-weight: 500;
     line-height: 22px; /* 169.231% */
     letter-spacing: 0.78px;
-    max-width: 550px;
-
-    @include onBigTablet {
-      font-size: .85rem;
-      line-height: 22px; /* 169.231% */
-      letter-spacing: 0.78px;
-      // max-width: 350px;
-    }
 
     @include onSmallDesktop {
+      max-width: 350px;
+    }
+
+    @include onBigDesktop {
+      max-width: 550px;
+
       font-size: 20px;
       font-style: normal;
       font-weight: 500;
@@ -1589,10 +1580,12 @@
 
   &__img {
     width: 100%;
-    margin-left: -30px;
+    // margin-left: -30px;
 
     &--mobile {
       display: block;
+      margin: 0 auto;
+      margin-bottom: 48px;
       @include onBigTablet {
         display: none;
       }
@@ -1629,8 +1622,6 @@
 
   &__title {
     text-align: right;
-    letter-spacing: 3px;
-    font-size: 4rem;
     margin-bottom: 50px;
 
 
@@ -1638,15 +1629,9 @@
       margin-bottom: 30px;
 
       text-align: left;
-
-      font-size: 4rem;
-      line-height: 4rem; /* 100% */
-      letter-spacing: 4.08px;
     }
 
     @include onSmallDesktop {
-      font-size: 6rem;
-      line-height: 6rem;
       margin-bottom: 30px;
     }
   }
@@ -1679,6 +1664,10 @@
     }
 
     @include onSmallDesktop {
+      width: 480px;
+    }
+
+    @include onBigDesktop {
       width: 700px;
     }
   }
@@ -1689,6 +1678,7 @@
   }
 
   &__sub-text {
+    margin: 0;
     color: $white-text-color;
     font-family: $fira-code;
     font-size: 13px;
@@ -1698,14 +1688,16 @@
     letter-spacing: 0.78px;
     max-width: 550px;
 
-    @include onBigTablet {
-      font-size: .85rem;
-      line-height: 22px; /* 169.231% */
-      letter-spacing: 0.78px;
-      // max-width: 350px;
-    }
+    // @include onBigTablet {
+    //   font-size: .85rem;
+    //   line-height: 22px; /* 169.231% */
+    //   letter-spacing: 0.78px;
+    //   // max-width: 350px;
+    // }
 
-    @include onSmallDesktop {
+
+
+    @include onBigDesktop {
       font-size: 20px;
       font-style: normal;
       font-weight: 500;
@@ -1715,25 +1707,18 @@
   }
 
   &__name {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 
     color: $pink2-text-color;
-    font-size: 2rem;
+    font-size: 26px;
+    font-style: normal;
     font-weight: 600;
-    line-height: 30px; /* 75% */
-    letter-spacing: 2.4px;
+    line-height: 30px; /* 115.385% */
+    letter-spacing: 1.56px;
     text-transform: uppercase;
 
-    @include onTablet {
-      font-size: 1.4rem;
-      line-height: 30px; /* 115.385% */
-      letter-spacing: 1.56px;
-      margin-bottom: 10px;
-    }
-
-    @include onSmallDesktop {
-      font-size: 2rem;
-      line-height: 30px; /* 75% */
+    @include onBigDesktop {
+      font-size: 40px;
       letter-spacing: 2.4px;
     }
   }
@@ -1742,26 +1727,27 @@
     margin-bottom: 20px;
 
     color: $pink-text-color;
-    font-family: Fira Code;
-    font-size: 1.3rem;
+    font-family: $fira-code;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 107.143% */
-    letter-spacing: 1.68px;
+    line-height: 30px; /* 166.667% */
+    letter-spacing: 1.08px;
 
-    @include onTablet {
-      margin-bottom: 10px;
+    // @include onTablet {
+    //   margin-bottom: 10px;
 
-      font-size: 1rem;
-      line-height: 30px; /* 166.667% */
-      letter-spacing: 1.08px;
-    }
+    //   font-size: 1rem;
+    //   line-height: 30px; /* 166.667% */
+    //   letter-spacing: 1.08px;
+    // }
 
     @include onSmallDesktop {
       margin-bottom: 20px;
+    }
 
-      font-size: 1.3rem;
-      line-height: 30px; /* 107.143% */
+    @include onBigDesktop {
+      font-size: 28px;
       letter-spacing: 1.68px;
     }
   }

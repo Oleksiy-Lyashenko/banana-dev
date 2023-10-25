@@ -24,7 +24,7 @@ export function Header({ buttonClass, headerClass }) {
             onClick={handleMenu}
           />
           <NavLink to="/">
-            <img src="./images/top_page/header/logo.svg" alt="" className="footer__logo" />
+            <img src="./images/top_page/header/logo.svg" alt="" className="header__logo" />
           </NavLink>
         </div>
 

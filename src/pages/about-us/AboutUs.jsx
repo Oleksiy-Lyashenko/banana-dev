@@ -23,7 +23,9 @@ export default function AboutUs() {
                   Home
                 </NavLink>
               </li>
-              <li className="pocketbook-top__item">-</li>
+              <li className="pocketbook-top__item">
+                <span className="pocketbook-top__line">-</span>
+              </li>
               <li className="pocketbook-top__item">
                 <NavLink
                   to="#"
@@ -60,62 +62,64 @@ export default function AboutUs() {
 
               <div className="about-us-top__img-block">
                 <h2 className="page-title-about-us--yellow about-us-top__main-contact-text">
-                  contact <br /> information
+                  contact <br className="about-us-top__br" /> information
                 </h2>
 
-                <div className="about-us-top__contact-field">
-                  <h4 className="about-us-top__contact-title about-us-top__contact-title">
-                    United States
-                  </h4>
+                <div className="about-us-top__info-block">
+                  <div className="about-us-top__contact-field">
+                    <h4 className="about-us-top__contact-title about-us-top__contact-title">
+                      United States
+                    </h4>
 
-                  <div className="about-us-top__contact-block">
-                    <img
-                      src="./images/about-us/mail_img.svg"
-                      alt=""
-                      srcset=""
-                      className="about-us-top__contact-img"
-                    />
+                    <div className="about-us-top__contact-block">
+                      <img
+                        src="./images/about-us/mail_img.svg"
+                        alt=""
+                        srcset=""
+                        className="about-us-top__contact-img"
+                      />
 
-                    <span className="about-us-top__contact-text">contact@banan.dev</span>
+                      <span className="about-us-top__contact-text">contact@banan.dev</span>
+                    </div>
+
+                    <div className="about-us-top__contact-block">
+                      <img
+                        src="./images/about-us/phone_img.svg"
+                        alt=""
+                        srcset=""
+                        className="about-us-top__contact-img"
+                      />
+
+                      <span className="about-us-top__contact-text">+380 (961) 50 4896</span>
+                    </div>
                   </div>
 
-                  <div className="about-us-top__contact-block">
-                    <img
-                      src="./images/about-us/phone_img.svg"
-                      alt=""
-                      srcset=""
-                      className="about-us-top__contact-img"
-                    />
+                  <div className="about-us-top__contact-field">
+                    <h4 className="about-us-top__contact-title about-us-top__contact-title--blue">
+                      Ukraine
+                    </h4>
 
-                    <span className="about-us-top__contact-text">+380 (961) 50 4896</span>
-                  </div>
-                </div>
+                    <div className="about-us-top__contact-block">
+                      <img
+                        src="./images/about-us/mail_img.svg"
+                        alt=""
+                        srcset=""
+                        className="about-us-top__contact-img"
+                      />
 
-                <div className="about-us-top__contact-field">
-                  <h4 className="about-us-top__contact-title about-us-top__contact-title--blue">
-                    Ukraine
-                  </h4>
+                      <span className="about-us-top__contact-text">contact@banan.dev</span>
+                    </div>
 
-                  <div className="about-us-top__contact-block">
-                    <img
-                      src="./images/about-us/mail_img.svg"
-                      alt=""
-                      srcset=""
-                      className="about-us-top__contact-img"
-                    />
+                    <div className="about-us-top__contact-block">
+                      <img
+                        src="./images/about-us/phone_img.svg"
+                        alt=""
+                        srcset=""
+                        className="about-us-top__contact-img"
+                      />
 
-                    <span className="about-us-top__contact-text">contact@banan.dev</span>
-                  </div>
-
-                  <div className="about-us-top__contact-block">
-                    <img
-                      src="./images/about-us/phone_img.svg"
-                      alt=""
-                      srcset=""
-                      className="about-us-top__contact-img"
-                    />
-
-                    <span className="about-us-top__contact-text">+380 (961) 50 4896</span>
+                      <span className="about-us-top__contact-text">+380 (961) 50 4896</span>
+                    </div>
                   </div>
                 </div>
               </div>

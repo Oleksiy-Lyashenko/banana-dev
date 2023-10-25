@@ -1,6 +1,70 @@
 @import "../../../../styles/utils/vars";
 @import "../../../../styles/utils/mixins";
 
+.page-title-stack {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+
+
+  font-family: $sugo-pro-display;
+  color: $white-text-color;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px; /* 100% */
+  letter-spacing: 3.12px;
+  text-transform: uppercase;
+
+  text-shadow: -1px -1px 0px #000000,
+    1.5px 1.5px 0px #000000,
+    2px 2px 0px #808080;
+
+  @include onSmallDesktop {
+    font-size: 70px;
+    line-height: 70px; /* 100% */
+    letter-spacing: 4.2px;
+    text-shadow: -1px -1px 0px #000000,
+      2.5px 2.5px 0px #000000,
+      3.5px 3.5px 0px #808080;
+  }
+
+  @include onBigDesktop {
+    font-size: 110px;
+    line-height: 112px; /* 101.818% */
+    letter-spacing: 6.6px;
+  }
+
+  &--about {
+    @include onSmallDesktop {
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 78px; /* 121.875% */
+      letter-spacing: 3.84px;
+      text-transform: uppercase;
+    }
+
+    @include onBigDesktop {
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 112px; /* 112% */
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+  }
+  
+
+  &--yellow {
+    color: $main-yellow-text-color;
+  }
+
+  &--pink {
+    color: $pink2-text-color;
+  }
+}
+
 .stack-page {
   &__content {
     padding-top: 10rem;
@@ -18,19 +82,13 @@
     display: block;
     margin: 0;
 
-    font-size: 3.8rem;
-    letter-spacing: 3.12px;
     margin-bottom: 25px;
 
     @include onTablet {
-      font-size: 5rem;
       margin-bottom: 30px;
-      letter-spacing: 4.08px;
     }
 
     @include onSmallDesktop {
-      font-size: 6rem;
-      margin-bottom: 50px;
     }
   }
 
@@ -60,9 +118,9 @@
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
 
-    @include onBigTablet {
+    @include onSmallDesktop {
       text-align: right;
-      width: 350px;
+      width: 375px;
       font-size: 13px;
       line-height: 26px; /* 200% */
       letter-spacing: 0.52px;
@@ -78,24 +136,25 @@
 }
 
 .main-stack {
-  height: 660px;
+  height: 630px;
   background-size: 150px 150px;
   position: relative;
-  background-position: 56px 64px;
+  background-position: 65px 64px;
 
   @include onBigPhone {
     background-position: 76px 64px;
   }
 
   @include onTablet {
-    height: 550px;
+    height: 520px;
 
     background-size: 200px 200px;
-    background-position: 77px 63.5px;
+    background-position: 80px 64px;
   }
 
   @include onBigTablet {
-    background-position: 0 63.5px;
+    height: 520px;
+    background-position: 100px 63.5px;
   }
 
   @include onBigDesktop {
@@ -185,8 +244,12 @@
     display: flex;
     flex: 1 0 100%;
     flex-direction: column;
-    width: 600px;
+    width: 250px;
     // width: 100%;
+
+    @include onTablet {
+      width: 600px;
+    }
   }
 
   &__direction {
@@ -253,8 +316,13 @@
   }
 
   &__img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+
+    @include onBigTablet {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__tool-name {
@@ -268,7 +336,7 @@
 
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 1rem;
+    font-size: 13px;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 1.2px;

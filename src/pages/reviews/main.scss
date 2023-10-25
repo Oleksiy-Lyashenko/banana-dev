@@ -17,22 +17,25 @@
   text-transform: uppercase;
 
   text-shadow: -1px -1px 0px #000000,
-    1.5px 1.5px 0px #000000,
-    2px 2px 0px #808080;
+    2.5px 2.5px 0px #000000,
+    3.5px 3.5px 0px #808080;
 
-  @include onBigTablet {
+  @include onSmallDesktop {
     font-size: 70px;
     line-height: 70px; /* 100% */
     letter-spacing: 4.2px;
-
+    text-shadow: -1px -1px 0px #000000,
+      2.5px 2.5px 0px #000000,
+      3.5px 3.5px 0px #808080;
   }
 
-  @include onSmallDesktop {
-    font-size: 5.6rem;
-    line-height: 6rem;
+  @include onBigDesktop {
+    font-size: 100px;
+    line-height: 112px; /* 112% */
+    letter-spacing: 6px;
     text-shadow: -1px -1px 0px #000000,
-      1.5px 1.5px 0px #000000,
-      2px 2px 0px #808080;
+      3.5px 3.5px 0px #000000,
+      5px 5px 0px #808080;
   }
   
 
@@ -45,6 +48,41 @@
   }
 }
 
+.reviews-top {
+  &__text-block {
+    max-width: 500px;
+    margin-bottom: 20px;
+
+    @include onSmallDesktop {
+      margin-bottom: 64px;
+    }
+    
+    @include onBigDesktop {
+      max-width: 650px;
+      margin-bottom: 110px;
+    }
+  }
+  
+  &__sub-text {
+    margin: 0;
+
+    color: $white-text-color;
+    font-family: $fira-code;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.6px;
+
+    @include onBigDesktop {
+      font-size: 20px;
+      line-height: 30px; /* 150% */
+      letter-spacing: 1.2px;
+    }
+  }
+
+}
+
 .reviews-main {
   &__content {
     display: grid;
@@ -55,13 +93,28 @@
 
     @include onBigTablet {
       grid-template-columns: repeat(2, 1fr);
-      row-gap: 40px;
+      column-gap: 10px;
+      row-gap: 32px;
     }
+
+    @include onBigDesktop {
+      column-gap: 20px;
+      row-gap: 48px;
+    }
+
   }
 
   &__page-title {
     &--position {
       margin-bottom: 26px;
+
+      @include onSmallDesktop {
+        margin-bottom: 20px;
+      }
+
+      @include onBigDesktop {
+        margin-bottom: 24px;
+      }
     }
   }
 
@@ -69,14 +122,16 @@
     width: 100%;
     height: max-content;
     box-sizing: border-box;
-    background: url(../../images/reviews_bg.png);
+    background: url(../../images/reviews_mobile_bg.svg);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     padding: 30px 25px;
     padding-left: 35px;
 
     @include onBigTablet {
-      background: url(../../images/reviews_desktop_bg.png);
+      background: url(../../images/reviews_bg.svg);
       background-size: 100% 100%;
+      background-repeat: no-repeat;
     }
 
     @include onDesktop {
@@ -85,12 +140,14 @@
 
     &--doshed-bg {
       height: max-content;
-      background-image: url(../../images/reviews_doshed_bg.png);
+      background-image: url(../../images/reviews_doshed_mobile_bg.svg);
       background-size: 100% 100%;
+      background-repeat: no-repeat;
 
       @include onBigTablet {
-        background: url(../../images/reviews_doshed_desktop_bg.png);
+        background: url(../../images/reviews_doshed_bg.svg);
         background-size: 100% 100%;
+        background-repeat: no-repeat;
       }
     }
 
@@ -108,22 +165,26 @@
     }
 
     &--change-bg-1 {
-      background: url(../../images/reviews_bg.png);
+      background: url(../../images/reviews_mobile_bg.svg);
       background-size: 100% 100%;
+      background-repeat: no-repeat;
 
       @include onBigTablet {
-        background: url(../../images/reviews_doshed_desktop_bg.png);
+        background: url(../../images/reviews_doshed_bg.svg);
         background-size: 100% 100%;
+        background-repeat: no-repeat;
       }
     }
 
     &--change-bg-2 {
-      background: url(../../images/reviews_doshed_bg.png);
+      background-image: url(../../images/reviews_doshed_mobile_bg.svg);
       background-size: 100% 100%;
+      background-repeat: no-repeat;
 
       @include onBigTablet {
-        background: url(../../images/reviews_desktop_bg.png);
+        background: url(../../images/reviews_bg.svg);
         background-size: 100% 100%;
+        background-repeat: no-repeat;
       }
     }
   }
@@ -135,11 +196,11 @@
 
     margin-bottom: 20px;
 
-    @include onBigTablet {
+    @include onSmallDesktop {
       margin-bottom: 16px;
     }
 
-    @include onSmallDesktop {
+    @include onBigDesktop {
       margin-bottom: 24px;
     }
   }
@@ -147,11 +208,11 @@
   &__star {
     width: 22px;
 
-    @include onBigTablet {
+    @include onSmallDesktop {
       width: 26px;
     }
 
-    @include onSmallDesktop {
+    @include onBigDesktop {
       width: 32px;
     }
   }
@@ -168,12 +229,11 @@
     line-height: 24px; /* 184.615% */
     letter-spacing: 0.52px;
 
-    @include onBigTablet {
+    @include onSmallDesktop {
       margin-bottom: 16px;
-      letter-spacing: 0.78px;
     }
 
-    @include onDesktop {
+    @include onBigDesktop {
       margin-bottom: 28px;
 
       font-size: 20px;
@@ -190,15 +250,10 @@
   }
 
   &__client-img {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
 
-    @include onBigTablet {
-      width: 52px;
-      height: 52px;
-    }
-
-    @include onDesktop {
+    @include onBigDesktop {
       width: 68px;
       height: 68px;
     }
@@ -209,36 +264,38 @@
   &__name {
     color: $main-yellow-text-color;
     font-family: $fira-code;
-    font-size: 1.1rem;
+    font-size: 17px;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.1rem; /* 125% */
-    letter-spacing: 1.08px;
+    line-height: normal;
+    letter-spacing: 1.02px;
     text-transform: uppercase;
 
-    @include onDesktop {
-      font-size: 1.4rem;
-      line-height: 1.4rem; /* 125% */
+    @include onBigDesktop {
+      font-size: 24px;
+      line-height: 30px; /* 125% */
+      letter-spacing: 1.44px;
     }
   }
 
   &__position {
     color: $pink-text-color;
     font-family: $fira-code;
-    font-size: .8rem;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 230.769% */
-    letter-spacing: 0.52px;
+    line-height: normal;
+    letter-spacing: 0.48px;
 
-    @include onBigTablet {
-      font-size: 16px;
-      letter-spacing: 0.64px;
+    @include onSmallDesktop {
+      font-size: 13px;
+      letter-spacing: 0.78px;
     }
 
-    @include onDesktop {
-      font-size: 22px;
-      letter-spacing: 1.32px;
+    @include onBigDesktop {
+      font-size: 20px;
+      line-height: 30px; /* 150% */
+      letter-spacing: 1.2px;
     }
   }
 
@@ -258,9 +315,18 @@
   }
   
   &__review-bottom-info {
-    margin-top: 5px;
+    // margin-top: 5px;
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
+
+    @include onSmallDesktop {
+      margin-top: 0;
+    }
+
+    @include onBigDesktop {
+      margin-top: 5px;
+      row-gap: 8px;
+    }
   }
 }

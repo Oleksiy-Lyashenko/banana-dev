@@ -17,22 +17,26 @@
   text-transform: uppercase;
 
   text-shadow: -1px -1px 0px #000000,
-    1.5px 1.5px 0px #000000,
-    2px 2px 0px #808080;
+    2.5px 2.5px 0px #000000,
+    3.5px 3.5px 0px #808080;
 
-  @include onBigTablet {
+  @include onSmallDesktop {
     font-size: 70px;
     line-height: 70px; /* 100% */
     letter-spacing: 4.2px;
+    text-shadow: -1px -1px 0px #000000,
+      2.5px 2.5px 0px #000000,
+      3.5px 3.5px 0px #808080;
 
   }
 
-  @include onSmallDesktop {
-    font-size: 5.6rem;
-    line-height: 6rem;
+  @include onBigDesktop {
+    font-size: 100px;
+    line-height: 112px; /* 112% */
+    letter-spacing: 6px;
     text-shadow: -1px -1px 0px #000000,
-      1.5px 1.5px 0px #000000,
-      2px 2px 0px #808080;
+      3.5px 3.5px 0px #000000,
+      5px 5px 0px #808080;
   }
   
 
@@ -52,52 +56,63 @@
 
   &__list {
     &--position {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
+
+      @include onSmallDesktop {
+        margin-bottom: 36px;
+      }
+
+      @include onBigDesktop {
+        margin-bottom: 46px;
+      }
+    }
+  }
+
+  &__text-block {
+    margin-bottom: 24px;
+
+
+    @include onSmallDesktop {
+      margin-bottom: 65px;
+    }
+
+    @include onBigDesktop {
+      margin-bottom: 80px;
     }
   }
 
   &__main-text {
-    margin-bottom: 10px;
-
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 4rem; /* 100% */
-    letter-spacing: 3.12px;
-
-    @include onTablet {
-      font-size: 4.5rem;
-      font-weight: 400;
-      line-height: 5rem; /* 111.429% */
-      letter-spacing: 4.2px;
-    }
+    margin-bottom: 26px;
 
     @include onSmallDesktop {
-      font-size: 5.5rem;
-      font-weight: 400;
-      line-height: 6rem; /* 112% */
-      letter-spacing: 6px;
+      margin-bottom: 20px;
+    }
+
+    @include onBigDesktop {
+      margin-bottom: 24px;
     }
   }
 
   &__sub-text {
-    margin-bottom: 30px;
+    margin: 0;
+    max-width: 500px;
 
-    font-size: 0.95rem;
+    color: $white-text-color;
+    font-family: $fira-code;
+    font-size: 15px;
+    font-style: normal;
     font-weight: 500;
-    line-height: 1.5rem; /* 173.333% */
+    line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
 
-    @include onTablet {
-      margin-bottom: 60px;
-      letter-spacing: 0.9px;
+    @include onSmallDesktop {
     }
 
-    @include onSmallDesktop {
-      margin-bottom: 80px;
+    @include onBigDesktop {
+      max-width: 650px;
 
-      font-size: 1.2rem;
-      line-height: 1.6rem; /* 173.333% */
+      font-size: 20px;
+      line-height: 30px; /* 150% */
       letter-spacing: 1.2px;
     }
   }
@@ -213,7 +228,7 @@
       margin-right: 7px;
 
       color: $pink-text-color;
-      font-size: 17px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -226,7 +241,12 @@
       }
 
       @include onSmallDesktop {
-        font-size: 1.5rem;
+        font-size: 20px;
+        letter-spacing: 1.2px;
+      }
+
+      @include onBigDesktop {
+        font-size: 28px;
         letter-spacing: 1.68px;
       }
     }
@@ -317,19 +337,18 @@
 
     cursor: pointer;
 
-    @include onBigTablet {
+    @include onSmallDesktop {
       flex-shrink: 1;
-      padding: 10px 15px;
+      padding: 15px 23px;
       font-size: 13px;
       line-height: normal;
       letter-spacing: 0.26px;
     }
 
-    @include onSmallDesktop {
+    @include onBigDesktop {
       padding: 18px 23px;
 
       font-size: 20px;
-      line-height: normal;
       letter-spacing: 0.4px;
     }
 
@@ -375,7 +394,9 @@
   }
 
   &__project {
+    margin: 0 auto;
     box-sizing: border-box;
+    max-width: 400px;
     width: 100%;
     height: 100%;
     // width: 650px;
@@ -390,14 +411,20 @@
 
     text-decoration: none;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-      url('../../../images/portfolio_pocketbok_img.png');
-    // background-repeat: no-repeat;
+      url('../../../images/portfolio_pocketbok_img.svg');
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     // background-position: center;
 
     @include onTablet {
       padding-top: 35px;
       padding-bottom: 30px;
+    }
+
+    @include onSmallDesktop {
+      max-width: max-content;
+      padding: 30px 40px;
+      padding-top: 50px;
     }
 
     @include onBigDesktop {
@@ -425,27 +452,34 @@
       }
 
       @include onSmallDesktop {
+        margin-bottom: 50px;
+
+        font-size: 16px;
+        letter-spacing: 0.96px;
+      }
+
+      @include onBigDesktop {
         margin-bottom: 100px;
 
-        font-size: 22px;
+        font-size: 24px;
         letter-spacing: 1.44px;
       }
     }
 
     &__img {
       // padding-top: 60px;
-      width: 200px;
+      width: 170px;
       margin-bottom: 60px;
 
-      @include onTablet {
-        width: 200px;
-        margin-bottom: 45px;
+      @include onSmallDesktop {
+        width: 220px;
+        margin-bottom: 65px;
       }
 
-      @include onSmallDesktop {
-        margin-bottom: 100px;
+      @include onBigDesktop {
+        margin-bottom: 120px;
 
-        width: 300px;
+        width: 330px;
       }
     }
 
@@ -475,11 +509,12 @@
       line-height: normal;
       letter-spacing: 0.6px;
 
-      @include onBigTablet {
+      @include onSmallDesktop {
         font-size: 9px;
+        letter-spacing: 0.54px;
       }
 
-      @include onSmallDesktop {
+      @include onBigDesktop {
         padding: 8px 12px;
 
         font-size: 16px;

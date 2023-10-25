@@ -46,6 +46,14 @@
     }
   }
 
+  &__logo {
+    width: 190px;
+
+    @include onSmallDesktop {
+      width: 236px;
+    }
+  }
+
   &__content {  
 
     // @include onTablet {
@@ -87,7 +95,7 @@
         display: block;
       }
 
-      @include onSmallDesktop {
+      @include onDesktop {
         display: none;
       }
     }
@@ -101,7 +109,7 @@
   &__nav-list {
     display: none;
 
-    @include onSmallDesktop {
+    @include onDesktop {
       display: flex;
       column-gap: 40px;
       margin-right: 50px;
@@ -182,7 +190,7 @@
     width: 420px;
   }
 
-  @include onSmallDesktop {
+  @include onDesktop {
     display: none;
   }
 
