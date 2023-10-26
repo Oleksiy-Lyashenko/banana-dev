@@ -469,56 +469,80 @@
     box-sizing: border-box;
 
     // max-width: 48rem;
+    max-width: 480px;
     width: 100%;
 
     z-index: 1;
     position: absolute;
-    top: 46rem;
+    top: 33%;
+    right: 0;
+
 
     @include onTablet {
       // max-width: 25rem;
       // right: -10rem;
-      top: 25rem;
+      // top: 25rem;
       right: 0;
+    }
+
+    @include onBigTablet {
+      max-width: 370px;
+      top: 31%;
     }
 
     @include onSmallDesktop {
-      width: 500px;
+      max-width: 500px;
       right: 0;
-      top: 33%;
+      top: 31%;
+    }
+
+    @include onDesktop {
+      max-width: 630px;
     }
 
     @include onBigDesktop {
-      width: 860px;
-      top: 33%;
-      right: -180px;
+      max-width: 860px;
+      top: 30%;
+      right: -12%;
     }
   }
 
   &__dev-bg {
-    // max-width: 45rem;
+    max-width: 480px;
     width: 100%;
 
     position: absolute;
-    bottom: 22rem;
+    left: 0;
+    bottom: 17%;
 
     @include onTablet {
       // max-width: 25rem;
-      bottom: -20rem;
-      left: 0;
-      height: 100%;
+      // bottom: -20rem;
+      // left: 0;
+      // height: 100%;
       // left: -12rem;
     }
 
+    @include onBigTablet {
+      max-width: 370px;
+      bottom: 15%;
+    }
+
     @include onSmallDesktop {
-      width: 440px;
-      bottom: -25%;
+      max-width: 480px;
+      bottom: 11%;
+      left: 0
+      // bottom: -25%;
     };
 
     @include onDesktop {
-      width: 750px;
-      left: -12rem;
-      bottom: -30%;
+      max-width: 550px;
+    }
+
+    @include onBigDesktop {
+      max-width: 750px;
+      left: -12%;
+      bottom: 4%;
     }
   }
 
@@ -677,9 +701,9 @@
 
     &--2 {
 
-      @include onTablet {
-        align-self: flex-end;
-      }
+      // @include onTablet {
+      //   align-self: flex-end;
+      // }
     }
   }
 
