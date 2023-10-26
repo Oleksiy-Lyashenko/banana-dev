@@ -25,6 +25,18 @@
     flex: 1 0 100%;
     text-decoration: none;
 
+    // @include onBigTablet {
+    //   flex: 0;
+    //   width: 600px;
+    //   height: 100%;
+    // }
+
+    @include onBigTablet {
+      flex: 0;
+      width: 500px;
+      height: 100%;
+    }
+
     @include onSmallDesktop {
       flex: 0;
       width: 700px;
@@ -40,7 +52,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // width: 100%;
     height: max-content;
 
     padding: 25px;
@@ -54,6 +65,14 @@
       box-sizing: border-box;
       padding: 4rem 50px;
       // background-size: contain;
+    }
+
+    @include onBigTablet {
+      width: 500px;
+    }
+
+    @include onBigTablet {
+      padding: 4rem 25px;
     }
 
     @include onSmallDesktop {

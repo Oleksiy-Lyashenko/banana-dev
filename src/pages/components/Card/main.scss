@@ -3,14 +3,28 @@
 
 .card {
   box-sizing: border-box;
-  max-width: 320px;
+  max-width: 250px;
+  padding: 15px 20px;
   width: 100%;
-  padding: 1rem 1.8rem;
+  height: max-content;
   margin-bottom: .5rem;
 
   background: url('../../../images/cart_bg.svg');
   background-size: cover;
   background-position: center;
+
+  @include onBigTablet {
+
+  }
+
+  @include onSmallDesktop {
+    max-width: 390px;
+    padding: 1rem 1.8rem;
+  }
+
+  @include onBigDesktop {
+    max-width: 390px;
+  }
 
   &--1 {
     display: block;
@@ -44,7 +58,7 @@
   &--6 {
     display: none;
 
-    @include onTablet {
+    @include onBigTablet{
       display: block;
     }
 
@@ -81,8 +95,12 @@
 
 
   &__avatar {
-    width: 50px;
-    height: 4.5rem;
+    width: 35px;
+    // height: 4.5rem;
+
+    @include onSmallDesktop {
+      width: 56px;
+    }
   }
 
   &__top {
@@ -97,9 +115,13 @@
 
   &__bottom {
     display: flex;
-    column-gap: 10px;
+    column-gap: 5px;
 
     box-sizing: border-box;
+
+    @include onSmallDesktop {
+      column-gap: 10px;
+    }
   }
 
   &__detail {
@@ -116,6 +138,10 @@
       justify-content: space-between;
 
       margin-bottom: 12px;
+
+      @include onBigTablet {
+        margin-bottom: 10px;
+      }
     }
 
     &-bottom {
@@ -127,44 +153,80 @@
     margin: 0;
 
     font-family: $sugo-pro-display;
-    font-size: 1.2rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.92px;
+    letter-spacing: 1.08px;
     text-transform: uppercase;
+
+    @include onBigTablet {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.08px;
+    }
+
+    @include onSmallDesktop {
+      font-size: 24px;
+      letter-spacing: 1.92px;
+    }
   }
 
   &__rate {
     margin: 0;
 
-    font-size: 1rem;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    letter-spacing: 1.08px;
+
+    @include onBigTablet {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.08px;
+    }
+
+    @include onSmallDesktop {
+      font-size: 20px;
+    }
   }
 
   &__position {
     margin: 0;
     margin-bottom: 6px;
 
-    font-size: .65rem;
+    font-size: 8px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.52px;
     text-transform: uppercase;
+
+    @include onSmallDesktop {
+      font-size: 13px;
+    }
   }
 
   &__experience {
     margin: 0;
 
     color: $pink-text-color;
-    font-size: .7rem;
+    font-size: 10px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.52px;
+
+
+    @include onSmallDesktop {
+      font-size: 13px;
+      letter-spacing: 0.52px;
+    }
   }
 
   &__skill {
@@ -178,5 +240,20 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.6px;
+
+    @include onBigTablet {
+      font-size: 7px;
+      letter-spacing: 0.42px;
+    }
+
+    @include onSmallDesktop {
+      padding: 8px;
+
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.6px;
+    }
   }
 }

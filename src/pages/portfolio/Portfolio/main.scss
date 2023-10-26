@@ -394,6 +394,9 @@
   }
 
   &__project {
+    position: relative;
+    display: block;
+    overflow: hidden;
     margin: 0 auto;
     box-sizing: border-box;
     max-width: 400px;
@@ -412,8 +415,11 @@
     text-decoration: none;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
       url('../../../images/portfolio_pocketbok_img.svg');
-    background-repeat: no-repeat;
+    // border-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    //   url('../../../images/portfolio_pocketbok_img.svg');
+    background-repeat: cover;
     background-size: 100% 100%;
+    border-image: url('../../../images/about-us_block_img.png');
     // background-position: center;
 
     @include onTablet {
@@ -524,5 +530,14 @@
         letter-spacing: 0.96px;
       }
     }
+  }
+
+  &__bg-img {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    background-image: url('../../../images/bg_img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

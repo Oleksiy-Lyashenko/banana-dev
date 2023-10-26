@@ -63,6 +63,7 @@ export default function Portfolio() {
         <section className="portfolio-main">
           <div className="portfolio-main__content container">
             <NavLink to="/pocketbook" className="portfolio-main__project">
+              {/* <div className="portfolio-main__bg-img"></div> */}
               <h4 className="portfolio-main__project__title">Mobile application</h4>
 
               <img
