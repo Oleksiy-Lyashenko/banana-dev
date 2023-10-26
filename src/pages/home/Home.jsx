@@ -33,7 +33,9 @@ export default function Home() {
                   wasting time and money hiring delinquent devs? get devotees to build your vision –
                   diabolically fast
                 </p>
-                <a href='/' className="home-top__button">let’s go banana</a>
+                <a href="/" className="home-top__button">
+                  let’s go banana
+                </a>
               </div>
 
               <div className="home-top__column">
@@ -90,7 +92,7 @@ export default function Home() {
                     rate={'60'}
                     position={'Senior Back-End Developer'}
                     experince={'6'}
-                    skills={['Python', 'Graphql', 'PostgreSQL', 'FastAPI']}
+                    skills={['Python', 'PostgreSQL', 'FastAPI']}
                   />
                 </div>
 
@@ -102,7 +104,7 @@ export default function Home() {
                     rate={'50'}
                     position={'Senior Full-Stack Developer'}
                     experince={'4'}
-                    skills={['JS', 'React', 'Python', 'Django', 'Graphql']}
+                    skills={['JS', 'React', 'Python', 'Django']}
                   />
                   <Card
                     number={'8'}
@@ -111,7 +113,7 @@ export default function Home() {
                     rate={'62'}
                     position={'Senior Python Developer'}
                     experince={'6'}
-                    skills={['Python', 'Django', 'Flask', 'AWS', 'PostgreSQL']}
+                    skills={['Python', 'Django', 'AWS', 'PostgreSQL']}
                   />{' '}
                   <Card
                     number={'9'}
@@ -141,43 +143,51 @@ export default function Home() {
                     skills={['Figma', 'Sketch', 'Photoshop', 'AEffects']}
                   />{' '}
                 </div>
+
+                <img
+                  src="./images/top_page/clients/bottom_shadow.svg"
+                  alt=""
+                  className="home-top__shadow"
+                />
               </div>
             </div>
 
             <div className="home-top__our-client container">
-              <div className="home-top__our-client__content">
-                <img
-                  src="./images/top_page/tape/left-tape.svg"
-                  className="home-top__our-client__left-tape"
-                />
-                <img
-                  src="./images/top_page/tape/right-tape.svg"
-                  className="home-top__our-client__right-tape"
-                />
+              <div className="home-top__our-client__shadow">
+                <div className="home-top__our-client__content">
+                  <img
+                    src="./images/top_page/tape/left-tape.svg"
+                    className="home-top__our-client__left-tape"
+                  />
+                  <img
+                    src="./images/top_page/tape/right-tape.svg"
+                    className="home-top__our-client__right-tape"
+                  />
 
-                <h3 className="home-top__our-client__title">Our clients</h3>
+                  <h3 className="home-top__our-client__title">Our clients</h3>
 
-                <div className="home-top__our-client__block-img">
-                  <img
-                    src="./images/top_page/clients/forbes.svg"
-                    className="home-top__our-client__img"
-                  />
-                  <img
-                    src="./images/top_page/clients/pocketbook.svg"
-                    className="home-top__our-client__img"
-                  />
-                  <img
-                    src="./images/top_page/clients/sps.svg"
-                    className="home-top__our-client__img"
-                  />
-                  <img
-                    src="./images/top_page/clients/syn.svg"
-                    className="home-top__our-client__img"
-                  />
-                  <img
-                    src="./images/top_page/clients/yotta.svg"
-                    className="home-top__our-client__img"
-                  />
+                  <div className="home-top__our-client__block-img">
+                    <img
+                      src="./images/top_page/clients/forbes.svg"
+                      className="home-top__our-client__img"
+                    />
+                    <img
+                      src="./images/top_page/clients/pocketbook.svg"
+                      className="home-top__our-client__img"
+                    />
+                    <img
+                      src="./images/top_page/clients/sps.svg"
+                      className="home-top__our-client__img"
+                    />
+                    <img
+                      src="./images/top_page/clients/syn.svg"
+                      className="home-top__our-client__img"
+                    />
+                    <img
+                      src="./images/top_page/clients/yotta.svg"
+                      className="home-top__our-client__img"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -473,7 +483,9 @@ export default function Home() {
           <section className="home-projects">
             <div className="home-projects__content">
               <div className="container">
-                <h2 className="page-title page-title--yellow home-projects__page-title">featured projects </h2>
+                <h2 className="page-title page-title--yellow home-projects__page-title">
+                  featured projects{' '}
+                </h2>
 
                 <SliderProjects />
               </div>

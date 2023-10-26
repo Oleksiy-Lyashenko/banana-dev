@@ -1,11 +1,10 @@
-@import "../../styles/utils/vars";
-@import "../../styles/utils/mixins";
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
 
 .page-title {
   margin: 0;
   position: relative;
   display: inline-block;
-
 
   font-family: $sugo-pro-display;
   color: $white-text-color;
@@ -16,36 +15,28 @@
   letter-spacing: 3.12px;
   text-transform: uppercase;
 
-  text-shadow: -1px -1px 0px #000000,
-    2.5px 2.5px 0px #000000,
-    3.5px 3.5px 0px #808080;
+  text-shadow: -1px -1px 0px #000000, 2.5px 2.5px 0px #000000, 3.5px 3.5px 0px #808080;
 
   @include onSmallDesktop {
     font-size: 70px;
     line-height: 70px; /* 100% */
     letter-spacing: 4.2px;
-    text-shadow: -1px -1px 0px #000000,
-      2.5px 2.5px 0px #000000,
-      3.5px 3.5px 0px #808080;
-
+    text-shadow: -1px -1px 0px #000000, 2.5px 2.5px 0px #000000, 3.5px 3.5px 0px #808080;
   }
 
   @include onBigDesktop {
     font-size: 110px;
     line-height: 112px; /* 101.818% */
     letter-spacing: 6.6px;
-    text-shadow: -1px -1px 0px #000000,
-      3.5px 3.5px 0px #000000,
-      5px 5px 0px #808080;
+    text-shadow: -1px -1px 0px #000000, 3.5px 3.5px 0px #000000, 5px 5px 0px #808080;
   }
-  
 
   &--yellow {
     color: $main-yellow-text-color;
   }
 
   &--pink {
-      color: $pink2-text-color;
+    color: $pink2-text-color;
   }
 }
 
@@ -59,6 +50,7 @@
 
     @include onTablet {
       flex-direction: row;
+      justify-content: space-between;
       column-gap: 1rem;
     }
   }
@@ -72,11 +64,16 @@
     box-shadow: 0px 30px 80px 80px #000000;
 
     @include onTablet {
-      margin-top: 5rem;
+      margin-top: 10px;
       box-shadow: none;
     }
 
+    @include onBigTablet {
+      width: 330px;
+    }
+
     @include onSmallDesktop {
+      margin-top: 100px;
       width: 500px;
     }
 
@@ -97,14 +94,13 @@
     }
 
     @include onBigTablet {
-
-      margin-bottom: 50px;
+      margin-bottom: 44px;
     }
 
     @include onSmallDesktop {
       width: 100%;
+      margin-bottom: 50px;
     }
-    
 
     &--yellow {
       color: $main-yellow-text-color;
@@ -112,6 +108,7 @@
   }
 
   &__sub-text {
+    display: block;
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
@@ -124,16 +121,14 @@
     letter-spacing: 0.6px;
     color: $white-text-color;
 
-    @include onBigTablet {
-      font-size: 18px;
-      line-height: 30px; /* 166.667% */
-      letter-spacing: 0.72px;
-    }
-
     @include onSmallDesktop {
       font-size: 18px;
       line-height: 30px; /* 150% */
       letter-spacing: 1px;
+    }
+
+    @include onBigDesktop {
+      max-width: 650px;
     }
   }
 
@@ -165,10 +160,11 @@
     cursor: pointer;
 
     @include onBigTablet {
-      font-size: 18px;
-      letter-spacing: 0.36px;
-      width: 300px;
-      height: 74px;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+
+      width: 246px;
+      height: 60px;
     }
 
     @include onSmallDesktop {
@@ -196,254 +192,239 @@
     }
   }
 
-  // &__columns {
-  //   display: grid;
-  //   grid-template-columns: repeat(2, 320px);
-  //   column-gap: 10px;
-  //   overflow: hidden;
-  //   position: relative;
-  //   z-index: 1;
-
-  //   @include onTablet {
-  //     grid-template-columns: repeat(1, 320px);
-  //   }
-
-  //   @include onSmallDesktop {
-  //     // margin-right: -10rem;
-  //     margin-left: 15rem;
-  //   }
-
-  //   @include onDesktop {
-  //     margin-left: 0;
-  //     margin-right: -10rem;
-  //   }
-  // }
-
-    &__column {
-      display: grid;
-      grid-template-columns: repeat(2, 320px);
-      column-gap: 10px;
-      // overflow: hidden;
-      position: relative;
-      z-index: 1;
-
-      @include onTablet {
-        grid-template-columns: repeat(1, 320px);
-      }
-
-      @include onSmallDesktop {
-        // margin-right: -10rem;
-        // margin-left: 15rem;
-      }
-
-      @include onBigDesktop {
-        // overflow: hidden;
-        // margin-left: 10rem;
-        margin-right: -10rem;
-      }
-
-  &-1 {
+  &__column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    // overflow: hidden;
+    position: relative;
+    z-index: 1;
 
     @include onTablet {
-      // position: absolute;
-      // flex: 1 0 100%;
-      margin-top: -6rem;
-      grid-column: 1;
-
-      z-index: 0;
+      grid-template-columns: repeat(1, 1fr);
+      // justify-self: flex-end;
+      // align-self: flex-end;
     }
 
     @include onSmallDesktop {
-      position: absolute;
-    }
-  }
-
-  &-2 {
-    margin-top: 25px;
-    grid-column: 2;
-
-    @include onTablet {
-      display: none;
+      grid-template-columns: repeat(1, 375px);
+      // margin-right: -10rem;
+      // margin-left: 15rem;
     }
 
     @include onBigDesktop {
-      display: block;
+      grid-template-columns: repeat(1, 365px);
+      // overflow: hidden;
+      // margin-left: 10rem;
+      margin-right: -10rem;
+    }
+
+    &-1 {
+      @include onTablet {
+        // position: absolute;
+        // flex: 1 0 100%;
+        margin-top: -6rem;
+        grid-column: 1;
+
+        z-index: 0;
+      }
+
+      @include onSmallDesktop {
+        position: absolute;
+      }
+    }
+
+    &-2 {
+      margin-top: 25px;
+      grid-column: 2;
+
+      @include onTablet {
+        display: none;
+      }
+
+      @include onBigDesktop {
+        display: block;
+      }
     }
   }
+
+  &__shadow {
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    height: 350px;
+
+    @include onSmallDesktop {
+      bottom: -35%;
+    }
+
+    @include onBigDesktop {
+      bottom: -9%;
+    }
   }
 
   &__our-client {
-      block-size: border-box;
-      width: 100%;
+    block-size: border-box;
+    width: 100%;
+
+    @include onSmallDesktop {
+      padding-top: 100px;
+    }
+
+    @include onDesktop {
+      padding-top: 0;
+    }
+
+    &__content {
+      position: relative;
+      margin-top: -30px;
+      z-index: 1;
+
+      padding: 50px 20px;
+      height: max-content;
+      background-image: url('../../images/project_info_mobile_img.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+
+      @include onTablet {
+        position: relative;
+        padding: 25px 100px 45px;
+      }
+
 
       @include onSmallDesktop {
-        padding-top: 100px;
+        background-image: url('../../images/project_info_img.svg');
+        padding: 2.5rem 4.5rem;
+        margin-top: 10%;
       }
 
-      @include onDesktop {
-        padding-top: 0;
+      @include onBigDesktop {
+        padding-top: 32px;
+        padding-bottom: 64px;
+        margin-top: 0%;
       }
 
-  &__content {
-    position: relative;
-    margin-top: -1rem;
-
-    padding: 50px 20px;
-    height: max-content;
-    background-image: url('../../images/project_info_mobile_img.svg');
-    background-position-x: 0px;
-    background-position-y: 0px;
-    background-size: 100% 100%;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-
-    @include onSmallDesktop {
-      background-image: url('../../images/project_info_img.svg');
-    }
-
-    
-    // background-size: 100% 100%;
-
-    &::after {
-      z-index: 5;
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
-      box-shadow: 0 -50px 55px 30px #000000;
-      background-position: 100% 100%;
-      background-repeat: no-repeat;
-    }
-
-    @include onTablet {
-      margin: 0 1rem;
-      // margin-top: -8rem;
-      position: relative;
-      z-index: 10;
-      
-
-      &::after {
-        z-index: 1;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        box-shadow: 16rem -50px 60px #000000;
-      }
-    }
-
-    @include onSmallDesktop {
-      padding: 2.5rem 4.5rem;
-      margin: 0;
-    }
-
-    &--pocketbook {
-      margin-top: 30px;
-      box-shadow: none;
-
-      &::after {
+      &--pocketbook {
+        margin-top: 30px;
         box-shadow: none;
+
+        &::after {
+          box-shadow: none;
+        }
+
+        @include onBigTablet {
+          margin-top: 75px;
+        }
+
+        @include onSmallDesktop {
+          margin-top: 150px;
+        }
       }
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: 1.5rem;
+
+      font-family: $sugo-pro-display;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;
+      color: $white-text-color;
+      text-align: center;
+      text-transform: uppercase;
 
       @include onBigTablet {
-        margin-top: 75px;
+        font-size: 24px;
+        letter-spacing: 2.4px;
+        margin-bottom: 32px;
       }
 
       @include onSmallDesktop {
-        margin-top: 150px;
+        font-size: 32px;
+        letter-spacing: 3.2px;
+
+        margin-bottom: 44px;
       }
     }
-  }
 
-  &__title {
-    margin: 0;
-    margin-bottom: 1.5rem;
-
-    font-family: $sugo-pro-display;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    color: $white-text-color;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__block-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 1.5rem;
-    row-gap: 2rem;
-    align-items: center;
-
-
-    @include onTablet {
+    &__block-img {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      column-gap: 1rem;
+      column-gap: 1.5rem;
+      row-gap: 2rem;
       align-items: center;
+
+      @include onTablet {
+        justify-content: center;
+        column-gap: 50px;
+        align-items: center;
+      }
+
+      @include onSmallDesktop {
+        justify-content: center;
+        column-gap: 90px;
+        row-gap: 40px;
+      }
+
+      @include onBigDesktop {
+        column-gap: 100px;
+      }
     }
 
-    @include onSmallDesktop {
-      justify-content: space-between;
+    &__img {
+      height: 30px;
+
+      @include onBigTablet {
+        height: 30px;
+      }
+
+      @include onSmallDesktop {
+        height: 40px;
+      }
     }
-  }
 
-  &__img {
-    max-width: 8rem;
-    width: 100%;
-    height: 4rem;
-  }
-
-  &__left-tape {
-    z-index: 10;
-    position: absolute;
-    width: 85px;
-    top: -10px;
-    left: -20px;
-
-    @include onTablet {
-      width: 100px;
-      display: block;
+    &__left-tape {
+      z-index: 10;
       position: absolute;
-      top: -1.5rem;
-      left: -1.5rem;
+      width: 85px;
+      top: -10px;
+      left: -20px;
+
+      @include onTablet {
+        width: 100px;
+        display: block;
+        position: absolute;
+        top: -1.5rem;
+        left: -1.5rem;
+      }
+
+      @include onSmallDesktop {
+        width: 120px;
+      }
     }
 
-    @include onSmallDesktop {
-      width: 120px;
-    }
-  }
-
-  &__right-tape {
-    z-index: 10;
-    position: absolute;
-    width: 85px;
-    top: -10px;
-    right: -20px;
-
-    @include onTablet {
-      width: 100px;
-      display: block;
-      z-index: 2;
+    &__right-tape {
+      z-index: 100;
       position: absolute;
-      top: -1.5rem;
-      right: -1.5rem;
-    }
+      width: 85px;
+      top: -10px;
+      right: -20px;
 
-    @include onSmallDesktop {
-      width: 120px;
-    }
+      @include onTablet {
+        width: 100px;
+        display: block;
+        // z-index: 2;
+        position: absolute;
+        top: -1.5rem;
+        right: -1.5rem;
+      }
 
-  }
+      @include onSmallDesktop {
+        width: 120px;
+      }
+    }
   }
 }
 
@@ -456,7 +437,7 @@
     z-index: -100px;
 
     @include onBigTablet {
-      padding-top: 200px;
+      padding-top: 230px;
     }
 
     @include onDesktop {
@@ -469,56 +450,79 @@
     box-sizing: border-box;
 
     // max-width: 48rem;
+    max-width: 480px;
     width: 100%;
 
     z-index: 1;
     position: absolute;
-    top: 46rem;
+    top: 33%;
+    right: 0;
 
     @include onTablet {
       // max-width: 25rem;
       // right: -10rem;
-      top: 25rem;
+      // top: 25rem;
       right: 0;
+    }
+
+    @include onBigTablet {
+      max-width: 370px;
+      top: 31%;
     }
 
     @include onSmallDesktop {
-      width: 500px;
+      max-width: 500px;
       right: 0;
-      top: 33%;
+      top: 31%;
+    }
+
+    @include onDesktop {
+      max-width: 630px;
     }
 
     @include onBigDesktop {
-      width: 860px;
-      top: 33%;
-      right: -180px;
+      max-width: 860px;
+      top: 30%;
+      right: -12%;
     }
   }
 
   &__dev-bg {
-    // max-width: 45rem;
+    max-width: 480px;
     width: 100%;
 
     position: absolute;
-    bottom: 22rem;
+    left: 0;
+    bottom: 17%;
 
     @include onTablet {
       // max-width: 25rem;
-      bottom: -20rem;
-      left: 0;
-      height: 100%;
+      // bottom: -20rem;
+      // left: 0;
+      // height: 100%;
       // left: -12rem;
     }
 
+    @include onBigTablet {
+      max-width: 370px;
+      bottom: 15%;
+    }
+
     @include onSmallDesktop {
-      width: 440px;
-      bottom: -25%;
-    };
+      max-width: 480px;
+      bottom: 11%;
+      left: 0;
+      // bottom: -25%;
+    }
 
     @include onDesktop {
-      width: 750px;
-      left: -12rem;
-      bottom: -30%;
+      max-width: 550px;
+    }
+
+    @include onBigDesktop {
+      max-width: 750px;
+      left: -12%;
+      bottom: 4%;
     }
   }
 
@@ -597,9 +601,11 @@
     justify-content: center;
     padding: 0 20px;
 
+    @include onBigTablet {
+      padding: 0;
+    }
 
     &--1 {
-
       @include onBigTablet {
         grid-column: 1;
         grid-row: 1;
@@ -618,7 +624,6 @@
         grid-row: 2;
         justify-self: center;
 
-
         margin-top: -20rem;
         text-align: right;
       }
@@ -629,12 +634,10 @@
     }
 
     &--3 {
-
       @include onBigTablet {
         grid-column: 1;
         grid-row: 3;
         justify-self: center;
-
 
         margin-top: -13rem;
         text-align: right;
@@ -644,7 +647,6 @@
         text-align: left;
         margin-top: -13rem;
       }
-
     }
   }
 
@@ -663,6 +665,12 @@
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
 
+    @include onBigTablet {
+      font-size: 13px;
+      line-height: 22px; /* 169.231% */
+      letter-spacing: 0.52px;
+    }
+
     @include onSmallDesktop {
       font-size: 18px;
       line-height: 28px; /* 155.556% */
@@ -676,10 +684,9 @@
     }
 
     &--2 {
-
-      @include onTablet {
-        align-self: flex-end;
-      }
+      // @include onTablet {
+      //   align-self: flex-end;
+      // }
     }
   }
 
@@ -687,14 +694,8 @@
     width: 100%;
     height: 60px;
     background: url('../../images/button.svg');
-    background-position-x: 0px;
-    background-position-y: 0px;
     background-size: 100% 100%;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
+    background-repeat: no-repeat;
 
     border: none;
 
@@ -718,11 +719,11 @@
     }
 
     @include onBigTablet {
-      width: 300px;
-      height: 74px;
+      width: 246px;
+      height: 60px;
 
-      font-size: 18px;
-      letter-spacing: 0.36px;
+      font-size: 15px;
+      letter-spacing: 0.3px;
     }
 
     @include onSmallDesktop {
@@ -816,7 +817,7 @@
 
     &--3 {
       grid-column: 3;
-      padding-bottom: .35rem;
+      padding-bottom: 0.35rem;
     }
   }
 
@@ -847,6 +848,11 @@
     line-height: 32px; /* 177.778% */
     letter-spacing: 0.72px;
 
+    @include onBigTablet {
+      font-size: 14px;
+      letter-spacing: 0.56px;
+    }
+
     @include onSmallDesktop {
       font-size: 18px;
       line-height: 32px; /* 177.778% */
@@ -875,8 +881,20 @@
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
 
+    @include onBigTablet {
+      font-size: 11px;
+      line-height: 20px; /* 181.818% */
+      letter-spacing: 0.44px;
+    }
+
     @include onSmallDesktop {
       width: 260px;
+
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px; /* 173.333% */
+      letter-spacing: 0.6px;
     }
 
     @include onBigDesktop {
@@ -899,10 +917,26 @@
   }
 
   &__list-img {
-    max-width: 1.5rem;
-    width: 100%;
+    width: 23px;
 
-    margin-right: 1rem;
+    margin-right: 12px;
+
+    @include onBigTablet {
+      width: 17px;
+      margin-right: 10px;
+    }
+
+    @include onBigTablet {
+      width: 23px;
+
+      margin-right: 12px;
+    }
+
+    @include onBigDesktop {
+      width: 25px;
+
+      margin-right: 16px;
+    }
   }
 
   &__list-text {
@@ -914,6 +948,17 @@
     line-height: 30px; /* 200% */
     letter-spacing: 0.6px;
 
+    @include onBigTablet {
+      font-size: 11px;
+      letter-spacing: 0.44px;
+    }
+
+    @include onSmallDesktop {
+      font-size: 15px;
+      line-height: 30px; /* 200% */
+      letter-spacing: 0.6px;
+    }
+
     @include onBigDesktop {
       font-size: 18px;
       letter-spacing: 1.2px;
@@ -922,7 +967,7 @@
 }
 
 .home-clients {
- &__content {
+  &__content {
     padding-top: 10rem;
     position: relative;
 
@@ -981,9 +1026,8 @@
     @include onTablet {
       flex: content;
       row-gap: 24px;
-      
-      margin-bottom: 55px;
 
+      margin-bottom: 55px;
     }
 
     @include onSmallDesktop {
@@ -1003,13 +1047,12 @@
 
     padding: 30px 18px;
 
-
     @include onTablet {
       width: 600px;
       padding: 30px 60px;
 
       background: url(../../images/our_page_bg_img.png);
-    // background-size: contain;
+      // background-size: contain;
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
@@ -1033,7 +1076,7 @@
     @include onSmallDesktop {
       margin-bottom: 16px;
     }
-    
+
     @include onBigDesktop {
       margin-bottom: 24px;
     }
@@ -1086,7 +1129,7 @@
       width: 52px;
       height: 52px;
     }
-    
+
     @include onBigDesktop {
       width: 68px;
       height: 68px;
@@ -1143,7 +1186,7 @@
       row-gap: 3rem;
     }
   }
-  
+
   &__review-bottom-info {
     display: flex;
     flex-direction: column;
@@ -1173,9 +1216,12 @@
   }
 
   &__arrow-img {
-    width: 1.7rem;
-
+    height: 45px;
     cursor: pointer;
+
+    @include onSmallDesktop {
+      height: 62px;
+    }
   }
 
   &__button {
@@ -1208,6 +1254,14 @@
       background-position: center;
     }
 
+    @include onBigTablet {
+      width: 246px;
+      height: 60px;
+
+      font-size: 15px;;
+      letter-spacing: 0.3px;
+    }
+
     @include onSmallDesktop {
       width: 302px;
       height: 74px;
@@ -1236,13 +1290,13 @@
     justify-content: center;
 
     @include onBigTablet {
+      flex-direction: row;
       padding-top: 230px;
     }
 
     @include onSmallDesktop {
       padding-top: 250px;
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       align-items: center;
     }
@@ -1258,6 +1312,10 @@
 
     display: flex;
     flex-direction: column;
+
+    @include onBigTablet {
+      // max-width: 320px;
+    }
 
     @include onSmallDesktop {
       display: block;
@@ -1275,8 +1333,12 @@
     justify-self: flex-start;
     display: none;
 
-    @include onSmallDesktop {
+    @include onBigTablet {
       display: block;
+      margin-bottom: 24px;
+    }
+
+    @include onSmallDesktop {
       margin-bottom: 24px;
     }
 
@@ -1287,16 +1349,14 @@
     &--pink {
       color: $pink-text-color;
 
-      text-shadow: -1px -1px 0px #000000,
-        3px 3px 0px #000000,
-        4px 4px 0px $pink-text-color;
+      text-shadow: -1px -1px 0px #000000, 3px 3px 0px #000000, 4px 4px 0px $pink-text-color;
     }
 
     &--mobile {
       align-self: flex-start;
       display: block;
 
-      @include onSmallDesktop {
+      @include onBigTablet {
         display: none;
       }
     }
@@ -1314,16 +1374,24 @@
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
 
-    // @include onTablet {
-    //   font-size: 1.2rem;
-    //   line-height: 1.8rem;
-    // }
+    @include onBigTablet {
+      font-size: 11px;
+      line-height: 22px; /* 200% */
+      letter-spacing: 0.44px;
+      max-width: 320px;
+    }
 
     @include onSmallDesktop {
       margin-bottom: 24px;
+      max-width: 420px;
+
+      font-size: 15px;
+      line-height: 26px; /* 173.333% */
+      letter-spacing: 0.6px;
     }
 
     @include onBigDesktop {
+      max-width: 650px;
       font-size: 20px;
       line-height: 30px; /* 150% */
       letter-spacing: 1.2px;
@@ -1344,10 +1412,26 @@
   }
 
   &__list-img {
-    max-width: 1.5rem;
-    width: 100%;
+    width: 23px;
 
-    margin-right: 1rem;
+    margin-right: 12px;
+
+    @include onBigTablet {
+      width: 17px;
+      margin-right: 10px;
+    }
+
+    @include onSmallDesktop{
+      width: 23px;
+
+      margin-right: 12px;
+    }
+
+    @include onBigDesktop {
+      width: 25px;
+
+      margin-right: 16px;
+    }
   }
 
   &__list-text {
@@ -1359,10 +1443,17 @@
     line-height: 30px; /* 200% */
     letter-spacing: 0.6px;
 
-    // @include onTablet {
-    //   font-size: 1.2rem;
-    //   line-height: 1.8rem;
-    // }
+    @include onBigTablet {
+      font-size: 11px;
+      line-height: 22px; /* 200% */
+      letter-spacing: 0.44px;
+    }
+
+    @include onSmallDesktop {
+      font-size: 15px;
+      line-height: 30px; /* 200% */
+      letter-spacing: 0.6px;
+    }
 
     @include onBigDesktop {
       font-size: 20px;
@@ -1373,16 +1464,24 @@
   &__img {
     display: none;
     max-width: 20rem;
-    
+
     height: 100%;
     width: 100%;
 
     padding-top: 2rem;
 
-    // margin-right: -10rem;
+    // @include onBigTablet {
+    //   display: block;
+    //   width: 350px;
+    // }
+
+    @include onBigTablet {
+      max-width: 23rem;
+      display: block;
+      width: 100%;
+    }
 
     @include onSmallDesktop {
-      display: block;
       max-width: 30rem;
     }
 
@@ -1402,7 +1501,7 @@
 
     margin-bottom: 2rem;
 
-    @include onSmallDesktop {
+    @include onBigTablet {
       display: none;
     }
   }
@@ -1413,7 +1512,11 @@
     padding-top: 10rem;
 
     @include onBigTablet {
-      padding-top: 230px;
+      padding-top: 100px;
+    }
+
+    @include onSmallDesktop {
+      padding-top: 320px;
     }
 
     @include onDesktop {

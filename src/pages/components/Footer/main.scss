@@ -88,13 +88,9 @@
 
     &--logo {
       padding: 0;
-      margin-top: -5px;
+      margin-top: -2px;
       row-gap: 0;
       list-style: none;
-
-      @include onBigTablet {
-        margin-top: -10px;
-      }
     }
 
     &--position-2 {
@@ -108,7 +104,7 @@
   }
 
   &__img {
-    width: 150px;
+    width: 142px;
 
     @include onSmallDesktop {
       width: 170px;
@@ -128,7 +124,7 @@
 
   &__text {
     display: block;
-    margin-left: 5px;
+    margin-left: 3px;
     margin-top: -10px;
     margin-bottom: 23px;
 
@@ -159,8 +155,8 @@
   }
 
   &__button {
-    width: 150px;
-    height: 50px;
+    width: 142px;
+    height: 48px;
     background-color: transparent;
     border: 2px solid $main-yellow-text-color;
 
@@ -209,8 +205,12 @@
     letter-spacing: 0.64px;
 
     @include onBigTablet {
+      font-size: 17px;
+      letter-spacing: 1.02px;
+    }
+
+    @include onSmallDesktop {
       font-size: 18px;
-      line-height: 40px; /* 222.222% */
       letter-spacing: 1.08px;
     }
 
@@ -231,7 +231,7 @@
     line-height: 40px;
     letter-spacing: 0.6px;
 
-    @include onBigTablet {
+    @include onSmallDesktop {
       font-size: 16px;
       letter-spacing: 0.96px;
     }

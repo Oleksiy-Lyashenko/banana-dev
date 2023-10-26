@@ -118,6 +118,15 @@
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
 
+    @include onBigTablet {
+      width: 300px;
+      
+      text-align: right;
+      font-size: 10px;
+      line-height: 20px; /* 200% */
+      letter-spacing: 0.4px;
+    }
+
     @include onSmallDesktop {
       text-align: right;
       width: 375px;
@@ -272,9 +281,16 @@
       width: 190px;
       height: 97.5px;
 
-      font-size: 2rem;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 1.8px;
       line-height: 98px;
-      letter-spacing: 2.16px;
+    }
+
+    @include onBigTablet {
+      margin-left: 5px;
     }
   }
 
@@ -299,6 +315,10 @@
     display: flex;
     column-gap: 2px;
     row-gap: 2px;
+
+    @include onBigTablet {
+      column-gap: 6px;
+    }
   }
 
   &__block-img {
@@ -346,12 +366,17 @@
       width: 190px;
       height: 98px;
 
-      font-size: 1.2rem;
-      letter-spacing: 1.2px;
+      font-size: 15px;
+      letter-spacing: 0.6px;
     }
 
     @include onDesktop {
       height: 97.5px;
+    }
+
+    @include onBigDesktop {
+      font-size: 20px;
+      letter-spacing: 1.2px;
     }
 
   }

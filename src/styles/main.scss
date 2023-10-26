@@ -32,7 +32,11 @@ code {
   }
 
   @include onBigTablet {
-    padding-inline: 50px;
+    padding-inline: 46px;
+  }
+
+  @include onSmallDesktop {
+    padding-inline: 40px;
   }
 
   @include onBigDesktop {
