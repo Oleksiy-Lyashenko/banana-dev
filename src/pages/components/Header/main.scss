@@ -108,6 +108,7 @@
 
   &__nav-list {
     display: none;
+    list-style: none;
 
     @include onDesktop {
       display: flex;
@@ -188,6 +189,7 @@
 
   @include onTablet {
     width: 420px;
+    border-right: 1px solid #262626;
   }
 
   @include onDesktop {

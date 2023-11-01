@@ -146,7 +146,7 @@ export const Stack = () => {
                     <div className="main-stack__tool">
                       <div className="main-stack__block-img">
                         <img
-                          src="./images/stack_page/ai_logo.svg"
+                          src="./images/stack_page/xd_logo.svg"
                           alt=""
                           className="main-stack__img"
                         />

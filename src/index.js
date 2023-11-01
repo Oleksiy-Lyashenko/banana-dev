@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {createHashRouter, RouterProvider } from 'react-router-dom';
 import PocketBook from './pages/portfolio/PocketBook/PocketBook';
+import ReadRate from './pages/portfolio/ReadRate/ReadRate';
 import Portfolio from './pages/portfolio/Portfolio/Portfolio';
 import Reviews from './pages/reviews/Reviews';
 import AboutUs from './pages/about-us/AboutUs';
@@ -17,6 +18,10 @@ const router = createHashRouter([
   {
     path: '/pocketbook',
     element: <PocketBook />,
+  },
+  {
+    path: '/readrate',
+    element: <ReadRate />,
   },
   {
     path: '/portfolio',

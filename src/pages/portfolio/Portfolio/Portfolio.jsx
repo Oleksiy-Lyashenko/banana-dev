@@ -63,13 +63,32 @@ export default function Portfolio() {
         <section className="portfolio-main">
           <div className="portfolio-main__content container">
             <NavLink to="/pocketbook" className="portfolio-main__project">
-              {/* <div className="portfolio-main__bg-img"></div> */}
               <h4 className="portfolio-main__project__title">Mobile application</h4>
 
               <img
-                src="./images/clients/pocketbook/logo.png"
+                src="./images/clients/pocketbook/logo.svg"
                 alt=""
                 className="portfolio-main__project__img"
+              />
+
+              <div className="portfolio-main__project__bottom">
+                <div className="portfolio-main__project__direction">Business</div>
+
+                <div className="portfolio-main__project__direction">Redesign</div>
+
+                <div className="portfolio-main__project__direction">Web development</div>
+
+                <div className="portfolio-main__project__direction">E-commerce</div>
+              </div>
+            </NavLink>
+
+            <NavLink to="/readrate" className="portfolio-main__project">
+              <h4 className="portfolio-main__project__title">Mobile application</h4>
+
+              <img
+                src="./images/clients/readrate/logo.svg"
+                alt=""
+                className="portfolio-main__project__img portfolio-main__project__img--readrate"
               />
 
               <div className="portfolio-main__project__bottom">

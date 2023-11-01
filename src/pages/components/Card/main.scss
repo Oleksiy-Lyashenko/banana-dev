@@ -58,7 +58,7 @@
   &--6 {
     display: none;
 
-    @include onBigTablet{
+    @include onSmallDesktop {
       display: block;
     }
 
@@ -80,7 +80,7 @@
   &--10 {
     display: none;
 
-    @include onSmallDesktop {
+    @include onBigTablet {
       display: block;
     }
   }
@@ -88,7 +88,7 @@
   &--11 {
     display: none;
 
-    @include onSmallDesktop {
+    @include onBigTablet {
       display: block;
     }
   }

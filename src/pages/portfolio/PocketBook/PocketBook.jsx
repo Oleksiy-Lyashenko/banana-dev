@@ -147,7 +147,7 @@ export default function PocketBook() {
                 <div className="pocketbook-top__line"></div>
                 <div className="pocketbook-top__info-block">
                   <span className="pocketbook-top__info-block__type">project state</span>
-                  <span className="pocketbook-top__info-block__description">Finalised</span>
+                  <span className="pocketbook-top__info-block__description">Swetzerland</span>
                 </div>
               </div>
             </div>
