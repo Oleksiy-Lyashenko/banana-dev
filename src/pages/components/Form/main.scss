@@ -112,8 +112,12 @@
       grid-template-rows: repeat(3, auto);
     }
 
-    @include onDesktop {
-      row-gap: 3rem;
+    @include onSmallDesktop {
+      row-gap: 60px;
+    }
+
+    @include onBigDesktop {
+      row-gap: 70px;
       margin-bottom: 40px;
     }
   }

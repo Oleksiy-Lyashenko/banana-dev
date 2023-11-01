@@ -32,13 +32,9 @@
   }
 
   &__bottom {
-    display: none;
-
-    @include onTablet {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__block {
@@ -261,8 +257,8 @@
       letter-spacing: 0.96px;
     }
     
-    @include onDesktop {
-      font-size: 24px;
+    @include onSmallDesktop {
+      font-size: 20px;
       letter-spacing: 1.44px;
     }
   }

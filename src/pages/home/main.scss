@@ -51,7 +51,7 @@
     @include onTablet {
       flex-direction: row;
       justify-content: space-between;
-      column-gap: 1rem;
+      column-gap: 40px;
     }
   }
 
@@ -206,6 +206,10 @@
       // align-self: flex-end;
     }
 
+    @include onBigTablet {
+      grid-template-columns: repeat(2, 250px);
+    }
+
     @include onSmallDesktop {
       grid-template-columns: repeat(1, 375px);
       // margin-right: -10rem;
@@ -239,10 +243,20 @@
       grid-column: 2;
 
       @include onTablet {
+        margin-top: -3rem;
+
+      }
+
+      @include onBigTablet {
+        display: block;
+      }
+
+      @include onSmallDesktop {
         display: none;
       }
 
       @include onBigDesktop {
+        margin-top: 0;
         display: block;
       }
     }
@@ -393,11 +407,11 @@
       left: -20px;
 
       @include onTablet {
-        width: 100px;
+        width: 80px;
         display: block;
         position: absolute;
-        top: -1.5rem;
-        left: -1.5rem;
+        top: -1rem;
+        left: -1rem;
       }
 
       @include onSmallDesktop {
@@ -413,12 +427,12 @@
       right: -20px;
 
       @include onTablet {
-        width: 100px;
+        width: 80px;
         display: block;
         // z-index: 2;
         position: absolute;
-        top: -1.5rem;
-        right: -1.5rem;
+        top: -1rem;
+        right: -1rem;
       }
 
       @include onSmallDesktop {
@@ -455,7 +469,7 @@
 
     z-index: 1;
     position: absolute;
-    top: 33%;
+    top: 31%;
     right: 0;
 
     @include onTablet {
@@ -1040,7 +1054,7 @@
     // max-width: 370px;
     width: 100%;
     height: max-content;
-    background: url(../../images/our_page_mobile_bg_img.png);
+    background: url(../../images/reviews_mobile_bg.svg);
     // background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1048,21 +1062,34 @@
     padding: 30px 18px;
 
     @include onTablet {
-      width: 600px;
-      padding: 30px 60px;
+      width: 450px;
+      padding: 30px 42px;
 
-      background: url(../../images/our_page_bg_img.png);
+      background: url(../../images/reviews_bg.svg);
       // background-size: contain;
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
 
     @include onSmallDesktop {
+      padding: 30px 60px;
       width: 600px;
     }
 
     @include onBigDesktop {
       width: 700px;
+    }
+
+    &--doshed {
+      background-image: url(../../images/reviews_doshed_mobile_bg.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      @include onTablet {
+        background: url(../../images/reviews_doshed_bg.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
     }
   }
 
@@ -1072,6 +1099,10 @@
     column-gap: 0.35rem;
 
     margin-bottom: 20px;
+
+    @include onBigTablet {
+      margin-bottom: 12px;
+    }
 
     @include onSmallDesktop {
       margin-bottom: 16px;
@@ -1106,10 +1137,25 @@
     line-height: 24px; /* 160% */
     letter-spacing: 0.6px;
 
+    @include onBigTablet {
+      font-size: 11px;
+      line-height: 22px; /* 200% */
+      letter-spacing: 0.44px;
+
+      margin-bottom: 20px;
+    }
+
+    @include onSmallDesktop {
+      font-size: 15px;
+      line-height: 24px; /* 160% */
+      letter-spacing: 0.6px;
+    }
+
     @include onBigDesktop {
       font-size: 18px;
       line-height: 27px; /* 150% */
       letter-spacing: 1.2px;
+      margin-bottom: 24px;
     }
   }
 
@@ -1124,6 +1170,11 @@
     // width: 100%;
 
     margin-right: 20px;
+
+    @include onBigTablet {
+      width: 42px;
+      height: 42px;
+    }
 
     @include onSmallDesktop {
       width: 52px;
@@ -1145,6 +1196,18 @@
     line-height: 30px; /* 166.667% */
     letter-spacing: 1.08px;
     text-transform: uppercase;
+
+    @include onBigTablet {
+      font-size: 15px;
+      letter-spacing: 0.9px;
+      line-height: normal; /* 166.667% */
+    }
+
+    @include onSmallDesktop {
+      font-size: 18px;
+      line-height: 30px; /* 166.667% */
+      letter-spacing: 1.08px;
+    }
 
     @include onBigDesktop {
       font-size: 24px;

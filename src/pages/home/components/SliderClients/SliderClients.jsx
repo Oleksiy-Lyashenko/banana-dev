@@ -5,8 +5,10 @@ import { NavLink } from 'react-router-dom';
 
 let REVIEW_WIDTH = window.screen.width;
 
-if (window.screen.width >= 600) {
+if (window.screen.width >= 1023) {
   REVIEW_WIDTH = 625;
+} else if (window.screen.width >= 600 && window.screen.width <= 1022) {
+  REVIEW_WIDTH = 455;
 }
 
 export const SliderClients = () => {
@@ -67,6 +69,67 @@ export const SliderClients = () => {
               </div>
             </div>
           </div>
+          <div className="home-clients__card home-clients__card--doshed">
+            <div className="home-clients__top">
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+            </div>
+
+            <p className="home-clients__review">
+              I’ve worked with some incredible devs in my career, but the experience I am having
+              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
+              the team!
+            </p>
+
+            <div className="home-clients__review-bottom">
+              <img
+                src="./images/our_clients_page/client_img.png"
+                alt=""
+                className="home-clients__client-img"
+              />
+
+              <div className="home-clients__review-bottom-info">
+                <span className="home-clients__name">Mitchel Gronyx</span>
+
+                <div className="home-clients__position">// founder of Microssoft, UK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="home-clients__column">
+          <div className="home-clients__card home-clients__card--doshed">
+            <div className="home-clients__top">
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
+            </div>
+
+            <p className="home-clients__review">
+              I’ve worked with some incredible devs in my career, but the experience I am having
+              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
+              the team!
+            </p>
+
+            <div className="home-clients__review-bottom">
+              <img
+                src="./images/our_clients_page/client_img.png"
+                alt=""
+                className="home-clients__client-img"
+              />
+
+              <div className="home-clients__review-bottom-info">
+                <span className="home-clients__name">Mitchel Gronyx</span>
+
+                <div className="home-clients__position">// founder of Microssoft, UK</div>
+              </div>
+            </div>
+          </div>
           <div className="home-clients__card">
             <div className="home-clients__top">
               <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
@@ -128,7 +191,7 @@ export const SliderClients = () => {
               </div>
             </div>
           </div>
-          <div className="home-clients__card">
+          <div className="home-clients__card home-clients__card--doshed">
             <div className="home-clients__top">
               <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
               <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
@@ -160,68 +223,7 @@ export const SliderClients = () => {
         </div>
 
         <div className="home-clients__column">
-          <div className="home-clients__card">
-            <div className="home-clients__top">
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-            </div>
-
-            <p className="home-clients__review">
-              I’ve worked with some incredible devs in my career, but the experience I am having
-              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
-              the team!
-            </p>
-
-            <div className="home-clients__review-bottom">
-              <img
-                src="./images/our_clients_page/client_img.png"
-                alt=""
-                className="home-clients__client-img"
-              />
-
-              <div className="home-clients__review-bottom-info">
-                <span className="home-clients__name">Mitchel Gronyx</span>
-
-                <div className="home-clients__position">// founder of Microssoft, UK</div>
-              </div>
-            </div>
-          </div>
-          <div className="home-clients__card">
-            <div className="home-clients__top">
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-              <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
-            </div>
-
-            <p className="home-clients__review">
-              I’ve worked with some incredible devs in my career, but the experience I am having
-              with my dev through Lemon.io is so 🔥. I feel invincible as a founder. So thankful to
-              the team!
-            </p>
-
-            <div className="home-clients__review-bottom">
-              <img
-                src="./images/our_clients_page/client_img.png"
-                alt=""
-                className="home-clients__client-img"
-              />
-
-              <div className="home-clients__review-bottom-info">
-                <span className="home-clients__name">Mitchel Gronyx</span>
-
-                <div className="home-clients__position">// founder of Microssoft, UK</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="home-clients__column">
-          <div className="home-clients__card">
+          <div className="home-clients__card home-clients__card--doshed">
             <div className="home-clients__top">
               <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />
               <img src="./images/our_clients_page/star.svg" alt="" className="home-clients__star" />

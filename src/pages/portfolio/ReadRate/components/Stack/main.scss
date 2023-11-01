@@ -1,10 +1,11 @@
-@import "../../../../styles/utils/vars";
-@import "../../../../styles/utils/mixins";
+@import "../../../../../styles/utils/vars";
+@import "../../../../../styles/utils/mixins";
 
-.page-title-stack {
+.stack-page-title {
+  display: block;
   margin: 0;
   position: relative;
-  display: inline-block;
+  // display: inline-block;
 
 
   font-family: $sugo-pro-display;
@@ -17,42 +18,24 @@
   text-transform: uppercase;
 
   text-shadow: -1px -1px 0px #000000,
-    1.5px 1.5px 0px #000000,
-    2px 2px 0px #808080;
+    2.5px 2.5px 0px #000000,
+    3.5px 3.5px 0px #808080;
 
   @include onSmallDesktop {
     font-size: 70px;
     line-height: 70px; /* 100% */
     letter-spacing: 4.2px;
-    text-shadow: -1px -1px 0px #000000,
-      2.5px 2.5px 0px #000000,
-      3.5px 3.5px 0px #808080;
+
   }
 
   @include onBigDesktop {
     font-size: 110px;
     line-height: 112px; /* 101.818% */
     letter-spacing: 6.6px;
-  }
-
-  &--about {
-    @include onSmallDesktop {
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 78px; /* 121.875% */
-      letter-spacing: 3.84px;
-      text-transform: uppercase;
-    }
-
-    @include onBigDesktop {
-      font-size: 100px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 112px; /* 112% */
-      letter-spacing: 6px;
-      text-transform: uppercase;
-    }
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0px #000000,
+      1.5px 1.5px 0px #000000,
+      2px 2px 0px #808080;
   }
   
 
@@ -69,82 +52,33 @@
   &__content {
     padding-top: 10rem;
 
-    @include onBigTablet {
+    @include onTablet {
       padding-top: 250px;
-    }
-
-    @include onDesktop {
-      padding-top: 300px;
     }
   }
 
   &__title {
     display: block;
-    margin: 0;
+    margin: 0 auto;
 
-    margin-bottom: 25px;
+    font-size: 3.8rem;
+    letter-spacing: 3.12px;
+    margin-bottom: 15px;
 
     @include onTablet {
+      font-size: 5rem;
       margin-bottom: 30px;
+      letter-spacing: 4.08px;
     }
 
     @include onSmallDesktop {
-    }
-  }
-
-  &__lock {
-    width: 100%;
-  }
-
-  &__block {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    @include onBigTablet {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-
-  &__sub-text {
-    margin: 0;
-    color: $white-text-color;
-
-    font-family: Fira Code;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; /* 173.333% */
-    letter-spacing: 0.6px;
-
-    @include onBigTablet {
-      width: 300px;
-      
-      text-align: right;
-      font-size: 10px;
-      line-height: 20px; /* 200% */
-      letter-spacing: 0.4px;
-    }
-
-    @include onSmallDesktop {
-      text-align: right;
-      width: 375px;
-      font-size: 13px;
-      line-height: 26px; /* 200% */
-      letter-spacing: 0.52px;
-    }
-
-    @include onDesktop {
-      font-size: 18px;
-      line-height: 30px; /* 150% */
-      letter-spacing: 1.2px;
-      width: 600px;
+      font-size: 6rem;
+      margin-bottom: 50px;
     }
   }
 }
 
-.main-stack {
+.main-stack-pocketbook {
   height: 630px;
   background-size: 150px 150px;
   position: relative;
@@ -167,7 +101,7 @@
   }
 
   @include onSmallDesktop {
-    background-position: 93px 63.5px;
+    background-position: 90px 63.5px;
   }
 
   @include onBigDesktop {
@@ -182,44 +116,16 @@
       height: 430px;
     }
 
+    @include onSmallDesktop {
+      height: 740px;
+    }
+
     @include onBigDesktop {
       height: 650px;
     }
   }
 
   background-image: linear-gradient(0deg,transparent 24%,rgba(52,52,56,.6) 25%,rgba(52,52,56,.6) 25.1%,transparent 25%,transparent 74%,rgba(52,52,56,.6) 75%,rgba(52,52,56,.6) 75.1%,transparent 75%,transparent),linear-gradient(90deg,transparent 24%,rgba(52,52,56,.6) 25%,rgba(52,52,56,.6) 25.1%,transparent 25%,transparent 74%,rgba(52,52,56,.6) 75%,rgba(52,52,56,.6) 75.1%,transparent 75%,transparent);
-
-  &__top-shadow {
-    position: absolute;
-    height: 25px;
-    width: 100%;
-    top: 0;
-  }
-
-  &__bottom-shadow {
-    position: absolute;
-    height: 30px;
-    width: 100%;
-    bottom: 0;
-  }
-
-  &__left-shadow {
-    position: absolute;
-    width: 20px;
-    height: 100%;
-    left: 0;
-
-    @include onBigPhone {
-      width: 30px;
-    }
-  }
-
-  &__right-shadow {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    z-index: 1;
-  }
 
   &__block {
     padding-top: 28px;
@@ -258,10 +164,33 @@
     flex: 1 0 100%;
     flex-direction: column;
     width: 250px;
-    // width: 100%;
 
     @include onTablet {
       width: 600px;
+    }
+
+    &--small-desktop {
+      display: none;
+      @include onSmallDesktop {
+        display: block;
+        margin-top: 2px;
+      }
+
+      @include onBigDesktop {
+        display: none;
+      }
+    }
+
+    &--big-desktop {
+      display: block;
+
+      @include onSmallDesktop {
+        display: none;
+      }
+
+      @include onBigDesktop {
+        display: block;
+      }
     }
   }
 
@@ -285,16 +214,9 @@
       width: 190px;
       height: 97.5px;
 
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: normal;
-      letter-spacing: 1.8px;
+      font-size: 2rem;
       line-height: 98px;
-    }
-
-    @include onBigTablet {
-      margin-left: 5px;
+      letter-spacing: 2.16px;
     }
   }
 
@@ -313,20 +235,12 @@
       flex-direction: row;
       row-gap: 1.5px;
     }
-
-    @include onSmallDesktop {
-      column-gap: 8px;
-    }
   }
 
   &__tool {
     display: flex;
     column-gap: 2px;
     row-gap: 2px;
-
-    @include onBigTablet {
-      column-gap: 6px;
-    }
   }
 
   &__block-img {
@@ -364,25 +278,21 @@
 
     color: $white-text-color;
     font-family: $fira-code;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
-    letter-spacing: 1.2px;
+    line-height: normal;
+    letter-spacing: 0.6px;
 
-    @include onTablet {
+    @include onSmallDesktop {
       margin-top: 1px;
       width: 190px;
       height: 98px;
-
-      font-size: 15px;
-      letter-spacing: 0.6px;
     }
 
     @include onDesktop {
       height: 97.5px;
-    }
 
-    @include onBigDesktop {
       font-size: 20px;
       letter-spacing: 1.2px;
     }
@@ -421,6 +331,7 @@
   }
 
   &__arrow-img {
-    height: 46px;
+    width: 50px;
+    height: 50px;
   }
 }
