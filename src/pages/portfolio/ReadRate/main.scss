@@ -66,6 +66,11 @@
   &--pink {
     color: $pink2-text-color;
   }
+
+  &--blue {
+    color: #07CBF5;
+  }
+
 }
 
 .readrate {
@@ -1266,13 +1271,16 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
+      margin-top: -7%;
       margin-bottom: 50px;
 
       @include onSmallDesktop {
+        margin-top: -5%;
         margin-bottom: 35px;
       }
 
       @include onBigDesktop {
+        margin-top: -7%;
         margin-bottom: 70px;
       }
     }

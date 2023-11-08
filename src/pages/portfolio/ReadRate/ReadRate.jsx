@@ -149,7 +149,7 @@ export default function ReadRate() {
               </div>
 
               <div className="readrate-about__block">
-                <h2 className="page-title-pocketbook page-title-pocketbook--pink page-title-pocketbook--about pocketbook-about__title">
+                <h2 className="page-title-readrate page-title-readrate--blue page-title-pocketbook--about pocketbook-about__title">
                   about client
                 </h2>
                 <p className="readrate-about__text">
@@ -288,7 +288,7 @@ export default function ReadRate() {
               <div className="readrate-responsive__img-block pocketbook-responsive__img-block--mobile">
                 <div className="readrate-responsive__block-img">
                   <img
-                    src="./images/clients/pocketbook/responsive_img.svg"
+                    src="./images/clients/readrate/responsive_img.svg"
                     alt=""
                     srcset=""
                     className="readrate-responsive__img"
@@ -341,7 +341,7 @@ export default function ReadRate() {
             <div className="readrate-responsive__img-block pocketbook-responsive__img-block--desktop">
               <div className="readrate-responsive__block-img">
                 <img
-                  src="./images/clients/pocketbook/responsive_img.svg"
+                  src="./images/clients/readrate/responsive_img.svg"
                   alt=""
                   srcset=""
                   className="readrate-responsive__img"
@@ -387,14 +387,14 @@ export default function ReadRate() {
                     typography
                   </h4>
                   <img
-                    src="./images/clients/pocketbook/colors/typo_img.svg"
+                    src="./images/clients/readrate/typo_img.svg"
                     alt=""
                     srcset=""
                     className="readrate-branding__typography__img"
                   />
                 </div>
                 <img
-                  src="./images/clients/pocketbook/branding_typography_img.svg"
+                  src="./images/clients/readrate/branding_typography_img.svg"
                   alt=""
                   srcset=""
                   className="readrate-branding__img-colours"
@@ -408,7 +408,7 @@ export default function ReadRate() {
           <div className="readrate-mobile-app__content container">
             <div className="readrate-mobile-app__img-block readrate-mobile-app__img-block--desktop">
               <img
-                src="./images/clients/pocketbook/mobile_app_img.png"
+                src="./images/clients/readrate/mobile_app_img.svg"
                 alt=""
                 srcset=""
                 className="readrate-mobile-app__img"
@@ -421,7 +421,7 @@ export default function ReadRate() {
               </h2>
               <div className="readrate-mobile-app__img-block readrate-mobile-app__img-block--mobile">
                 <img
-                  src="./images/clients/pocketbook/mobile_app_img.svg"
+                  src="./images/clients/readrate/mobile_app_img.svg"
                   alt=""
                   srcset=""
                   className="readrate-mobile-app__img"
