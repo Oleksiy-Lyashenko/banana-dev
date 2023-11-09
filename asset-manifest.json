@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/banana-dev/static/css/main.c515dbc8.css",
+    "main.css": "/banana-dev/static/css/main.5be49ffd.css",
     "main.js": "/banana-dev/static/js/main.686c1165.js",
     "static/media/portfolio_pocketbok_img.svg": "/banana-dev/static/media/portfolio_pocketbok_img.7b6159b973161bb5a0fb.svg",
     "static/media/bg_img.svg": "/banana-dev/static/media/bg_img.5f1be081a2ce7f5692d8.svg",
@@ -45,11 +45,11 @@
     "index.html": "/banana-dev/index.html",
     "static/media/project_info_mobile_img.svg": "/banana-dev/static/media/project_info_mobile_img.2ce6bbc29f3f777a242a.svg",
     "static/media/star.svg": "/banana-dev/static/media/star.b73ff636d0fec6ec7bda.svg",
-    "main.c515dbc8.css.map": "/banana-dev/static/css/main.c515dbc8.css.map",
+    "main.5be49ffd.css.map": "/banana-dev/static/css/main.5be49ffd.css.map",
     "main.686c1165.js.map": "/banana-dev/static/js/main.686c1165.js.map"
   },
   "entrypoints": [
-    "static/css/main.c515dbc8.css",
+    "static/css/main.5be49ffd.css",
     "static/js/main.686c1165.js"
   ]
 }
