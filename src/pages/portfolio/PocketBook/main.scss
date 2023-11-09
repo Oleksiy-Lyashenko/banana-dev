@@ -291,7 +291,7 @@
 
     @include onTablet {
       column-gap: 0;
-      width: 500px;
+      width: 550px;
     }
 
     @include onSmallDesktop {
@@ -440,22 +440,22 @@
     @include onBigTablet {
       width: 100%;
       height: max-content;
-      background-image: url('../../../images/pocketbook_project_info_bg.png');
+      background-image: url('../../../images/project_info_img.svg');
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
 
-    @include onSmallDesktop {
-      background-image: url('../../../images/project_info_img.svg');
-      background-position-x: 0px;
-      background-position-y: 0px;
-      background-size: 100% 100%;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: initial;
-      background-origin: initial;
-      background-clip: initial;
-    }
+    // @include onSmallDesktop {
+    //   background-image: url('../../../images/project_info_img.svg');
+    //   background-position-x: 0px;
+    //   background-position-y: 0px;
+    //   background-size: 100% 100%;
+    //   background-repeat-x: no-repeat;
+    //   background-repeat-y: no-repeat;
+    //   background-attachment: initial;
+    //   background-origin: initial;
+    //   background-clip: initial;
+    // }
     &::after {
       box-shadow: none;
     }
@@ -1315,7 +1315,7 @@
 
     @include onBigTablet {
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 15px;
+      column-gap: 50px;
 
       padding-top: 150px;
       max-width: max-content;
@@ -1328,7 +1328,7 @@
     }
 
     @include onBigDesktop {
-      column-gap: 250px;
+      column-gap: 150px;
     }
   }
 
@@ -1349,8 +1349,8 @@
   &__text-block {
     display: flex;
     flex-direction: column;
-
-    max-width: 600px;
+    margin: 0 auto;
+    max-width: 500px;
 
     @include onSmallDesktop {
       margin-left: 60px;
@@ -1525,13 +1525,29 @@
       padding-top: 100px;
 
       grid-template-columns: repeat(2, 1fr);
-      // column-gap: 50px;
+      column-gap: 50px;
       align-items: center;
     }
 
     @include onSmallDesktop {
       padding-top: 250px;
       // column-gap: 60px;
+    }
+  }
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    max-width: 500px;
+
+    &--position {
+      justify-content: center;
+    }
+
+    @include onBigTablet {
+      margin: 0;
     }
   }
 
@@ -1607,7 +1623,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 
-    @include onTablet {
+    @include onBigTablet {
       padding-top: 130px;
 
       grid-template-columns: repeat(2, 1fr);
@@ -1620,12 +1636,28 @@
     }
   }
 
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    max-width: 500px;
+
+    &--position {
+      justify-content: center;
+    }
+
+    @include onBigTablet {
+      margin: 0;
+    }
+  }
+
   &__title {
     text-align: right;
     margin-bottom: 50px;
 
 
-    @include onTablet {
+    @include onBigTablet {
       margin-bottom: 30px;
 
       text-align: left;
@@ -1641,7 +1673,7 @@
     &--desktop {
       display: none;
 
-      @include onTablet {
+      @include onBigTablet {
         display: block;
 
         padding-top: 40px;
@@ -1650,7 +1682,7 @@
     }
 
     &--mobile {
-      @include onTablet {
+      @include onBigTablet {
         display: none;
       }
     }

@@ -1338,7 +1338,7 @@
     }
 
     @include onBigDesktop {
-      column-gap: 250px;
+      column-gap: 100px;
     }
   }
 
@@ -1359,19 +1359,16 @@
   &__text-block {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 
-    max-width: 600px;
-
-    @include onSmallDesktop {
-      margin-left: 50px;
-    }
+    max-width: 500px;
 
     &--position {
       justify-content: center;
     }
 
-    @include onTablet {
-      // margin-left: 60px;
+    @include onBigTablet {
+      max-width: 600px;
     }
 
   }
@@ -1422,6 +1419,39 @@
       @include onBigTablet {
         display: none;
       }
+    }
+  }
+
+  &__ampersant {
+    color: #FFE500;
+    font-family: Fira Code;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px; /* 100% */
+    letter-spacing: 3.12px;
+    text-transform: uppercase;
+
+    text-shadow: -1px -1px 0px #000000,
+      1.5px 1.5px 0px #000000,
+      2px 2px 0px #808080;
+
+    @include onSmallDesktop {
+      font-size: 70px;
+      line-height: 70px; /* 100% */
+      letter-spacing: 4.2px;
+      text-shadow: -1px -1px 0px #000000,
+        2.5px 2.5px 0px #000000,
+        3.5px 3.5px 0px #808080;
+    }
+
+    @include onBigDesktop {
+      font-size: 110px;
+      line-height: 112px; /* 101.818% */
+      letter-spacing: 6.6px;
+      text-shadow: -1px -1px 0px #000000,
+        3.5px 3.5px 0px #000000,
+        5px 5px 0px #808080;
     }
   }
 
@@ -1535,13 +1565,29 @@
       padding-top: 100px;
 
       grid-template-columns: repeat(2, 1fr);
-      // column-gap: 50px;
+      column-gap: 50px;
       align-items: center;
     }
 
     @include onSmallDesktop {
       padding-top: 250px;
       // column-gap: 60px;
+    }
+  }
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    max-width: 500px;
+
+    &--position {
+      justify-content: center;
+    }
+
+    @include onBigTablet {
+      margin: 0;
     }
   }
 
@@ -1654,7 +1700,10 @@
       @include onTablet {
         display: block;
 
-        padding-top: 40px;
+        // padding-top: 40px;
+      }
+
+      @include onBigDesktop {
         margin-left: -100px;
       }
     }

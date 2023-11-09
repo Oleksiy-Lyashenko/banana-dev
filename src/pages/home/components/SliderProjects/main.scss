@@ -57,7 +57,7 @@
     padding: 25px;
 
     background: url('../../../../images/projects_bg.svg');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     // background-position: center center;
 
@@ -82,7 +82,7 @@
       padding-bottom: 70px;
     }
 
-    @include onDesktop {
+    @include onBigDesktop {
       width: 850px;
       padding: 100px 0;
     }

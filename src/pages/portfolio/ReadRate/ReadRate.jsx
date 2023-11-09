@@ -162,23 +162,9 @@ export default function ReadRate() {
             </div>
 
             <div className="readrate-about__main">
-              <img
-                src="./images/clients/pocketbook/about_top_shadow_img.png"
-                alt=""
-                srcset=""
-                className="readrate-about__top-shadow"
-              />
-
-              <img
-                src="./images/clients/pocketbook/about_bottom_shadow_img.png"
-                alt=""
-                srcset=""
-                className="readrate-about__bottom-shadow"
-              />
-
               <div className="readrate-about__img-block">
                 <img
-                  src="./images/clients/pocketbook/about_img.svg"
+                  src="./images/clients/readrate/about_img.svg"
                   alt=""
                   className="readrate-about__img"
                 />
@@ -374,7 +360,7 @@ export default function ReadRate() {
               <div className="readrate-branding__colors-block">
                 <h4 className="readrate-branding__colors-block__title">colours</h4>
                 <img
-                  src="./images/clients/pocketbook/branding_colors_img.svg"
+                  src="./images/clients/readrate/branding_colors_img.svg"
                   alt=""
                   srcset=""
                   className="readrate-branding__img-colours"
@@ -406,18 +392,9 @@ export default function ReadRate() {
 
         <section className="readrate-mobile-app">
           <div className="readrate-mobile-app__content container">
-            <div className="readrate-mobile-app__img-block readrate-mobile-app__img-block--desktop">
-              <img
-                src="./images/clients/readrate/mobile_app_img.svg"
-                alt=""
-                srcset=""
-                className="readrate-mobile-app__img"
-              />
-            </div>
-
             <div className="readrate-mobile-app__text-block">
               <h2 className="page-title-readrate page-title-readrate--yellow readrate-mobile-app__title">
-                mobile app
+                COMMUNITY <span className="readrate-mobile-app__ampersant">&</span> NETWORKING
               </h2>
               <div className="readrate-mobile-app__img-block readrate-mobile-app__img-block--mobile">
                 <img
@@ -436,6 +413,15 @@ export default function ReadRate() {
                 Moreover, we integrated a dark mode feature into the application, allowing users to
                 switch between light and dark color schemes according to their preference.
               </p>
+            </div>
+
+            <div className="readrate-mobile-app__img-block readrate-mobile-app__img-block--desktop">
+              <img
+                src="./images/clients/readrate/mobile_app_img.svg"
+                alt=""
+                srcset=""
+                className="readrate-mobile-app__img"
+              />
             </div>
           </div>
         </section>
@@ -483,7 +469,7 @@ export default function ReadRate() {
           <div className="readrate-review__content container">
             <div className="readrate-review__img-block readrate-review__img-block--desktop">
               <img
-                src="./images/clients/pocketbook/client_img.png"
+                src="./images/clients/readrate/client_img.svg"
                 alt=""
                 srcset=""
                 className="readrate-review__img"
@@ -497,7 +483,7 @@ export default function ReadRate() {
 
               <div className="readrate-review__img-block readrate-review__img-block--mobile">
                 <img
-                  src="./images/clients/pocketbook/client_img.png"
+                  src="./images/clients/readrate/client_img.svg"
                   alt=""
                   srcset=""
                   className="readrate-review__img"
