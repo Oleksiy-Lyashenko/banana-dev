@@ -446,22 +446,11 @@
     @include onBigTablet {
       width: 100%;
       height: max-content;
-      background-image: url('../../../images/pocketbook_project_info_bg.png');
+      background-image: url('../../../images/project_info_img.svg');
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
 
-    @include onSmallDesktop {
-      background-image: url('../../../images/project_info_img.svg');
-      background-position-x: 0px;
-      background-position-y: 0px;
-      background-size: 100% 100%;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: initial;
-      background-origin: initial;
-      background-clip: initial;
-    }
     &::after {
       box-shadow: none;
     }
@@ -526,7 +515,7 @@
     @include onBigTablet {
       flex-direction: row;
       justify-content: space-between;
-      padding: 35px 50px;
+      padding: 35px 30px;
       padding-top: 50px;
     }
 
@@ -623,7 +612,7 @@
   &__br {
     display: block;
 
-    @include onSmallDesktop {
+    @include onBigTablet {
       display: none;
     }
   }

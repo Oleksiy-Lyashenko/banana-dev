@@ -520,7 +520,7 @@
     @include onBigTablet {
       flex-direction: row;
       justify-content: space-between;
-      padding: 35px 50px;
+      padding: 35px 15px;
       padding-top: 50px;
     }
 
@@ -617,7 +617,7 @@
   &__br {
     display: block;
 
-    @include onSmallDesktop {
+    @include onBigTablet {
       display: none;
     }
   }
