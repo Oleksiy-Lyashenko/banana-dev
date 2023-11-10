@@ -39,7 +39,19 @@ export const Stack = () =>  {
   return (
     <div className="stack-page">
       <div className="stack-page__content">
-        <h2 className="stack-page-title stack-page-title--yellow container"> Tech stack</h2>
+        <div className="container">
+          <div className="stack-page__block">
+            <h2 className="page-title-stack page-title-stack--yellow stack-page__title">
+              {' '}
+              Tech stack
+            </h2>
+
+            <p className="stack-page__sub-text">
+              We work with the latest and greatest mobile, cross-platform and web technologies and
+              tools to provide you with a powerful custom tech stack for your project.
+            </p>
+          </div>
+        </div>
 
         <div className="main-stack-pocketbook main-stack-pocketbook--pocketbook container--stack">
           <div className="container">

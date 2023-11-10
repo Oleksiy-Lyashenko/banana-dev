@@ -20,6 +20,11 @@
     1.5px 1.5px 0px #000000,
     2px 2px 0px #808080;
 
+  @include oniPhoneXr {
+    font-size: 60px;
+    line-height: 60px; /* 100% */
+  }
+
   @include onSmallDesktop {
     font-size: 70px;
     line-height: 70px; /* 100% */
@@ -153,6 +158,12 @@
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
 
+    @include oniPhoneXr {
+      font-size: 17px;
+      line-height: 26px; /* 173.333% */
+      letter-spacing: 0.6px;
+    }
+
     @include onSmallDesktop {
       font-size: 15px;
       font-style: normal;
@@ -242,8 +253,8 @@
   &__tools {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 20px;
+    column-gap: 12px;
+    row-gap: 12px;
 
     margin-bottom: 40px;
 
@@ -729,22 +740,34 @@
 
   &__img-block {
     overflow: hidden;
-    @include onBigTablet {
-      height: 520px;
-    }
+    // @include onBigTablet {
+    //   height: 520px;
+    // }
 
-    @include onBigDesktop {
-      height: 860px;
-    }
+    // @include onBigDesktop {
+    //   height: 860px;
+    // }
   }
 
   &__img {
     width: 100%;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.3));
 
-    @include onSmallDesktop {
-      width: 100%;
-      // height: 520px;
+    &--mobile {
+      display: block;
+      max-width: 500px;
+      margin: 0 auto;
+
+      @include onBigTablet {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @include onBigTablet {
+        display: block;
+      }
     }
   }
 
@@ -950,11 +973,11 @@
   &__list-text {
     color: #FFF;
     font-family: Fira Code;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px; /* 169.231% */
-    letter-spacing: 0.78px;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.9px;
 
     @include onBigDesktop {
       font-size: 20px;
@@ -1019,24 +1042,6 @@
 
     margin-right: 1rem;
   }
-
-  // &__list-text {
-  //   color: $white-text-color;
-  //   font-family: $fira-code;
-  //   font-size: 15px;
-  //   font-style: normal;
-  //   font-weight: 500;
-  //   line-height: 30px; /* 200% */
-  //   letter-spacing: 0.6px;
-
-  //   @include onSmallDesktop {
-  //     font-size: 18px;
-  //     font-style: normal;
-  //     font-weight: 500;
-  //     line-height: 30px; /* 150% */
-  //     letter-spacing: 1.2px;
-  //   }
-  // }
 
   &__img {
     width: 100%;
@@ -1367,11 +1372,11 @@
     color: $white-text-color;
 
     font-family: Fira Code;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px; /* 169.231% */
-    letter-spacing: 0.78px;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.9px;
 
     @include onBigDesktop {
       font-size: 20px;

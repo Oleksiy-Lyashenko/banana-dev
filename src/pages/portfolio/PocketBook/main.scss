@@ -20,6 +20,11 @@
     1.5px 1.5px 0px #000000,
     2px 2px 0px #808080;
 
+  @include oniPhoneXr {
+    font-size: 60px;
+    line-height: 60px; /* 100% */
+  }
+
   @include onSmallDesktop {
     font-size: 70px;
     line-height: 70px; /* 100% */
@@ -80,7 +85,7 @@
     background-image:
     linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)),
     linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../../../images/header_img.png');
+    url('../../../images/pocketbook_header_img.svg');
     width: 60%;
     height: 100%;
     background-size: cover;
@@ -147,6 +152,12 @@
     font-weight: 500;
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
+
+    @include oniPhoneXr {
+      font-size: 17px;
+      line-height: 26px; /* 173.333% */
+      letter-spacing: 0.6px;
+    }
 
     @include onSmallDesktop {
       font-size: 15px;
@@ -236,8 +247,8 @@
   &__tools {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 20px;
+    column-gap: 12px;
+    row-gap: 12px;
 
     margin-bottom: 40px;
 
@@ -445,17 +456,6 @@
       background-repeat: no-repeat;
     }
 
-    // @include onSmallDesktop {
-    //   background-image: url('../../../images/project_info_img.svg');
-    //   background-position-x: 0px;
-    //   background-position-y: 0px;
-    //   background-size: 100% 100%;
-    //   background-repeat-x: no-repeat;
-    //   background-repeat-y: no-repeat;
-    //   background-attachment: initial;
-    //   background-origin: initial;
-    //   background-clip: initial;
-    // }
     &::after {
       box-shadow: none;
     }
@@ -468,9 +468,6 @@
     top: -10px;
     left: -20px;
 
-    // @include onBigTablet {
-    //   display: none;
-    // }
 
     @include onBigTablet {
       display: block;
@@ -734,13 +731,6 @@
 
   &__img-block {
     overflow: hidden;
-    @include onBigTablet {
-      height: 520px;
-    }
-
-    @include onBigDesktop {
-      height: 860px;
-    }
   }
 
   &__img {
@@ -955,11 +945,11 @@
   &__list-text {
     color: #FFF;
     font-family: Fira Code;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px; /* 169.231% */
-    letter-spacing: 0.78px;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.9px;
 
     @include onBigDesktop {
       font-size: 20px;
@@ -1024,24 +1014,6 @@
 
     margin-right: 1rem;
   }
-
-  // &__list-text {
-  //   color: $white-text-color;
-  //   font-family: $fira-code;
-  //   font-size: 15px;
-  //   font-style: normal;
-  //   font-weight: 500;
-  //   line-height: 30px; /* 200% */
-  //   letter-spacing: 0.6px;
-
-  //   @include onSmallDesktop {
-  //     font-size: 18px;
-  //     font-style: normal;
-  //     font-weight: 500;
-  //     line-height: 30px; /* 150% */
-  //     letter-spacing: 1.2px;
-  //   }
-  // }
 
   &__img {
     width: 100%;
@@ -1371,11 +1343,11 @@
     color: $white-text-color;
 
     font-family: Fira Code;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px; /* 169.231% */
-    letter-spacing: 0.78px;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.9px;
 
     @include onBigDesktop {
       font-size: 20px;

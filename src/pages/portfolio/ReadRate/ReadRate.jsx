@@ -164,9 +164,15 @@ export default function ReadRate() {
             <div className="readrate-about__main">
               <div className="readrate-about__img-block">
                 <img
+                  src="./images/clients/readrate/about_mobile_img.svg"
+                  alt=""
+                  className="readrate-about__img readrate-about__img--mobile"
+                />
+
+                <img
                   src="./images/clients/readrate/about_img.svg"
                   alt=""
-                  className="readrate-about__img"
+                  className="readrate-about__img readrate-about__img--desktop"
                 />
               </div>
             </div>

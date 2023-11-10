@@ -183,20 +183,6 @@ export default function PocketBook() {
             </div>
 
             <div className="pocketbook-about__main">
-              <img
-                src="./images/clients/pocketbook/about_top_shadow_img.png"
-                alt=""
-                srcset=""
-                className="pocketbook-about__top-shadow"
-              />
-
-              <img
-                src="./images/clients/pocketbook/about_bottom_shadow_img.png"
-                alt=""
-                srcset=""
-                className="pocketbook-about__bottom-shadow"
-              />
-
               <div className="pocketbook-about__img-block">
                 <img
                   src="./images/clients/pocketbook/about_img.svg"

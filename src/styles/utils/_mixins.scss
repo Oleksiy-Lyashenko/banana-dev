@@ -6,6 +6,13 @@
   }
 }
 
+@mixin oniPhoneXr {
+  @media (min-width: $iphone-xr) {
+    @content;
+  }
+}
+
+
 @mixin onBigPhone {
   @media (min-width: $big-phone-min-width) {
     @content;

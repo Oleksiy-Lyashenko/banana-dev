@@ -20,6 +20,11 @@
     2.5px 2.5px 0px #000000,
     3.5px 3.5px 0px #808080;
 
+  @include oniPhoneXr {
+    font-size: 60px;
+    line-height: 60px; /* 100% */
+  }
+
   @include onSmallDesktop {
     font-size: 70px;
     line-height: 70px; /* 100% */
@@ -105,7 +110,10 @@
     line-height: 26px; /* 173.333% */
     letter-spacing: 0.6px;
 
-    @include onSmallDesktop {
+    @include oniPhoneXr {
+      font-size: 17px;
+      line-height: 26px; /* 173.333% */
+      letter-spacing: 0.6px;
     }
 
     @include onBigDesktop {
