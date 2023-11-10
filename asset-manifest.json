@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/banana-dev/static/css/main.5be49ffd.css",
-    "main.js": "/banana-dev/static/js/main.686c1165.js",
+    "main.css": "/banana-dev/static/css/main.e043fead.css",
+    "main.js": "/banana-dev/static/js/main.f70e05e4.js",
     "static/media/portfolio_pocketbok_img.svg": "/banana-dev/static/media/portfolio_pocketbok_img.7b6159b973161bb5a0fb.svg",
     "static/media/bg_img.svg": "/banana-dev/static/media/bg_img.5f1be081a2ce7f5692d8.svg",
+    "static/media/pocketbook_header_img.svg": "/banana-dev/static/media/pocketbook_header_img.d4dc539582d6cc13b34c.svg",
     "static/media/readrate_header_bg.svg": "/banana-dev/static/media/readrate_header_bg.422978c303b34f5c41c2.svg",
     "static/media/projects_bg.svg": "/banana-dev/static/media/projects_bg.e95591284668dc11f0c3.svg",
-    "static/media/header_img.png": "/banana-dev/static/media/header_img.7e45e9e1becc884a608e.png",
     "static/media/Sugo-Pro-Classic-Thin-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Thin-trial.08ce01ad8a874fb4a8c8.ttf",
     "static/media/Sugo-Pro-Classic-Light-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Light-trial.95d5ce39453ba7a5fb28.ttf",
     "static/media/Sugo-Pro-Classic-Bold-trial.ttf": "/banana-dev/static/media/Sugo-Pro-Classic-Bold-trial.0da79f137b8a422c0e7b.ttf",
@@ -45,11 +45,11 @@
     "index.html": "/banana-dev/index.html",
     "static/media/project_info_mobile_img.svg": "/banana-dev/static/media/project_info_mobile_img.2ce6bbc29f3f777a242a.svg",
     "static/media/star.svg": "/banana-dev/static/media/star.b73ff636d0fec6ec7bda.svg",
-    "main.5be49ffd.css.map": "/banana-dev/static/css/main.5be49ffd.css.map",
-    "main.686c1165.js.map": "/banana-dev/static/js/main.686c1165.js.map"
+    "main.e043fead.css.map": "/banana-dev/static/css/main.e043fead.css.map",
+    "main.f70e05e4.js.map": "/banana-dev/static/js/main.f70e05e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.5be49ffd.css",
-    "static/js/main.686c1165.js"
+    "static/css/main.e043fead.css",
+    "static/js/main.f70e05e4.js"
   ]
 }
